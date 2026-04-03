@@ -1,0 +1,2542 @@
+[
+  {
+    "id": 1,
+    "text": "Chętnie czytam czasopisma techniczne.",
+    "key": "tak"
+  },
+  {
+    "id": 2,
+    "text": "Mam dobry apetyt.",
+    "key": "tak"
+  },
+  {
+    "id": 3,
+    "text": "Rano, zazwyczaj budzę się rześki i wypoczęty.",
+    "key": "tak"
+  },
+  {
+    "id": 4,
+    "text": "Sądzę, że odpowiadałaby mi praca bibliotekarza.",
+    "key": "nie"
+  },
+  {
+    "id": 5,
+    "text": "Hałasy łatwo mnie budzą.",
+    "key": "nie"
+  },
+  {
+    "id": 6,
+    "text": "Mój ojciec jest dobrym człowiekiem (jeśli nie żyje) był dobrym człowiekiem.",
+    "key": "tak"
+  },
+  {
+    "id": 7,
+    "text": "Chętnie czytam w gazetach o przestępstwach i rozprawach sądowych.",
+    "key": "nie"
+  },
+  {
+    "id": 8,
+    "text": "Mam zwykle dość ciepłe ręce i nogi.",
+    "key": "tak"
+  },
+  {
+    "id": 9,
+    "text": "Moje życie codzienne jest pełne spraw, które mnie interesują.",
+    "key": "tak"
+  },
+  {
+    "id": 10,
+    "text": "Jestem obecnie tak samo zdolny do pracy, jak prawie zawsze.",
+    "key": "tak"
+  },
+  {
+    "id": 11,
+    "text": "Często mam uczucie ściskania w gardle.",
+    "key": "nie"
+  },
+  {
+    "id": 12,
+    "text": "Jestem zadowolony ze swojego życia seksualnego.",
+    "key": "tak"
+  },
+  {
+    "id": 13,
+    "text": "Należy starać się rozumieć swoje sny i wyciągnąć z nich wnioski.",
+    "key": "nie"
+  },
+  {
+    "id": 14,
+    "text": "Chętnie czytam powieści kryminalne i sensacyjne.",
+    "key": "tak"
+  },
+  {
+    "id": 15,
+    "text": "Pracuję w dużym napięciu nerwowym.",
+    "key": "nie"
+  },
+  {
+    "id": 16,
+    "text": "Zdarza mi się myśleć o rzeczach, o których nie wypada mówić.",
+    "key": "nie"
+  },
+  {
+    "id": 17,
+    "text": "Jestem pewien, że życie źle się ze mną obchodzi.",
+    "key": "nie"
+  },
+  {
+    "id": 18,
+    "text": "Dokuczają mi nudności i wymioty.",
+    "key": "nie"
+  },
+  {
+    "id": 19,
+    "text": "Gdy podejmuję nową pracę lubię wiedzieć z góry, o czyje względy warto się ubiegać.",
+    "key": "nie"
+  },
+  {
+    "id": 20,
+    "text": "Na zatwardzenie cierpię bardzo rzadko lub nigdy.",
+    "key": "tak"
+  },
+  {
+    "id": 21,
+    "text": "Czasem bardzo pragnąłem opuścić dom.",
+    "key": "nie"
+  },
+  {
+    "id": 22,
+    "text": "Wydaje mi się, że nikt mnie nie rozumie.",
+    "key": "nie"
+  },
+  {
+    "id": 23,
+    "text": "Miewam czasem napady śmiechu i płaczu, których nie mogę opanować.",
+    "key": "nie"
+  },
+  {
+    "id": 24,
+    "text": "Czasem jak gdyby siedział we mnie jakiś zły duch.",
+    "key": "nie"
+  },
+  {
+    "id": 25,
+    "text": "Chciałbym być piosenkarzem.",
+    "key": "tak"
+  },
+  {
+    "id": 26,
+    "text": "Sądzę, że gdy się ma kłopoty, to najlepiej jest trzymać język za zębami.",
+    "key": "nie"
+  },
+  {
+    "id": 27,
+    "text": "Gdy mi ktoś wyrządzi krzywdę czuję, że powinienem odpłacić mu tym samym, chociażby dla zasady.",
+    "key": "nie"
+  },
+  {
+    "id": 28,
+    "text": "Często miewam zaburzenia żołądkowe.",
+    "key": "nie"
+  },
+  {
+    "id": 29,
+    "text": "Czasami mam ochotę kląć.",
+    "key": "tak"
+  },
+  {
+    "id": 30,
+    "text": "Bardzo często mam koszmarne sny.",
+    "key": "nie"
+  },
+  {
+    "id": 31,
+    "text": "Trudno mi się skupić na jakimś zadaniu lub pracy.",
+    "key": "nie"
+  },
+  {
+    "id": 32,
+    "text": "Miałem bardzo niezwykłe i dziwne przeżycia (doznania).",
+    "key": "nie"
+  },
+  {
+    "id": 33,
+    "text": "Rzadko martwię się swoim zdrowiem.",
+    "key": "tak"
+  },
+  {
+    "id": 34,
+    "text": "Nigdy nie miałem kłopotów z powodu mojego zachowania seksualnego.",
+    "key": "tak"
+  },
+  {
+    "id": 35,
+    "text": "Czasem zdarza mi się popełnić drobne kradzieże.",
+    "key": "nie"
+  },
+  {
+    "id": 36,
+    "text": "Mam często kaszel.",
+    "key": "nie"
+  },
+  {
+    "id": 37,
+    "text": "Czasem mam ochotę coś stłuc, co mi wpadnie w ręce.",
+    "key": "nie"
+  },
+  {
+    "id": 38,
+    "text": "Miewam okresy, w których trudno mi się czymkolwiek zająć, gdyż nie mam na to siły.",
+    "key": "nie"
+  },
+  {
+    "id": 39,
+    "text": "Mam niespokojny i przerywany sen.",
+    "key": "nie"
+  },
+  {
+    "id": 40,
+    "text": "Często boli mnie głowa.",
+    "key": "nie"
+  },
+  {
+    "id": 41,
+    "text": "Nie zawsze mówię prawdę.",
+    "key": "tak"
+  },
+  {
+    "id": 42,
+    "text": "Gdybym nie miał wrogów, powodziłoby mi się znacznie lepiej.",
+    "key": "nie"
+  },
+  {
+    "id": 43,
+    "text": "Myślę teraz jaśniej, niż kiedykolwiek.",
+    "key": "tak"
+  },
+  {
+    "id": 44,
+    "text": "Dość często robi mi się nagle gorąco bez widocznego powodu.",
+    "key": "nie"
+  },
+  {
+    "id": 45,
+    "text": "Jestem fizycznie tak samo zdrów, jak większość moich znajomych.",
+    "key": "tak"
+  },
+  {
+    "id": 46,
+    "text": "Wolę unikać dawnych przyjaciół szkolnych lub ludzi, których dawno nie widziałem, dopóki oni pierwsi nie zwrócą się do mnie.",
+    "key": "nie"
+  },
+  {
+    "id": 47,
+    "text": "Prawie nigdy nie odczuwam bólu w klatce piersiowej lub w okolicach serca.",
+    "key": "tak"
+  },
+  {
+    "id": 48,
+    "text": "Prawie zawsze wolałbym siedzieć i marzyć, zamiast zająć się czymś.",
+    "key": "nie"
+  },
+  {
+    "id": 49,
+    "text": "Mam łatwość obcowania z ludźmi.",
+    "key": "tak"
+  },
+  {
+    "id": 50,
+    "text": "Często musiałem przyjmować polecenia od kogoś, kto umiał mniej ode mnie.",
+    "key": "nie"
+  },
+  {
+    "id": 51,
+    "text": "Nie codziennie czytam główne artykuły w gazecie.",
+    "key": "tak"
+  },
+  {
+    "id": 52,
+    "text": "Żyłem dotąd w sposób niewłaściwy.",
+    "key": "tak"
+  },
+  {
+    "id": 53,
+    "text": "Mam często uczucie palenia, swędzenia, cierpnięcia lub odrętwienia w różnych częściach mojego ciała.",
+    "key": "nie"
+  },
+  {
+    "id": 54,
+    "text": "Moja rodzina nie akceptuje zawodu jaki sobie wybrałem lub zamierzam wybrać.",
+    "key": "nie"
+  },
+  {
+    "id": 55,
+    "text": "Czasami obstaję przy czymś tak długo, że inni tracą cierpliwość.",
+    "key": "nie"
+  },
+  {
+    "id": 56,
+    "text": "Chciałbym być tak szczęśliwy, jak inni.",
+    "key": "nie"
+  },
+  {
+    "id": 57,
+    "text": "Bóle w karku odczuwam bardzo rzadko lub nigdy.",
+    "key": "nie"
+  },
+  {
+    "id": 58,
+    "text": "Wiele osób wyolbrzymia swoje nieszczęścia, aby zdobyć sympatię i pomoc otoczenia.",
+    "key": "nie"
+  },
+  {
+    "id": 59,
+    "text": "Bardzo często dokucza mi ściskanie lub gniecenie w okolicy żołądka (w dołku).",
+    "key": "nie"
+  },
+  {
+    "id": 60,
+    "text": "Gdy jestem z ludźmi, przeszkadza i męczy mnie słyszenie dziwnych rzeczy.",
+    "key": "nie"
+  },
+  {
+    "id": 61,
+    "text": "Jestem ważną osobą.",
+    "key": "tak"
+  },
+  {
+    "id": 62,
+    "text": "Często chciałem być dziewczynką (lub gdy nią jesteś: nigdy nie żałowałam, że jestem dziewczynką).",
+    "key": "nie"
+  },
+  {
+    "id": 63,
+    "text": "Jest trudno mnie urazić.",
+    "key": "nie"
+  },
+  {
+    "id": 64,
+    "text": "Lubię czytać powieści miłosne (romanse).",
+    "key": "tak"
+  },
+  {
+    "id": 65,
+    "text": "Prawie zawsze czuję się przygnębiony.",
+    "key": "nie"
+  },
+  {
+    "id": 66,
+    "text": "Byłoby lepiej na świecie, gdyby odrzucono większość zarządzeń prawnych.",
+    "key": "nie"
+  },
+  {
+    "id": 67,
+    "text": "Lubię poezję.",
+    "key": "tak"
+  },
+  {
+    "id": 68,
+    "text": "Czasem dokuczam zwierzętom.",
+    "key": "nie"
+  },
+  {
+    "id": 69,
+    "text": "Sądzę, że odpowiadałaby mi praca leśniczego.",
+    "key": "nie"
+  },
+  {
+    "id": 70,
+    "text": "Łatwo mnie pokonać w dyskusji.",
+    "key": "nie"
+  },
+  {
+    "id": 71,
+    "text": "Ostatnio z trudem udaje mi się nie tracić nadziei na dojście do czegoś.",
+    "key": "nie"
+  },
+  {
+    "id": 72,
+    "text": "Moja dusza opuszcza czasem ciało.",
+    "key": "nie"
+  },
+  {
+    "id": 73,
+    "text": "Niewątpliwie brak mi wiary w siebie.",
+    "key": "nie"
+  },
+  {
+    "id": 74,
+    "text": "Chciałbym być ogrodnikiem.",
+    "key": "tak"
+  },
+  {
+    "id": 75,
+    "text": "Czuję, że warto żyć.",
+    "key": "tak"
+  },
+  {
+    "id": 76,
+    "text": "Na ogół jest trudno przekonać ludzi o prawdzie.",
+    "key": "nie"
+  },
+  {
+    "id": 77,
+    "text": "Zdarza mi się odkładać do jutra coś, co powinienem zrobić dzisiaj.",
+    "key": "nie"
+  },
+  {
+    "id": 78,
+    "text": "Jestem lubiany przez większość moich znajomych.",
+    "key": "tak"
+  },
+  {
+    "id": 79,
+    "text": "Nie przejmuję się tym, gdy ktoś ze mnie żartuje.",
+    "key": "nie"
+  },
+  {
+    "id": 80,
+    "text": "Chętnie zostałbym pielęgniarzem (pielęgniarką).",
+    "key": "nie"
+  },
+  {
+    "id": 81,
+    "text": "Myślę, że większość ludzi kłamie, gdy jest to im potrzebne.",
+    "key": "tak"
+  },
+  {
+    "id": 82,
+    "text": "Robię wiele rzeczy, których później żałuję i myślę, że zdarza mi się to częściej niż innym ludziom.",
+    "key": "tak"
+  },
+  {
+    "id": 83,
+    "text": "Bardzo rzadko kłócę się z rodziną.",
+    "key": "nie"
+  },
+  {
+    "id": 84,
+    "text": "Byłem kiedyś usunięty ze szkoły z powodu złego zachowania się.",
+    "key": "nie"
+  },
+  {
+    "id": 85,
+    "text": "Czasami mam wielką ochotę zrobić coś szkodliwego lub gorszącego.",
+    "key": "nie"
+  },
+  {
+    "id": 86,
+    "text": "Lubię uczestniczyć w imprezach, prywatkach w których można się hałaśliwie zabawić.",
+    "key": "nie"
+  },
+  {
+    "id": 87,
+    "text": "Bywałem w sytuacjach, gdzie miałem tak wiele możliwości wyboru, że na nic nie mogłem się zdecydować.",
+    "key": "tak"
+  },
+  {
+    "id": 88,
+    "text": "Kobiety powinny mieć taką samą swobodę seksualną jak mężczyźni.",
+    "key": "nie"
+  },
+  {
+    "id": 89,
+    "text": "Najcięższe walki toczę sam ze sobą.",
+    "key": "nie"
+  },
+  {
+    "id": 90,
+    "text": "Kocham mojego ojca ( lub jeśli ojciec nie żyje) kochałem mojego ojca.",
+    "key": "nie"
+  },
+  {
+    "id": 91,
+    "text": "Rzadko dokuczają mi skurcze lub drżenia w mięśniach.",
+    "key": "nie"
+  },
+  {
+    "id": 92,
+    "text": "Nie troszczę się o to, co się ze mną stanie.",
+    "key": "nie"
+  },
+  {
+    "id": 93,
+    "text": "Czasami, gdy się źle czuję, jestem w złym humorze.",
+    "key": "nie"
+  },
+  {
+    "id": 94,
+    "text": "Bardzo często czuję tak, jakbym postąpił niewłaściwie lub zrobił coś złego.",
+    "key": "nie"
+  },
+  {
+    "id": 95,
+    "text": "Prawie zawsze czuję się szczęśliwy.",
+    "key": "nie"
+  },
+  {
+    "id": 96,
+    "text": "Widzę wokół siebie rzeczy, zwierzęta lub ludzi, których inni nie dostrzegają.",
+    "key": "nie"
+  },
+  {
+    "id": 97,
+    "text": "Prawie zawsze mam uczucie zapchania nosa lub pełności w głowie.",
+    "key": "nie"
+  },
+  {
+    "id": 98,
+    "text": "Niektórzy ludzie tak lubią się rządzić, że mam ochotę robić im na przekór, mimo że mają rację.",
+    "key": "nie"
+  },
+  {
+    "id": 99,
+    "text": "Ktoś się na mnie uwziął.",
+    "key": "nie"
+  },
+  {
+    "id": 100,
+    "text": "Nigdy nie zdarzyło mi się szukać niebezpieczeństwa tylko dla samej przyjemności.",
+    "key": "nie"
+  },
+  {
+    "id": 101,
+    "text": "Często mam takie uczucie, jakbym miał głowę ściśniętą obręczą.",
+    "key": "nie"
+  },
+  {
+    "id": 102,
+    "text": "Czasami złoszczę się.",
+    "key": "nie"
+  },
+  {
+    "id": 103,
+    "text": "Znajduję większą przyjemność w grze, gdy gram o pieniądze.",
+    "key": "nie"
+  },
+  {
+    "id": 104,
+    "text": "Większość ludzi postępuje uczciwie jedynie z obawy przed karą.",
+    "key": "nie"
+  },
+  {
+    "id": 105,
+    "text": "W szkole wzywano mnie czasem do dyrektora z powodu złego zachowania się.",
+    "key": "nie"
+  },
+  {
+    "id": 106,
+    "text": "Mówię teraz tak samo jak dawniej (ani szybciej, ani wolniej, czysto i wyraźnie).",
+    "key": "nie"
+  },
+  {
+    "id": 107,
+    "text": "W domu nie zachowuję się przy stole tak poprawnie jak to robię gdy jestem w towarzystwie obcych.",
+    "key": "nie"
+  },
+  {
+    "id": 108,
+    "text": "Każdy człowiek zdolny i nie lękający się pracy ma widoki na osiągnięcie powodzenia.",
+    "key": "nie"
+  },
+  {
+    "id": 109,
+    "text": "Wydaje mi się, że jestem równie zdolny i bystry jak inni.",
+    "key": "nie"
+  },
+  {
+    "id": 110,
+    "text": "Większość ludzi jest gotowa stosować niezbyt uczciwe środki dla osiągnięcia swych celów.",
+    "key": "nie"
+  },
+  {
+    "id": 111,
+    "text": "Mam często dolegliwości żołądkowe.",
+    "key": "nie"
+  },
+  {
+    "id": 112,
+    "text": "Lubię teatr.",
+    "key": "nie"
+  },
+  {
+    "id": 113,
+    "text": "Wiem kto ponosi odpowiedzialność za większość moich niepowodzeń.",
+    "key": "nie"
+  },
+  {
+    "id": 114,
+    "text": "Czasem jestem tak silnie ujęty przedmiotami osobistymi innych osób (np. buty, rękawice, itp.), że przychodzi mi ochota dotknąć je, lub ukraść nawet jeśli nie są mi potrzebne.",
+    "key": "nie"
+  },
+  {
+    "id": 115,
+    "text": "Nie przeraża mnie widok krwi i nie odczuwam mdłości gdy ją widzę.",
+    "key": "nie"
+  },
+  {
+    "id": 116,
+    "text": "Często dziwię się, czemu bywam tak zrzędliwy i gderliwy.",
+    "key": "nie"
+  },
+  {
+    "id": 117,
+    "text": "Nigdy nie zdarzyło mi się wymiotować krwią lub nią kaszleć.",
+    "key": "nie"
+  },
+  {
+    "id": 118,
+    "text": "Nie boję się chorób zakaźnych.",
+    "key": "nie"
+  },
+  {
+    "id": 119,
+    "text": "Lubię hodować kwiaty i rośliny doniczkowe.",
+    "key": "nie"
+  },
+  {
+    "id": 120,
+    "text": "Często zdarza mi się bronić tego, co uważam za słuszne.",
+    "key": "nie"
+  },
+  {
+    "id": 121,
+    "text": "Nigdy nie pozwalam sobie na niezwykłe praktyki seksualne.",
+    "key": "nie"
+  },
+  {
+    "id": 122,
+    "text": "Zdarzało mi się, że moje myśli biegły szybciej, niż byłem w stanie je wypowiedzieć.",
+    "key": "nie"
+  },
+  {
+    "id": 123,
+    "text": "Gdybym mógł wejść do kina bez biletu i był pewny, że mnie nikt nie zobaczy, prawdopodobnie bym to zrobił.",
+    "key": "nie"
+  },
+  {
+    "id": 124,
+    "text": "Kiedy ktoś okazuje mi życzliwość i robi dla mnie coś dobrego, zwykle podejrzewam go o ukryte cele.",
+    "key": "nie"
+  },
+  {
+    "id": 125,
+    "text": "Sądzę, że moje życie domowe jest równie szczęśliwe, jak życie większości moich znajomych.",
+    "key": "nie"
+  },
+  {
+    "id": 126,
+    "text": "Myślę, że należy rygorystycznie przestrzegać prawo.",
+    "key": "nie"
+  },
+  {
+    "id": 127,
+    "text": "Krytyka lub nagana dotyka mnie boleśnie.",
+    "key": "nie"
+  },
+  {
+    "id": 128,
+    "text": "Lubię gotować.",
+    "key": "nie"
+  },
+  {
+    "id": 129,
+    "text": "Zachowuję się na ogół tak, jak nakazują zwyczaje mojego otoczenia.",
+    "key": "nie"
+  },
+  {
+    "id": 130,
+    "text": "Czuję się czasem całkiem niepotrzebny.",
+    "key": "nie"
+  },
+  {
+    "id": 131,
+    "text": "Gdy byłem dzieckiem, miałem zwykle paru kolegów, z którymi trzymaliśmy się razem w doli i niedoli.",
+    "key": "nie"
+  },
+  {
+    "id": 132,
+    "text": "Wierzę w życie pozagrobowe.",
+    "key": "nie"
+  },
+  {
+    "id": 133,
+    "text": "Chciałbym być żołnierzem.",
+    "key": "nie"
+  },
+  {
+    "id": 134,
+    "text": "Czuję czasem, że chciałbym się z kimś pobić.",
+    "key": "nie"
+  },
+  {
+    "id": 135,
+    "text": "Często źle na tym wychodziłem, że nie mogłem się szybko zdecydować.",
+    "key": "nie"
+  },
+  {
+    "id": 136,
+    "text": "Denerwuje mnie, gdy przerywają mi ważną pracę.",
+    "key": "nie"
+  },
+  {
+    "id": 137,
+    "text": "Pisałem pamiętnik.",
+    "key": "nie"
+  },
+  {
+    "id": 138,
+    "text": "Jestem przekonany, że spiskują przeciwko mnie.",
+    "key": "nie"
+  },
+  {
+    "id": 139,
+    "text": "Gdy gram, wolę wygrać, niż przegrać.",
+    "key": "nie"
+  },
+  {
+    "id": 140,
+    "text": "Na ogół zasypiam bez żadnych natrętnych myśli lub wyobrażeń.",
+    "key": "nie"
+  },
+  {
+    "id": 141,
+    "text": "Przez kilka ostatnich lat przeważnie byłem zdrów.",
+    "key": "nie"
+  },
+  {
+    "id": 142,
+    "text": "Nigdy nie miałem nagłych ataków lub konwulsji.",
+    "key": "nie"
+  },
+  {
+    "id": 143,
+    "text": "Waga moja utrzymuje się mniej więcej na tym samym poziomie.",
+    "key": "nie"
+  },
+  {
+    "id": 144,
+    "text": "Wydaje mi się, że jestem śledzony.",
+    "key": "nie"
+  },
+  {
+    "id": 145,
+    "text": "Uważam, że często byłem karany bez powodu.",
+    "key": "nie"
+  },
+  {
+    "id": 146,
+    "text": "Płaczę z byle powodu.",
+    "key": "nie"
+  },
+  {
+    "id": 147,
+    "text": "Dawniej lepiej rozumiałem to co czytam niż teraz.",
+    "key": "nie"
+  },
+  {
+    "id": 148,
+    "text": "Nigdy w życiu nie czułem się lepiej niż teraz.",
+    "key": "nie"
+  },
+  {
+    "id": 149,
+    "text": "Czasem odczuwam szczególną wrażliwość na szczycie głowy.",
+    "key": "nie"
+  },
+  {
+    "id": 150,
+    "text": "Jestem wściekły, gdy mnie ktoś tak sprytnie podejdzie, że muszę mu przyznać słuszność.",
+    "key": "nie"
+  },
+  {
+    "id": 151,
+    "text": "Jestem bardzo zły, gdy muszę przyznać, że mnie ktoś wystrychnął na dudka.",
+    "key": "nie"
+  },
+  {
+    "id": 152,
+    "text": "Nie męczę się szybko.",
+    "key": "nie"
+  },
+  {
+    "id": 153,
+    "text": "Lubię poznawać ważne osoby, gdyż wtedy sam czuję się ważniejszy.",
+    "key": "nie"
+  },
+  {
+    "id": 154,
+    "text": "Odczuwam strach, gdy patrzę w dół z wysokości.",
+    "key": "nie"
+  },
+  {
+    "id": 155,
+    "text": "Nie zmartwiłbym się, gdyby ktoś z mojej rodziny popełnił jakieś przestępstwo.",
+    "key": "nie"
+  },
+  {
+    "id": 156,
+    "text": "Jestem szczęśliwy tylko wtedy, gdy jestem w drodze lub w podróży.",
+    "key": "nie"
+  },
+  {
+    "id": 157,
+    "text": "Nie obchodzi mnie to co inni o mnie pomyślą.",
+    "key": "nie"
+  },
+  {
+    "id": 158,
+    "text": "Jest mi trochę głupio jeśli mam się czymś popisywać w towarzystwie nawet, gdy inni też to robią.",
+    "key": "nie"
+  },
+  {
+    "id": 159,
+    "text": "Nigdy nie zemdlałem.",
+    "key": "nie"
+  },
+  {
+    "id": 160,
+    "text": "Lubię (lubiłem) chodzić do szkoły.",
+    "key": "nie"
+  },
+  {
+    "id": 161,
+    "text": "Często muszę kryć się ze swoją nieśmiałością.",
+    "key": "nie"
+  },
+  {
+    "id": 162,
+    "text": "Ktoś próbował mnie otruć.",
+    "key": "nie"
+  },
+  {
+    "id": 163,
+    "text": "Węże i żmije nie wzbudzają we mnie strachu.",
+    "key": "nie"
+  },
+  {
+    "id": 164,
+    "text": "Zawroty głowy miewam rzadko lub nigdy.",
+    "key": "nie"
+  },
+  {
+    "id": 165,
+    "text": "Pamięć moja jest w porządku.",
+    "key": "nie"
+  },
+  {
+    "id": 166,
+    "text": "Martwię się sprawami seksualnymi.",
+    "key": "nie"
+  },
+  {
+    "id": 167,
+    "text": "Rozmowa z ludźmi, których mało znam, sprawia mi trudności.",
+    "key": "nie"
+  },
+  {
+    "id": 168,
+    "text": "Zdarzało mi się robić coś z czego potem nie zdawałem sobie sprawy.",
+    "key": "nie"
+  },
+  {
+    "id": 169,
+    "text": "Kiedy się nudzę, lubię coś zrobić dla rozruszania towarzystwa.",
+    "key": "nie"
+  },
+  {
+    "id": 170,
+    "text": "Boję się, że zwariuję.",
+    "key": "nie"
+  },
+  {
+    "id": 171,
+    "text": "Jestem przeciwny dawaniu jałmużny żebrakom.",
+    "key": "nie"
+  },
+  {
+    "id": 172,
+    "text": "Często zauważam, że drżą mi ręce, gdy próbuję coś zrobić.",
+    "key": "nie"
+  },
+  {
+    "id": 173,
+    "text": "Mogę długo czytać bez zmęczenia wzroku.",
+    "key": "nie"
+  },
+  {
+    "id": 174,
+    "text": "Lubię czytać o sprawach związanych z moją pracą.",
+    "key": "nie"
+  },
+  {
+    "id": 175,
+    "text": "Przeważnie czuję się osłabiony.",
+    "key": "nie"
+  },
+  {
+    "id": 176,
+    "text": "Bóle głowy miewam rzadko lub nigdy.",
+    "key": "nie"
+  },
+  {
+    "id": 177,
+    "text": "Nie straciłem dawnej zręczności w rękach.",
+    "key": "nie"
+  },
+  {
+    "id": 178,
+    "text": "Czasami, gdy jestem w kłopotliwej sytuacji pocę się nagle, co jest dla mnie bardzo niemiłe.",
+    "key": "nie"
+  },
+  {
+    "id": 179,
+    "text": "Nigdy nie miałem trudności z utrzymaniem równowagi przy chodzeniu.",
+    "key": "nie"
+  },
+  {
+    "id": 180,
+    "text": "Coś jest źle z moim umysłem.",
+    "key": "nie"
+  },
+  {
+    "id": 181,
+    "text": "Nie cierpię z powodu ataku kataru siennego lub astmy.",
+    "key": "nie"
+  },
+  {
+    "id": 182,
+    "text": "Miewałem ataki, podczas których nie panowałem nad swoimi ruchami i mową, lecz widziałem, co się wokół dzieje.",
+    "key": "nie"
+  },
+  {
+    "id": 183,
+    "text": "Nie wszystkich których znam, lubię.",
+    "key": "nie"
+  },
+  {
+    "id": 184,
+    "text": "Rzadko pogrążam się w marzeniach.",
+    "key": "nie"
+  },
+  {
+    "id": 185,
+    "text": "Chciałbym przestać być taki nieśmiały.",
+    "key": "nie"
+  },
+  {
+    "id": 186,
+    "text": "Lubię mieć do czynienia z pieniędzmi.",
+    "key": "nie"
+  },
+  {
+    "id": 187,
+    "text": "Gdybym był dziennikarzem, chciałbym być sprawozdawcą teatralnym.",
+    "key": "nie"
+  },
+  {
+    "id": 188,
+    "text": "Lubię różne gry i zabawy.",
+    "key": "nie"
+  },
+  {
+    "id": 189,
+    "text": "Lubię flirtować.",
+    "key": "nie"
+  },
+  {
+    "id": 190,
+    "text": "Moi bliscy traktują mnie raczej jak dziecko, niż jak dorosłego.",
+    "key": "nie"
+  },
+  {
+    "id": 191,
+    "text": "Chciałbym być dziennikarzem.",
+    "key": "nie"
+  },
+  {
+    "id": 192,
+    "text": "Moja matka jest dobrą osobą (jeśli matka nie żyje) była dobrą osobą.",
+    "key": "nie"
+  },
+  {
+    "id": 193,
+    "text": "Unikam stawiania nogi na szpary między płytami chodnika.",
+    "key": "nie"
+  },
+  {
+    "id": 194,
+    "text": "Nigdy nie miałem wyprysków na skórze, z powodu których martwiłem się.",
+    "key": "nie"
+  },
+  {
+    "id": 195,
+    "text": "W mojej rodzinie jest stosunkowo mniej ciepła rodzinnego, niż w innych.",
+    "key": "nie"
+  },
+  {
+    "id": 196,
+    "text": "Często czymś się martwię.",
+    "key": "nie"
+  },
+  {
+    "id": 197,
+    "text": "Odpowiadałaby mi praca przedsiębiorcy budowlanego.",
+    "key": "nie"
+  },
+  {
+    "id": 198,
+    "text": "Często słyszę głosy, które nie wiem skąd pochodzą.",
+    "key": "nie"
+  },
+  {
+    "id": 199,
+    "text": "Lubię nauki przyrodnicze (ścisłe).",
+    "key": "nie"
+  },
+  {
+    "id": 200,
+    "text": "Bez wahania zwracam się do przyjaciół o pomoc, nawet gdy im się nie mogę odwdzięczyć.",
+    "key": "nie"
+  },
+  {
+    "id": 201,
+    "text": "Bardzo lubię polowanie.",
+    "key": "nie"
+  },
+  {
+    "id": 202,
+    "text": "Rodzice moi często mieli zastrzeżenia do osób, z którymi się spotykałem.",
+    "key": "nie"
+  },
+  {
+    "id": 203,
+    "text": "Zdarza mi się czasem trochę poplotkować.",
+    "key": "nie"
+  },
+  {
+    "id": 204,
+    "text": "Jak mi się wydaje, mam słuch równie dobry jak inni.",
+    "key": "nie"
+  },
+  {
+    "id": 205,
+    "text": "Denerwują mnie przyzwyczajenia niektórych osób z mojej rodziny.",
+    "key": "nie"
+  },
+  {
+    "id": 206,
+    "text": "Czasami czuję, że mogę podjąć decyzję z niezwykłą łatwością.",
+    "key": "nie"
+  },
+  {
+    "id": 207,
+    "text": "Chciałbym należeć do kilku klubów, organizacji, zrzeszeń.",
+    "key": "nie"
+  },
+  {
+    "id": 208,
+    "text": "Rzadko odczuwam bicie serca i nigdy nie brakuje mi powietrza.",
+    "key": "nie"
+  },
+  {
+    "id": 209,
+    "text": "Lubię mówić o sprawach seksualnych (płciowych).",
+    "key": "nie"
+  },
+  {
+    "id": 210,
+    "text": "Lubię zwiedzać miejsca w których wcześniej nigdy nie byłem.",
+    "key": "nie"
+  },
+  {
+    "id": 211,
+    "text": "Przejąłem się kiedyś ideą życia opartego na obowiązku i odtąd kieruję się nią w życiu.",
+    "key": "nie"
+  },
+  {
+    "id": 212,
+    "text": "Od czasu do czasu sprzeciwiałem się czemuś, co ludzie chcieli robić.",
+    "key": "nie"
+  },
+  {
+    "id": 213,
+    "text": "Łatwo wpadam w złość i łatwo mi ona przechodzi.",
+    "key": "nie"
+  },
+  {
+    "id": 214,
+    "text": "Jestem całkowicie samodzielny i niezależny od wpływów rodziny.",
+    "key": "nie"
+  },
+  {
+    "id": 215,
+    "text": "Często pogrążam się w smętnych rozmyślaniach.",
+    "key": "nie"
+  },
+  {
+    "id": 216,
+    "text": "Ktoś próbował mnie okraść.",
+    "key": "nie"
+  },
+  {
+    "id": 217,
+    "text": "Prawie wszyscy moi krewni lubią mnie.",
+    "key": "nie"
+  },
+  {
+    "id": 218,
+    "text": "Miewam okresy, w których bywam tak niespokojny, że nie mogę długo usiedzieć na miejscu.",
+    "key": "nie"
+  },
+  {
+    "id": 219,
+    "text": "Przeżyłem kiedyś zawód miłosny.",
+    "key": "nie"
+  },
+  {
+    "id": 220,
+    "text": "Nigdy nie martwiło mnie to, że nie jestem przystojniejszy.",
+    "key": "nie"
+  },
+  {
+    "id": 221,
+    "text": "Miewam często sny, o których lepiej nikomu nie mówić.",
+    "key": "nie"
+  },
+  {
+    "id": 222,
+    "text": "Dzieci powinny być uświadomione w zagadnieniach seksualnych.",
+    "key": "nie"
+  },
+  {
+    "id": 223,
+    "text": "Sądzę, że nie jestem bardziej nerwowy, niż większość ludzi.",
+    "key": "nie"
+  },
+  {
+    "id": 224,
+    "text": "Bóle miewam rzadko lub nigdy.",
+    "key": "nie"
+  },
+  {
+    "id": 225,
+    "text": "Moje postępowanie bywa często źle rozumiane przez innych.",
+    "key": "nie"
+  },
+  {
+    "id": 226,
+    "text": "Miewam okresy takiego niepokoju, że nie mogę długo usiedzieć na miejscu.",
+    "key": "nie"
+  },
+  {
+    "id": 227,
+    "text": "Nie potępiam ludzi, którzy chcieliby wszystko zagarnąć dla siebie.",
+    "key": "nie"
+  },
+  {
+    "id": 228,
+    "text": "Są ludzie, którzy chcieliby skraść moje pomysły.",
+    "key": "nie"
+  },
+  {
+    "id": 229,
+    "text": "Miewałem chwile zamroczenia, w których nie wiedziałem, co się wokoło mnie dzieje.",
+    "key": "nie"
+  },
+  {
+    "id": 230,
+    "text": "Mogę żyć dobrze z ludźmi, nawet gdy nie pochwalam ich postępowania.",
+    "key": "nie"
+  },
+  {
+    "id": 231,
+    "text": "Lubię przebywać w gronie ludzi, w którym wszyscy z siebie żartują.",
+    "key": "nie"
+  },
+  {
+    "id": 232,
+    "text": "Czasami głosowałem na osoby, o których bardzo mało wiedziałem.",
+    "key": "nie"
+  },
+  {
+    "id": 233,
+    "text": "Zazwyczaj trudno mi się do czegoś zabrać.",
+    "key": "nie"
+  },
+  {
+    "id": 234,
+    "text": "Myślę, że jestem prześladowany przez los.",
+    "key": "nie"
+  },
+  {
+    "id": 235,
+    "text": "W szkole byłem słabym uczniem.",
+    "key": "nie"
+  },
+  {
+    "id": 236,
+    "text": "Gdybym był malarzem chciałbym malować kwiaty.",
+    "key": "nie"
+  },
+  {
+    "id": 237,
+    "text": "Nie przejmuję się tym, że nie jestem przystojniejszy.",
+    "key": "nie"
+  },
+  {
+    "id": 238,
+    "text": "Bardzo łatwo się pocę, nawet gdy jest chłodno.",
+    "key": "nie"
+  },
+  {
+    "id": 239,
+    "text": "Mam zaufanie do siebie.",
+    "key": "nie"
+  },
+  {
+    "id": 240,
+    "text": "Czasami nie mogłem się powstrzymać przed kradzieżą lub wyniesieniem czegoś ze sklepu.",
+    "key": "nie"
+  },
+  {
+    "id": 241,
+    "text": "Bezpieczniej jest nie wierzyć nikomu.",
+    "key": "nie"
+  },
+  {
+    "id": 242,
+    "text": "Często bywam bardzo pobudzony.",
+    "key": "nie"
+  },
+  {
+    "id": 243,
+    "text": "Gdy jestem w towarzystwie, często brakuje mi dobrego tematu do rozmowy.",
+    "key": "nie"
+  },
+  {
+    "id": 244,
+    "text": "Gdy jestem smutny coś emocjonującego, podniecającego zawsze poprawia mi nastrój.",
+    "key": "nie"
+  },
+  {
+    "id": 245,
+    "text": "Gdy wychodzę z domu nie odczuwam niepokoju o to, czy zamknąłem okna i drzwi.",
+    "key": "nie"
+  },
+  {
+    "id": 246,
+    "text": "Wierzę, że moje grzechy są trudne do wybaczenia.",
+    "key": "nie"
+  },
+  {
+    "id": 247,
+    "text": "Mam na ciele miejsce lub miejsca pozbawione czucia.",
+    "key": "nie"
+  },
+  {
+    "id": 248,
+    "text": "Nie mam za złe osobie, jeśli wykorzystuje innych, którzy wyzyskiwać się pozwalają.",
+    "key": "nie"
+  },
+  {
+    "id": 249,
+    "text": "Mam obecnie wzrok równie dobry, jak dawniej.",
+    "key": "nie"
+  },
+  {
+    "id": 250,
+    "text": "Bywałem tak ubawiony sprytem oszusta, że życzyłem mu, aby nie był wykryty.",
+    "key": "nie"
+  },
+  {
+    "id": 251,
+    "text": "Często mi się wydaje, że nieznajomi patrzą na mnie tak, jakby im się coś we mnie nie podobało.",
+    "key": "nie"
+  },
+  {
+    "id": 252,
+    "text": "Wszystko smakuje mi tak samo.",
+    "key": "nie"
+  },
+  {
+    "id": 253,
+    "text": "Piję codziennie bardzo dużo wody.",
+    "key": "nie"
+  },
+  {
+    "id": 254,
+    "text": "Większość ludzi szuka przyjaciół, ponieważ mogą im się na coś przydać.",
+    "key": "nie"
+  },
+  {
+    "id": 255,
+    "text": "Rzadko szumi lub dzwoni mi w uszach.",
+    "key": "nie"
+  },
+  {
+    "id": 256,
+    "text": "Czasami czuję nienawiść do tych osób z mojej rodziny, które w zasadzie kocham.",
+    "key": "nie"
+  },
+  {
+    "id": 257,
+    "text": "Gdybym był dziennikarzem, chciałbym być sprawozdawcą sportowym.",
+    "key": "nie"
+  },
+  {
+    "id": 258,
+    "text": "Mogę spać w dzień, lecz dokucza mi bezsenność w nocy.",
+    "key": "nie"
+  },
+  {
+    "id": 259,
+    "text": "Jestem pewien, że ludzie o mnie plotkują.",
+    "key": "nie"
+  },
+  {
+    "id": 260,
+    "text": "Zdarza mi się śmiać z nieprzyzwoitych kawałów.",
+    "key": "nie"
+  },
+  {
+    "id": 261,
+    "text": "Jesten mniej bojaźliwy, niż moi znajomi.",
+    "key": "nie"
+  },
+  {
+    "id": 262,
+    "text": "Jestem zakłopotany, gdy w towarzystwie proszą mnie o wszczęcie dyskusji lub wypowiedzenie swego zdania.",
+    "key": "nie"
+  },
+  {
+    "id": 263,
+    "text": "Oburza mnie, gdy jakiś przestępca zostaje zwolniony dzięki obronie zręcznego prawnika.",
+    "key": "nie"
+  },
+  {
+    "id": 264,
+    "text": "Nadużywałem alkoholu.",
+    "key": "nie"
+  },
+  {
+    "id": 265,
+    "text": "Nie odzywam się pierwszy do ludzi, jeżeli pierwsi nie rozpoczną rozmowy.",
+    "key": "nie"
+  },
+  {
+    "id": 266,
+    "text": "Nigdy nie zdarzyło mi się wejść w kolizję z prawem.",
+    "key": "nie"
+  },
+  {
+    "id": 267,
+    "text": "Miewam okresy niezwykłej wesołości bez specjalnego powodu.",
+    "key": "nie"
+  },
+  {
+    "id": 268,
+    "text": "Chciałbym, aby moich myśli nie zaprzątały sprawy seksu.",
+    "key": "nie"
+  },
+  {
+    "id": 269,
+    "text": "Gdy ktoś ma coś na sumieniu, powinien znaleźć jakiś wykręt i się go trzymać.",
+    "key": "nie"
+  },
+  {
+    "id": 270,
+    "text": "Nie przejmuję się widokiem cierpiących zwierząt.",
+    "key": "nie"
+  },
+  {
+    "id": 271,
+    "text": "Sądzę, że przeżywam wszystko silniej, niż większość ludzi.",
+    "key": "nie"
+  },
+  {
+    "id": 272,
+    "text": "Nigdy w moim życiu nie lubiłem bawić się lalkami.",
+    "key": "nie"
+  },
+  {
+    "id": 273,
+    "text": "Życie jest dla mnie przeważnie wysiłkiem.",
+    "key": "nie"
+  },
+  {
+    "id": 274,
+    "text": "Jestem tak przeczulony na punkcie niektórych spraw, że bardzo trudno mi o nich mówić.",
+    "key": "nie"
+  },
+  {
+    "id": 275,
+    "text": "W szkole było mi trudno odpowiadać przed całą klasą.",
+    "key": "nie"
+  },
+  {
+    "id": 276,
+    "text": "Lubię swoją matkę (jeśli matka żyje) lubiłem moją matkę.",
+    "key": "nie"
+  },
+  {
+    "id": 277,
+    "text": "Nawet gdy jestem wśród ludzi, czuję się samotny.",
+    "key": "nie"
+  },
+  {
+    "id": 278,
+    "text": "Ludzie lubią mnie tak, jak na to zasługuję.",
+    "key": "nie"
+  },
+  {
+    "id": 279,
+    "text": "Odmawiam udziału w niektórych grach, gdy jestem w nich słaby.",
+    "key": "nie"
+  },
+  {
+    "id": 280,
+    "text": "Myślę, że zawieram przyjaźnie równie łatwo jak inni.",
+    "key": "nie"
+  },
+  {
+    "id": 281,
+    "text": "Nie lubię przebywać z ludźmi.",
+    "key": "nie"
+  },
+  {
+    "id": 282,
+    "text": "Podobno czasem w nocy wstaję i chodzę we śnie.",
+    "key": "nie"
+  },
+  {
+    "id": 283,
+    "text": "Człowiek, który przez pozostawienie bez opieki wartościowych rzeczy ułatwia kradzież, jest tak samo odpowiedzialny za nią jak ten co je kradnie.",
+    "key": "nie"
+  },
+  {
+    "id": 284,
+    "text": "Prawie każdy gotów jest skłamać, aby uniknąć nieprzyjemności.",
+    "key": "nie"
+  },
+  {
+    "id": 285,
+    "text": "Jestem bardziej wrażliwy, niż większość ludzi.",
+    "key": "nie"
+  },
+  {
+    "id": 286,
+    "text": "Ludzie na ogół niechętnie poświęcają się dla innych.",
+    "key": "nie"
+  },
+  {
+    "id": 287,
+    "text": "Wiele moich snów dotyczy spraw seksualnych (płciowych).",
+    "key": "nie"
+  },
+  {
+    "id": 288,
+    "text": "Moi rodzice i krewni widzą we mnie więcej wad niż powinni.",
+    "key": "nie"
+  },
+  {
+    "id": 289,
+    "text": "Łatwo wpadam w zakłopotanie.",
+    "key": "nie"
+  },
+  {
+    "id": 290,
+    "text": "Martwię się pieniędzmi i interesami.",
+    "key": "nie"
+  },
+  {
+    "id": 291,
+    "text": "Nigdy nie byłem w kimś zakochany.",
+    "key": "nie"
+  },
+  {
+    "id": 292,
+    "text": "Ktoś z członków mojej rodziny zrobił coś, co przeraziło mnie.",
+    "key": "nie"
+  },
+  {
+    "id": 293,
+    "text": "Bardzo rzadko miewam jakieś sny (prawie nigdy nic mi się nie śni).",
+    "key": "nie"
+  },
+  {
+    "id": 294,
+    "text": "Miewam często czerwone plamy na szyi.",
+    "key": "nie"
+  },
+  {
+    "id": 295,
+    "text": "Nigdy nie byłem sparaliżowany ani nie odczułem szczególnego osłabienia w mięśniach.",
+    "key": "nie"
+  },
+  {
+    "id": 296,
+    "text": "Czasem tracę głos lub głos mi się zmienia, nawet gdy nie jestem przeziębiony.",
+    "key": "nie"
+  },
+  {
+    "id": 297,
+    "text": "Rodzice zmuszali mnie do posłuszeństwa - nawet wtedy, gdy było to nierozsądne.",
+    "key": "nie"
+  },
+  {
+    "id": 298,
+    "text": "Czasami dochodzą mnie dziwne zapachy.",
+    "key": "nie"
+  },
+  {
+    "id": 299,
+    "text": "Jest mi trudno skupić uwagę na jednej rzeczy.",
+    "key": "nie"
+  },
+  {
+    "id": 300,
+    "text": "Mam powody do zazdrości o kogoś z moich bliskich krewnych.",
+    "key": "nie"
+  },
+  {
+    "id": 301,
+    "text": "Prawie nieustannie odczuwam niepokój o coś lub o kogoś.",
+    "key": "nie"
+  },
+  {
+    "id": 302,
+    "text": "Ludzie łatwo mnie niecierpliwią.",
+    "key": "nie"
+  },
+  {
+    "id": 303,
+    "text": "Często chciałbym umrzeć.",
+    "key": "nie"
+  },
+  {
+    "id": 304,
+    "text": "Czasem bywam tak podniecony, że trudno mi zasnąć.",
+    "key": "nie"
+  },
+  {
+    "id": 305,
+    "text": "Niewątpliwie miałem więcej kłopotów, niż powinienem.",
+    "key": "nie"
+  },
+  {
+    "id": 306,
+    "text": "Nikt nie przejmuje się zbytnio losem bliźniego.",
+    "key": "nie"
+  },
+  {
+    "id": 307,
+    "text": "Czasami słyszę tak wyraźnie, że to mnie niepokoi.",
+    "key": "nie"
+  },
+  {
+    "id": 308,
+    "text": "Od razu zapominam, co ludzie do mnie mówią.",
+    "key": "nie"
+  },
+  {
+    "id": 309,
+    "text": "Zwykle muszę się zastanowić przez chwilę zanim coś zrobię, nawet gdy chodzi o drobiazgi.",
+    "key": "nie"
+  },
+  {
+    "id": 310,
+    "text": "Często przechodzę na drugą stronę ulicy, aby nie spotkać się z kimś kogo znam.",
+    "key": "nie"
+  },
+  {
+    "id": 311,
+    "text": "Często wydaje mi się, że wszystko jest nierzeczywiste.",
+    "key": "nie"
+  },
+  {
+    "id": 312,
+    "text": "Jedynym ciekawym działem w gazetach jest dział humoru.",
+    "key": "nie"
+  },
+  {
+    "id": 313,
+    "text": "Mam zwyczaj niepotrzebnego liczenia takich rzeczy, jak drzewa, latarnie.",
+    "key": "nie"
+  },
+  {
+    "id": 314,
+    "text": "Nie mam wrogów (lub wroga), którzy chcą mi szkodzić.",
+    "key": "nie"
+  },
+  {
+    "id": 315,
+    "text": "Zwykle mam się na baczności przed ludźmi, którzy są dla mnie bardziej uprzejmi niż się można było tego spodziewać.",
+    "key": "nie"
+  },
+  {
+    "id": 316,
+    "text": "Miewam dziwne i osobliwe myśli.",
+    "key": "nie"
+  },
+  {
+    "id": 317,
+    "text": "Nawet przed krótką podróżą czuję się zdenerwowany i niespokojny.",
+    "key": "nie"
+  },
+  {
+    "id": 318,
+    "text": "Spodziewam się zwykle powodzenia w tym co robię.",
+    "key": "nie"
+  },
+  {
+    "id": 319,
+    "text": "Gdy jestem sam słyszę dziwne głosy.",
+    "key": "nie"
+  },
+  {
+    "id": 320,
+    "text": "Zdarza mi się czuć lęk przed rzeczami lub ludźmi zupełnie nieszkodliwymi.",
+    "key": "nie"
+  },
+  {
+    "id": 321,
+    "text": "Nie krępuję się sam wejść do pokoju, w którym są już inni ludzie i rozmawiają.",
+    "key": "tak"
+  },
+  {
+    "id": 322,
+    "text": "Boję się używać noży lub czegokolwiek ostrego i spiczastego.",
+    "key": "nie"
+  },
+  {
+    "id": 323,
+    "text": "Czasem sprawia mi przyjemność zadawania bólu osobom, które kocham.",
+    "key": "nie"
+  },
+  {
+    "id": 324,
+    "text": "Czasem budzę w ludziach uczucie strachu i bawi mnie to.",
+    "key": "nie"
+  },
+  {
+    "id": 325,
+    "text": "Trudno mi się skupić na jakimś zadaniu lub pracy.",
+    "key": "nie"
+  },
+  {
+    "id": 326,
+    "text": "Kilkakrotnie porzucałem coś, co robiłem, ponieważ nie wierzyłem w swoje zdolności.",
+    "key": "nie"
+  },
+  {
+    "id": 327,
+    "text": "Czasami trudno mi się pozbyć jakichś nieładnych a nawet bardzo brzydkich słów, które przychodzą mi na myśl.",
+    "key": "nie"
+  },
+  {
+    "id": 328,
+    "text": "Czasem jakaś nieważna myśl prześladuje mnie całymi dniami.",
+    "key": "nie"
+  },
+  {
+    "id": 329,
+    "text": "Prawie codziennie dzieje się coś, co mnie przeraża.",
+    "key": "nie"
+  },
+  {
+    "id": 330,
+    "text": "Czasem jestem pełen energii.",
+    "key": "nie"
+  },
+  {
+    "id": 331,
+    "text": "Jestem skłonny wszystkim się przejmować.",
+    "key": "nie"
+  },
+  {
+    "id": 332,
+    "text": "Czasami czułem przyjemność, gdy sprawił mi ból ktoś, kogo kocham.",
+    "key": "nie"
+  },
+  {
+    "id": 333,
+    "text": "Ludzie mówią o mnie obraźliwe i ordynarne rzeczy.",
+    "key": "nie"
+  },
+  {
+    "id": 334,
+    "text": "Czuję się bezradny w zamkniętych pomieszczeniach.",
+    "key": "nie"
+  },
+  {
+    "id": 335,
+    "text": "Nie martwię się szczególnie o to jaki jestem lub jak odbierają mnie inni.",
+    "key": "tak"
+  },
+  {
+    "id": 336,
+    "text": "Ktoś kieruje moimi myślami.",
+    "key": "nie"
+  },
+  {
+    "id": 337,
+    "text": "W większym towarzystwie siedzę raczej sam lub we dwójkę, niż przyłączam się do wszystkich.",
+    "key": "nie"
+  },
+  {
+    "id": 338,
+    "text": "Ludzie często rozczarowują mnie.",
+    "key": "nie"
+  },
+  {
+    "id": 339,
+    "text": "Czasami wydawało mi się, że trudności tak się przede mną piętrzą, iż przezwyciężenie ich będzie ponad moje siły.",
+    "key": "nie"
+  },
+  {
+    "id": 340,
+    "text": "Uwielbiam chodzić na zabawy taneczne.",
+    "key": "nie"
+  },
+  {
+    "id": 341,
+    "text": "Są okresy, w których mój umysł pracuje wolniej niż zwykle.",
+    "key": "nie"
+  },
+  {
+    "id": 342,
+    "text": "Rozmawiam często z nieznajomymi w pociągach, autobusach.",
+    "key": "nie"
+  },
+  {
+    "id": 343,
+    "text": "Lubię dzieci.",
+    "key": "tak"
+  },
+  {
+    "id": 344,
+    "text": "Sprawia mi przyjemność hazard, gdy gram o małe stawki.",
+    "key": "nie"
+  },
+  {
+    "id": 345,
+    "text": "Gdyby mi dano szansę, dokonałbym wielkich rzeczy.",
+    "key": "nie"
+  },
+  {
+    "id": 346,
+    "text": "Często spotykałem osoby uważane za niby ekspertów, ale umieli mniej ode mnie.",
+    "key": "nie"
+  },
+  {
+    "id": 347,
+    "text": "Powodzenie kogoś dobrze mi znanego odczuwam - jako własne niepowodzenie.",
+    "key": "nie"
+  },
+  {
+    "id": 348,
+    "text": "Często myślę sobie, że chciałbym być jeszcze raz dzieckiem.",
+    "key": "nie"
+  },
+  {
+    "id": 349,
+    "text": "Czuję się najbardziej szczęśliwy wtedy, gdy jestem sam.",
+    "key": "nie"
+  },
+  {
+    "id": 350,
+    "text": "Gdyby dano mi okazję, byłbym dobrym przywódcą ludzi.",
+    "key": "nie"
+  },
+  {
+    "id": 351,
+    "text": "Jestem zawstydzony, gdy słyszę nieprzyzwoite kawały.",
+    "key": "tak"
+  },
+  {
+    "id": 352,
+    "text": "Ludzie na ogół skłonni są raczej żądać poszanowania własnych niż szanować cudze.",
+    "key": "tak"
+  },
+  {
+    "id": 353,
+    "text": "Lubię spotkania, imprezy towarzyskie, ponieważ mogę być wśród ludzi.",
+    "key": "tak"
+  },
+  {
+    "id": 354,
+    "text": "Staram się zapamiętać dobre kawały, aby je potem opowiadać innym.",
+    "key": "tak"
+  },
+  {
+    "id": 355,
+    "text": "Czasem zdawało mi się, że zmuszano mnie do robienia czegoś pod hipnozą.",
+    "key": "nie"
+  },
+  {
+    "id": 356,
+    "text": "Trudno mi jest odłożyć nawet na krotko, wykonanie pracy jakiej się podjąłem.",
+    "key": "nie"
+  },
+  {
+    "id": 357,
+    "text": "Nie dążę do tego, żeby być wtajemniczony w plotki i rozmowy grona osób z który od niedawna się spotykam.",
+    "key": "nie"
+  },
+  {
+    "id": 358,
+    "text": "Ludzie często zazdrościli mi moich dobrych pomysłów tylko dlatego, że nie wpadli na mnie pierwsi.",
+    "key": "nie"
+  },
+  {
+    "id": 359,
+    "text": "Lubię przebywać w ożywionym tłumie.",
+    "key": "nie"
+  },
+  {
+    "id": 360,
+    "text": "Nawiązywanie znajomości z obcymi ludźmi przychodzi mi bez trudności.",
+    "key": "nie"
+  },
+  {
+    "id": 361,
+    "text": "Ktoś próbował wpłynąć na mój umysł.",
+    "key": "nie"
+  },
+  {
+    "id": 362,
+    "text": "Pamiętam, że udawałem chorego, aby uniknąć trudnej sytuacji.",
+    "key": "nie"
+  },
+  {
+    "id": 363,
+    "text": "Moje zmartwienia znikają natychmiast, gdy znajduję się w gronie wesołych przyjaciół.",
+    "key": "tak"
+  },
+  {
+    "id": 364,
+    "text": "Mam ochotę natychmiast zrezygnować z tego co robię, gdy mi się nie wiedzie.",
+    "key": "nie"
+  },
+  {
+    "id": 365,
+    "text": "Lubię zaznajamiać ludzi ze swymi poglądami.",
+    "key": "tak"
+  },
+  {
+    "id": 366,
+    "text": "Miałem okresy, w których czułem się tak pełen energii, że przez kilka dni nie potrzebowałem snu.",
+    "key": "nie"
+  },
+  {
+    "id": 367,
+    "text": "Jeśli tylko mogę unikam tłumu.",
+    "key": "nie"
+  },
+  {
+    "id": 368,
+    "text": "Mam skłonności do unikania trudnych sytuacji.",
+    "key": "nie"
+  },
+  {
+    "id": 369,
+    "text": "Rezygnuję ze swych planów, gdy inni uważają, że nie są warte zachodu.",
+    "key": "nie"
+  },
+  {
+    "id": 370,
+    "text": "Lubię prywatki, przyjęcia i zebrania towarzyskie.",
+    "key": "nie"
+  },
+  {
+    "id": 371,
+    "text": "Często marzyłem o tym, aby być odmiennej płci.",
+    "key": "nie"
+  },
+  {
+    "id": 372,
+    "text": "Jest mnie trudno rozgniewać.",
+    "key": "tak"
+  },
+  {
+    "id": 373,
+    "text": "Robiłem w przeszłości rzeczy o których nikomu nigdy nie powiem.",
+    "key": "nie"
+  },
+  {
+    "id": 374,
+    "text": "Większość ludzi użyłaby niedozwolonych środków, aby tylko dotrzeć do celu.",
+    "key": "nie"
+  },
+  {
+    "id": 375,
+    "text": "Denerwuję się gdy ktoś zadaje mi pytania osobiste.",
+    "key": "nie"
+  },
+  {
+    "id": 376,
+    "text": "Nie czuję się na siłach aby zaplanować swoją własną przyszłość.",
+    "key": "nie"
+  },
+  {
+    "id": 377,
+    "text": "Jestem niezadowolony z siebie.",
+    "key": "nie"
+  },
+  {
+    "id": 378,
+    "text": "Denerwuję się gdy moja rodzina lub przyjaciele dają mi rady jak mam żyć.",
+    "key": "nie"
+  },
+  {
+    "id": 379,
+    "text": "Jako dziecko często byłem karany fizycznie i bity.",
+    "key": "nie"
+  },
+  {
+    "id": 380,
+    "text": "Przeszkadza mi gdy ludzie mówią o mnie miłe rzeczy.",
+    "key": "nie"
+  },
+  {
+    "id": 381,
+    "text": "Nie lubię słuchać opinii innych ludzi na temat życia.",
+    "key": "nie"
+  },
+  {
+    "id": 382,
+    "text": "Często nie zgadzam się z osobami, które są mi bliscy uczuciowo.",
+    "key": "nie"
+  },
+  {
+    "id": 383,
+    "text": "Kiedy moje sprawy mają się na prawdę źle, wiem, że moja rodzina mi pomoże.",
+    "key": "tak"
+  },
+  {
+    "id": 384,
+    "text": "Lubiłem bawić się w dom kiedy byłem mały.",
+    "key": "tak"
+  },
+  {
+    "id": 385,
+    "text": "Nie odczuwam strachu przed ogniem.",
+    "key": "tak"
+  },
+  {
+    "id": 386,
+    "text": "Czasami starałem się unikać kogoś, ponieważ obawiałem, że zrobię lub powiem coś, czego mógłbym potem żałować.",
+    "key": "nie"
+  },
+  {
+    "id": 387,
+    "text": "Dopiero gdy jestem pod wpływem alkoholu potrafię wyrazić swoje prawdziwe uczucia.",
+    "key": "nie"
+  },
+  {
+    "id": 388,
+    "text": "Bardzo rzadko ogarnia mnie przygnębienie.",
+    "key": "nie"
+  },
+  {
+    "id": 389,
+    "text": "Często słyszę, że jestem porywczy (zapalczywy).",
+    "key": "nie"
+  },
+  {
+    "id": 390,
+    "text": "Chciałbym przestać martwić się tym co powiedziałem, a co mogło zranić uczucia innych ludzi.",
+    "key": "nie"
+  },
+  {
+    "id": 391,
+    "text": "Powiedzenie komuś wszystkiego o sobie byłoby dla mnie bardzo trudną rzeczą.",
+    "key": "tak"
+  },
+  {
+    "id": 392,
+    "text": "Boję się piorunów.",
+    "key": "tak"
+  },
+  {
+    "id": 393,
+    "text": "Nie lubię wtajemniczać ludzi w to co robię.",
+    "key": "tak"
+  },
+  {
+    "id": 394,
+    "text": "Plany moje wydawały się często tak najeżone trudnościami, że musiałem je porzucać.",
+    "key": "tak"
+  },
+  {
+    "id": 395,
+    "text": "Boję się przebywać sam w ciemności.",
+    "key": "tak"
+  },
+  {
+    "id": 396,
+    "text": "Często było mi przykro, gdy inni ludzie źle rozumieli moje dobre zamiary, które miały im pomóc.",
+    "key": "nie"
+  },
+  {
+    "id": 397,
+    "text": "Odczuwam lęk przed wichurą i burzą.",
+    "key": "nie"
+  },
+  {
+    "id": 398,
+    "text": "Często proszę ludzi o radę.",
+    "key": "nie"
+  },
+  {
+    "id": 399,
+    "text": "Człowiek nie może sobie robić zbyt poważnych planów na przyszłość, ponieważ jest ona niepewna.",
+    "key": "nie"
+  },
+  {
+    "id": 400,
+    "text": "Często nawet gdy wszystko idzie mi dobrze to odczuwam, że nic nie ma dla mnie znaczenia.",
+    "key": "nie"
+  },
+  {
+    "id": 401,
+    "text": "Nie mam lęku przed wodą.",
+    "key": "nie"
+  },
+  {
+    "id": 402,
+    "text": "Pewne sprawy muszą się u mnie odleżeć, zanim coś postanowię.",
+    "key": "nie"
+  },
+  {
+    "id": 403,
+    "text": "Ludzie często mylnie rozumieli moje zamiary, kiedy próbowałem im pomóc i sprowadzić z błędnej drogi.",
+    "key": "nie"
+  },
+  {
+    "id": 404,
+    "text": "Nie mam trudności z przełykaniem.",
+    "key": "nie"
+  },
+  {
+    "id": 405,
+    "text": "Na ogół jestem spokojny i trudno wytrącić mnie z równowagi.",
+    "key": "nie"
+  },
+  {
+    "id": 406,
+    "text": "Na pewno sprawiłoby mi przyjemność pokonania oszusta jego własną bronią.",
+    "key": "nie"
+  },
+  {
+    "id": 407,
+    "text": "Zasługuję na ciężką karę za swoje grzechy.",
+    "key": "nie"
+  },
+  {
+    "id": 408,
+    "text": "Gdybym znalazł się kłopotach wraz z kilkoma przyjaciółmi, którzy by wspólnie ze mną ponosili odpowiedzialność, wziąłbym raczej całą winę na siebie niż ich wydał.",
+    "key": "nie"
+  },
+  {
+    "id": 409,
+    "text": "Drażni mnie, gdy ktoś przygląda się mojej pracy, nawet jeśli dobrze ją wykonuję.",
+    "key": "nie"
+  },
+  {
+    "id": 410,
+    "text": "Często tak mnie denerwuje ktoś, kto staje przede mną w kolejce, że zwracam mu na to uwagę.",
+    "key": "nie"
+  },
+  {
+    "id": 411,
+    "text": "Czasem wydaje mi się, że jestem do niczego.",
+    "key": "nie"
+  },
+  {
+    "id": 412,
+    "text": "Dość często zdarzało mi się opuszczać szkołę.",
+    "key": "nie"
+  },
+  {
+    "id": 413,
+    "text": "Mam w rodzinie co najmniej jedną osobę bardzo nerwową.",
+    "key": "nie"
+  },
+  {
+    "id": 414,
+    "text": "Czasami musiałem być szorstki wobec ludzi, którzy byli ordynarni i natarczywi.",
+    "key": "nie"
+  },
+  {
+    "id": 415,
+    "text": "Martwię się o nieszczęścia, które mogłyby się przydarzyć.",
+    "key": "nie"
+  },
+  {
+    "id": 416,
+    "text": "Mam jawne przekonania polityczne.",
+    "key": "nie"
+  },
+  {
+    "id": 417,
+    "text": "Chciałbym być pilotem auta wyścigowego.",
+    "key": "nie"
+  },
+  {
+    "id": 418,
+    "text": "Niepokoję się, gdy ludzie mówią o mnie miłe rzeczy.",
+    "key": "nie"
+  },
+  {
+    "id": 419,
+    "text": "Niektóre osoby są tak antypatyczne dla mnie, że sprawia mi przyjemność kiedy są ukarane za coś co zrobiły.",
+    "key": "nie"
+  },
+  {
+    "id": 420,
+    "text": "Oczekiwanie czyni mnie bardzo nerwowym.",
+    "key": "nie"
+  },
+  {
+    "id": 421,
+    "text": "Jeśli inni mi mówią, że źle wykonuję daną rzecz, to jestem w stanie z tego zrezygnować.",
+    "key": "nie"
+  },
+  {
+    "id": 422,
+    "text": "Kiedy byłem młody, miałem wiele entuzjazmu.",
+    "key": "nie"
+  },
+  {
+    "id": 423,
+    "text": "Na ogół daję całego siebie, byleby tylko wygrać z kimś kto mi się sprzeciwia.",
+    "key": "nie"
+  },
+  {
+    "id": 424,
+    "text": "Przeszkadzają mi ludzie, którzy obserwują mnie np. na ulicy, w sklepie itp.",
+    "key": "nie"
+  },
+  {
+    "id": 425,
+    "text": "Mężczyzna, który najbardziej zajmował się mną, kiedy byłem dzieckiem, był wobec mnie bardzo surowy.",
+    "key": "nie"
+  },
+  {
+    "id": 426,
+    "text": "Lubiłem grać w klasy lub skakać na skakance.",
+    "key": "nie"
+  },
+  {
+    "id": 427,
+    "text": "Nigdy nie miałem wizji.",
+    "key": "nie"
+  },
+  {
+    "id": 428,
+    "text": "Zmieniłem wielokrotnie zdanie odnośnie pracy, którą chciałbym wykonywać.",
+    "key": "nie"
+  },
+  {
+    "id": 429,
+    "text": "Zawsze unikam zażywania leków lub środków nasennych bez zalecenia lekarza.",
+    "key": "nie"
+  },
+  {
+    "id": 430,
+    "text": "Często jest mi przykro z powodu mojego złego humoru i nerwowości.",
+    "key": "nie"
+  },
+  {
+    "id": 431,
+    "text": "W szkole na ogół moje oceny z zachowania były złe.",
+    "key": "nie"
+  },
+  {
+    "id": 432,
+    "text": "Bardzo podoba mi się ogień.",
+    "key": "nie"
+  },
+  {
+    "id": 433,
+    "text": "Kiedy jestem zmuszony mówię tylko tę część prawdy, która najprawdopodobniej mi nie zaszkodzi.",
+    "key": "nie"
+  },
+  {
+    "id": 434,
+    "text": "Gdybym wraz z moimi przyjaciółmi znalazł się w kłopotach, to wolałbym wziąć winę na siebie niż zdradzić ich.",
+    "key": "nie"
+  },
+  {
+    "id": 435,
+    "text": "Często boję się ciemności.",
+    "key": "nie"
+  },
+  {
+    "id": 436,
+    "text": "Kiedy mężczyzna jest z kobietą to na ogół on myśli o niej w aspekcie seksualnym.",
+    "key": "nie"
+  },
+  {
+    "id": 437,
+    "text": "Na ogół jasno mówię do osób, które staram się poprawić.",
+    "key": "nie"
+  },
+  {
+    "id": 438,
+    "text": "Martwię się na myśl o trzęsieniu ziemi.",
+    "key": "nie"
+  },
+  {
+    "id": 439,
+    "text": "Jestem pełen entuzjazmu z powodu każdego dobrego pomysłu.",
+    "key": "nie"
+  },
+  {
+    "id": 440,
+    "text": "Na ogół wolę radzić sobie sam, niż prosić kogoś o pokazanie mi jak się to robi.",
+    "key": "nie"
+  },
+  {
+    "id": 441,
+    "text": "Boję się przebywać w zamkniętych pomieszczeniach.",
+    "key": "nie"
+  },
+  {
+    "id": 442,
+    "text": "Muszę przyznać, że wielokrotnie martwiłem się o rzeczy, które w rzeczywistości nie były ważne.",
+    "key": "nie"
+  },
+  {
+    "id": 443,
+    "text": "Nie staram się ukryć mojego braku szacunku i litości, które budzą we mnie ludzie.",
+    "key": "nie"
+  },
+  {
+    "id": 444,
+    "text": "Jestem osobą bardzo nerwową.",
+    "key": "nie"
+  },
+  {
+    "id": 445,
+    "text": "Często pracowałem z przełożonymi, którzy przypisywali sobie zasługi za dobrze wykonaną pracę.",
+    "key": "nie"
+  },
+  {
+    "id": 446,
+    "text": "Kilka razy było mi trudno upomnieć się o swoje prawa, ponieważ jestem bardzo powściągliwy.",
+    "key": "nie"
+  },
+  {
+    "id": 447,
+    "text": "Brud budzi we mnie wstręt lub boję się brudu.",
+    "key": "nie"
+  },
+  {
+    "id": 448,
+    "text": "Mam swój świat fantazji, o którym nie rozmawiam z nikim.",
+    "key": "nie"
+  },
+  {
+    "id": 449,
+    "text": "Ktoś z mojej rodziny ma charakter bardzo kłótliwy.",
+    "key": "nie"
+  },
+  {
+    "id": 450,
+    "text": "Nie jestem w stanie zrobić nic dobrego.",
+    "key": "nie"
+  },
+  {
+    "id": 451,
+    "text": "Często czuję się winny, ponieważ udaję, że jest mi bardziej przykro niż to jest w rzeczywistości.",
+    "key": "nie"
+  },
+  {
+    "id": 452,
+    "text": "Na ogół bronię z całą siłą swojej opinii.",
+    "key": "nie"
+  },
+  {
+    "id": 453,
+    "text": "Nie boję się pająków.",
+    "key": "nie"
+  },
+  {
+    "id": 454,
+    "text": "Przyszłość wydaje mi się beznadziejna.",
+    "key": "nie"
+  },
+  {
+    "id": 455,
+    "text": "Moja rodzina i krewni żyją bardzo zgodnie.",
+    "key": "nie"
+  },
+  {
+    "id": 456,
+    "text": "Chciałbym nosić bardzo kosztowne ubiory.",
+    "key": "nie"
+  },
+  {
+    "id": 457,
+    "text": "Inni ludzie mogą wpłynąć na moje opinie również wtedy gdy już podjąłem decyzję.",
+    "key": "nie"
+  },
+  {
+    "id": 458,
+    "text": "Denerwują mnie pewne zwierzęta.",
+    "key": "nie"
+  },
+  {
+    "id": 459,
+    "text": "Jestem tak samo wytrzymały na ból jak inni.",
+    "key": "nie"
+  },
+  {
+    "id": 460,
+    "text": "Wielokrotnie mimo, że inni stracili wiarę we mnie starałem się do końca nie poddać.",
+    "key": "nie"
+  },
+  {
+    "id": 461,
+    "text": "Złoszczę się gdy ktoś mnie ponagla.",
+    "key": "nie"
+  },
+  {
+    "id": 462,
+    "text": "Nie boję się myszy.",
+    "key": "nie"
+  },
+  {
+    "id": 463,
+    "text": "Często w ciągu tygodnia czuję, jakby miało wydarzyć się coś przerażającego.",
+    "key": "nie"
+  },
+  {
+    "id": 464,
+    "text": "Bardzo często czuję się zmęczony.",
+    "key": "nie"
+  },
+  {
+    "id": 465,
+    "text": "Lubię naprawiać zamki.",
+    "key": "nie"
+  },
+  {
+    "id": 466,
+    "text": "Czasem jestem pewien, że inni wiedzą co myślę.",
+    "key": "nie"
+  },
+  {
+    "id": 467,
+    "text": "Lubię czytać artykułu naukowe.",
+    "key": "nie"
+  },
+  {
+    "id": 468,
+    "text": "Boję się przebywać sam w miejscach obszernych, otwartych.",
+    "key": "nie"
+  },
+  {
+    "id": 469,
+    "text": "Czasem czuję się tak jakbym miał rozsypać się w kawałki.",
+    "key": "nie"
+  },
+  {
+    "id": 470,
+    "text": "Wiele osób prowadzi w sposób niewłaściwy swoje życie seksualne.",
+    "key": "nie"
+  },
+  {
+    "id": 471,
+    "text": "Często budzę się przerażony w środku nocy.",
+    "key": "nie"
+  },
+  {
+    "id": 472,
+    "text": "Jestem zmartwiony, ponieważ zapominam, gdzie pozostawiam swoje rzeczy.",
+    "key": "nie"
+  },
+  {
+    "id": 473,
+    "text": "Kiedy byłem dzieckiem osoba, którą podziwiałem najbardziej była kobietą.",
+    "key": "nie"
+  },
+  {
+    "id": 474,
+    "text": "Lubię bardziej opowiadania przygodowe niż historie miłosne.",
+    "key": "tak"
+  },
+  {
+    "id": 475,
+    "text": "Często jestem roztargniony i zapominam to co chciałem powiedzieć.",
+    "key": "nie"
+  },
+  {
+    "id": 476,
+    "text": "Jestem bardzo niezdarny i naiwny.",
+    "key": "nie"
+  },
+  {
+    "id": 477,
+    "text": "Lubię uprawiać sport agresywny.",
+    "key": "nie"
+  },
+  {
+    "id": 478,
+    "text": "Nienawidzę całej mojej rodziny.",
+    "key": "nie"
+  },
+  {
+    "id": 479,
+    "text": "Niektórzy ludzie myślą, że trudno jest mnie poznać.",
+    "key": "nie"
+  },
+  {
+    "id": 480,
+    "text": "Większość wolnego czasu spędzam samotnie.",
+    "key": "nie"
+  },
+  {
+    "id": 481,
+    "text": "Kiedy ktoś robi coś co mnie denerwuje, mówię mu o tym.",
+    "key": "tak"
+  },
+  {
+    "id": 482,
+    "text": "Przeważnie nie potrafię zdecydować co mam robić.",
+    "key": "nie"
+  },
+  {
+    "id": 483,
+    "text": "Dla innych nie jestem atrakcyjny.",
+    "key": "nie"
+  },
+  {
+    "id": 484,
+    "text": "Ludzie nie są dla mnie uprzejmi.",
+    "key": "nie"
+  },
+  {
+    "id": 485,
+    "text": "Często czuję, że nie jestem tak dobry jak inni.",
+    "key": "nie"
+  },
+  {
+    "id": 486,
+    "text": "Jestem bardzo uparty.",
+    "key": "nie"
+  },
+  {
+    "id": 487,
+    "text": "Sprawiło mi przyjemność branie marihuany.",
+    "key": "nie"
+  },
+  {
+    "id": 488,
+    "text": "Choroba psychiczna jest oznaką słabości.",
+    "key": "nie"
+  },
+  {
+    "id": 489,
+    "text": "Mam problem z narkotykami lub z alkoholem.",
+    "key": "nie"
+  },
+  {
+    "id": 490,
+    "text": "Duchy lub dusze mogą wpływać w dobry lub zły sposób na człowieka.",
+    "key": "nie"
+  },
+  {
+    "id": 491,
+    "text": "Czuję się bezradny, kiedy muszę podjąć jakieś ważne decyzje.",
+    "key": "nie"
+  },
+  {
+    "id": 492,
+    "text": "Zawsze staram się być miły nawet, gdy inni są zdenerwowani.",
+    "key": "tak"
+  },
+  {
+    "id": 493,
+    "text": "Kiedy mam jakiś problem, pomaga mi rozmowa z kimś na ten temat.",
+    "key": "tak"
+  },
+  {
+    "id": 494,
+    "text": "Moje główne cele życiowe są w moim zasięgu.",
+    "key": "tak"
+  },
+  {
+    "id": 495,
+    "text": "Myślę, że ludzie powinni zachować dla siebie swoje problemy.",
+    "key": "nie"
+  },
+  {
+    "id": 496,
+    "text": "Ostatnio nie odczuwam zbytniego napięcia lub bycia pod presją.",
+    "key": "tak"
+  },
+  {
+    "id": 497,
+    "text": "Bardzo przeszkadza mi myślenie o jakichś zmianach we własnym życiu.",
+    "key": "nie"
+  },
+  {
+    "id": 498,
+    "text": "Moje największe problemy są spowodowane zachowaniem kogoś mi bliskiego.",
+    "key": "nie"
+  },
+  {
+    "id": 499,
+    "text": "Nie lubię chodzić do lekarzy, nawet wtedy gdy jestem chory.",
+    "key": "nie"
+  },
+  {
+    "id": 500,
+    "text": "Pomimo tego, że nie jestem zadowolony z mojego życia, to nic nie mogę teraz na to poradzić.",
+    "key": "nie"
+  },
+  {
+    "id": 501,
+    "text": "Porozmawianie z kimś o swoich problemach jest często pomocne.",
+    "key": "tak"
+  },
+  {
+    "id": 502,
+    "text": "Mam bardzo szkodliwe przyzwyczajenia.",
+    "key": "nie"
+  },
+  {
+    "id": 503,
+    "text": "Kiedy trzeba rozwiązywać problemy, pozwalam aby inni ludzie się tym zajęli.",
+    "key": "nie"
+  },
+  {
+    "id": 504,
+    "text": "Wiem, że posiadam kilka wad, których nie jestem w stanie zmienić.",
+    "key": "nie"
+  },
+  {
+    "id": 505,
+    "text": "Mam tak dosyć wszystkiego, że najchętniej bym to wszystko zostawił.",
+    "key": "nie"
+  },
+  {
+    "id": 506,
+    "text": "Zastanawiałem się ostatnio nad samobójstwem.",
+    "key": "nie"
+  },
+  {
+    "id": 507,
+    "text": "Często irytuje mnie, gdy ktoś przerywa mi pracę.",
+    "key": "nie"
+  },
+  {
+    "id": 508,
+    "text": "Często czuję, że mogę czytać ludziom w myślach.",
+    "key": "nie"
+  }
+]

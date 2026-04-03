@@ -1,0 +1,1930 @@
+[
+  {
+    "question": "Co oznacza skrót G7?",
+    "option_a": "grupa 7 najbardziej zadłużonych państw świata",
+    "option_b": "grupa 7 największych państw Unii Europejskiej",
+    "option_c": "grupa 7 państw, które tworzą największe i najbardziej rozwinięte gospodarki na świecie",
+    "option_d": "nieformalne forum spotkań grupy 7 państw NATO",
+    "correct_answer": "grupa 7 państw, które tworzą największe i najbardziej rozwinięte gospodarki na świecie"
+  },
+  {
+    "question": "Siedziba Parlamentu Europejskiego znajduje się w:",
+    "option_a": "Strasburgu",
+    "option_b": "Berlinie",
+    "option_c": "Paryżu",
+    "option_d": "Warszawie",
+    "correct_answer": "Strasburgu"
+  },
+  {
+    "question": "Brexit to:",
+    "option_a": "potoczna nazwa procesu opuszczania struktur Unii Europejskiej przez Wielką Brytanię i Holandię zapoczątkowanego przez referendum w czerwcu 2016 roku",
+    "option_b": "oficjalna nazwa belgijskiego indeksu giełdowego",
+    "option_c": "potoczna nazwa procesu opuszczania struktur Unii Europejskiej przez Wielką Brytanię zapoczątkowanego przez referendum w czerwcu 2016 roku",
+    "option_d": "potoczna nazwa procesu opuszczania struktur Unii Europejskiej przez Wielką Brytanię zapoczątkowanego przez referendum w czerwcu 2020 roku",
+    "correct_answer": "potoczna nazwa procesu opuszczania struktur Unii Europejskiej przez Wielką Brytanię zapoczątkowanego przez referendum w czerwcu 2016 roku"
+  },
+  {
+    "question": "PIT to podatek, który nakłada się na:",
+    "option_a": "osoby prawne",
+    "option_b": "osoby fizyczne",
+    "option_c": "organizacje pożytku publicznego",
+    "option_d": "fundacje",
+    "correct_answer": "osoby fizyczne"
+  },
+  {
+    "question": "Aktualnie Ministrem Spraw Zagranicznych jest:",
+    "option_a": "Andrzej Domański",
+    "option_b": "Jacek Czaputowicz",
+    "option_c": "Radosław Sikorski",
+    "option_d": "Paulina Hennig-Kloska",
+    "correct_answer": "Radosław Sikorski"
+  },
+  {
+    "question": "Polska przystąpiła do Traktatu Północnoatlantyckiego (NATO):",
+    "option_a": "12 marca 1996 roku",
+    "option_b": "1 maja 1998 roku",
+    "option_c": "12 marca 1999 roku",
+    "option_d": "4 kwietnia 2000 roku",
+    "correct_answer": "12 marca 1999 roku"
+  },
+  {
+    "question": "Sekretarzem Generalnym NATO jest:",
+    "option_a": "Jonas Gahr Støre",
+    "option_b": "Jens Stoltenberg",
+    "option_c": "gen. Christopher Cavoli",
+    "option_d": "Mark Rutte",
+    "correct_answer": "Mark Rutte"
+  },
+  {
+    "question": "Które państwa należą do grupy G7?",
+    "option_a": "Stany Zjednoczone, Japonia, Niemcy, Wielka Brytania, Francja, Włochy i Kanada",
+    "option_b": "Stany Zjednoczone, Japonia, Niemcy, Wielka Brytania, Francja, Włochy i Rosja",
+    "option_c": "Stany Zjednoczone, Japonia, Niemcy, Wielka Brytania, Francja, Włochy i Hiszpania",
+    "option_d": "Stany Zjednoczone, Japonia, Niemcy, Wielka Brytania, Francja, Włochy i Indie",
+    "correct_answer": "Stany Zjednoczone, Japonia, Niemcy, Wielka Brytania, Francja, Włochy i Kanada"
+  },
+  {
+    "question": "Członkiem Unii Europejskiej nie jest:",
+    "option_a": "Bośnia i Hercegowina",
+    "option_b": "Słowenia",
+    "option_c": "Chorwacja",
+    "option_d": "Luksemburg",
+    "correct_answer": "Bośnia i Hercegowina"
+  },
+  {
+    "question": "Ile gwiazd widnieje na fladze Unii Europejskiej?",
+    "option_a": "10",
+    "option_b": "12",
+    "option_c": "15",
+    "option_d": "16",
+    "correct_answer": "12"
+  },
+  {
+    "question": "Jaki jest tytuł hymnu Unii Europejskiej?",
+    "option_a": "Marsylianka",
+    "option_b": "Międzynarodówka",
+    "option_c": "Oda do radości",
+    "option_d": "Oda do praworządności",
+    "correct_answer": "Oda do radości"
+  },
+  {
+    "question": "Aktualnie Prezesem Rady Ministrów jest:",
+    "option_a": "Bartłomiej Sienkiewicz",
+    "option_b": "Władysław Kosiniak-Kamysz",
+    "option_c": "Donald Tusk",
+    "option_d": "Szymon Hołownia",
+    "correct_answer": "Donald Tusk"
+  },
+  {
+    "question": "Ile państw aktualnie należy do Sojuszu Północnoatlantyckiego?",
+    "option_a": "21",
+    "option_b": "29",
+    "option_c": "32",
+    "option_d": "42",
+    "correct_answer": "32"
+  },
+  {
+    "question": "Od 2019 roku Komisji Europejskiej przewodniczy:",
+    "option_a": "Manfred Weber",
+    "option_b": "Angela Merkel",
+    "option_c": "Ursula von der Leyen",
+    "option_d": "Kaja Kallas",
+    "correct_answer": "Ursula von der Leyen"
+  },
+  {
+    "question": "Amerykańskim odpowiednikiem polskiego Ministerstwa Spraw Zagranicznych jest:",
+    "option_a": "Departament Stanu",
+    "option_b": "Izba Reprezentantów",
+    "option_c": "Kongres",
+    "option_d": "Zgromadzenie Parlamentarne",
+    "correct_answer": "Departament stanu"
+  },
+  {
+    "question": "Główna siedziba NATO znajduje się w:",
+    "option_a": "Nowym Jorku",
+    "option_b": "Waszyngtonie",
+    "option_c": "Brukseli",
+    "option_d": "Paryżu",
+    "correct_answer": "Brukseli"
+  },
+  {
+    "question": "Aktualnie urzędującym Rzecznikiem Praw Obywatelskich jest:",
+    "option_a": "Andrzej Zoll",
+    "option_b": "Adam Bodnar",
+    "option_c": "Marcin Wiącek",
+    "option_d": "Roman Giertych",
+    "correct_answer": "Marcin Wiącek"
+  },
+  {
+    "question": "Aktualnie prezydentem Ukrainy jest:",
+    "option_a": "Petro Poroszenko",
+    "option_b": "Wiktor Janukowycz",
+    "option_c": "Aleksandr Łukaszenka",
+    "option_d": "Wołodymyr Zełenski",
+    "correct_answer": "Wołodymyr Zełenski"
+  },
+  {
+    "question": "Aktualnie  prezydentem Stanów Zjednoczonych jest:",
+    "option_a": "Joe Biden",
+    "option_b": "Kamala Harris",
+    "option_c": "Donald Trump",
+    "option_d": "Barak Obama",
+    "correct_answer": "Donald Trump"
+  },
+  {
+    "question": "Który z poniższych krajów nie należy do NATO?",
+    "option_a": "Czarnogóra",
+    "option_b": "Albania",
+    "option_c": "Szwajcaria",
+    "option_d": "Litwa",
+    "correct_answer": "Szwajcaria"
+  },
+  {
+    "question": "Co symbolizuje flaga RP?",
+    "option_a": "czystość i niewinność, odwagę i waleczność",
+    "option_b": "wiarę i krew",
+    "option_c": "pamięć, honor i poświęcenie",
+    "option_d": "męczeństwo i oddanie",
+    "correct_answer": "czystość i niewinność, odwagę i waleczność"
+  },
+  {
+    "question": "Aneksja Krymu i wojna w Donbasie, która rozpoczęła konflikt między Federacją Rosyjską a Ukrainą, miała miejsce w roku:",
+    "option_a": "2012",
+    "option_b": "2014",
+    "option_c": "2016",
+    "option_d": "2022",
+    "correct_answer": "2014"
+  },
+  {
+    "question": "Inwazja Federacji Rosyjskiej na Ukrainę o charakterze regularnej wojny rozpoczęła się 24 lutego:",
+    "option_a": "2014 r.",
+    "option_b": "2021 r.",
+    "option_c": "2022 r.",
+    "option_d": "2023 r.",
+    "correct_answer": "2022 r."
+  },
+  {
+    "question": "Unia Europejska, jako gospodarczo – polityczny związek państw europejskich, liczy obecnie:",
+    "option_a": "25 państw członkowskich",
+    "option_b": "12 państw członkowskich",
+    "option_c": "27 państw członkowskich",
+    "option_d": "31 państw członkowskich",
+    "correct_answer": "27 państw członkowskich"
+  },
+  {
+    "question": "Miejsce kultu wyznawców judaizmu to:",
+    "option_a": "kościół",
+    "option_b": "meczet",
+    "option_c": "synagoga",
+    "option_d": "cerkiew",
+    "correct_answer": "Synagoga"
+  },
+  {
+    "question": "Zagwarantowanie środkami politycznymi i militarnymi wolności i bezpieczeństwa wszystkim państwom członkowskim jest głównym celem:",
+    "option_a": "Organizacji Traktatu Północnoatlantyckiego (NATO)",
+    "option_b": "Europejskiej Wspólnoty Węgla i Stali (ECSC)",
+    "option_c": "Unii Europejskiej (EU)",
+    "option_d": "Europejskiego Obszaru Gospodarczego (EOG)",
+    "correct_answer": "Organizacji Traktatu Północnoatlantyckiego (NATO)"
+  },
+  {
+    "question": "Wolność myśli, sumienia, religii i przekonań to prawa przynależące do grupy praw:",
+    "option_a": "osobistych",
+    "option_b": "politycznych",
+    "option_c": "gospodarczych, socjalnych i kulturalnych",
+    "option_d": "solidarnościowych",
+    "correct_answer": "osobistych"
+  },
+  {
+    "question": "Które z wymienionych państw nie należy do Unii Europejskiej?",
+    "option_a": "Luksemburg",
+    "option_b": "Szwecja",
+    "option_c": "Chorwacja",
+    "option_d": "Szwajcaria",
+    "correct_answer": "Szwajcaria"
+  },
+  {
+    "question": "Wrogi stosunek do innych przejawiający się wyższością jednej rasy nad drugą to:",
+    "option_a": "mizoginia",
+    "option_b": "rasizm",
+    "option_c": "globalizacja",
+    "option_d": "ageizm",
+    "correct_answer": "rasizm"
+  },
+  {
+    "question": "Dominującą religią w krajach arabskich jest:",
+    "option_a": "islam",
+    "option_b": "taoizm",
+    "option_c": "buddyzm",
+    "option_d": "judaizm",
+    "correct_answer": "Islam"
+  },
+  {
+    "question": "Natychmiastowe przemieszczanie ludności z rejonów uznanych za szczególnie niebezpiecznych do rejonów, w których można zapewnić im bezpieczeństwo to:",
+    "option_a": "emigracja",
+    "option_b": "ewakuacja",
+    "option_c": "elokwencja",
+    "option_d": "ekspatriacja",
+    "correct_answer": "ewakuacja"
+  },
+  {
+    "question": "Utrzymujący się przez dłuższy czas proces wzrostu cen w gospodarce narodowej, połączony z dużą utratą wartości pieniądza to:",
+    "option_a": "inflacja",
+    "option_b": "dewaluacja",
+    "option_c": "deflacja",
+    "option_d": "infrakcja",
+    "correct_answer": "inflacja"
+  },
+  {
+    "question": "VAT jest podatkiem płaconym :",
+    "option_a": "od towarów i usług",
+    "option_b": "tylko przez osoby fizyczne",
+    "option_c": "tylko przez osoby prawne",
+    "option_d": "tylko przez osoby kupujące tytoń i alkohol",
+    "correct_answer": "od towarów i usług"
+  },
+  {
+    "question": "Czynne prawo wyborcze nie przysługuje osobom:",
+    "option_a": "pozbawionym praw publicznych w wyniku prawomocnego wyroku sądu",
+    "option_b": "które ukończyły 18 lat",
+    "option_c": "które mają powyżej 75 roku życia",
+    "option_d": "z ilorazem inteligencji poniżej  statystycznej normy",
+    "correct_answer": "pozbawionym praw publicznych w wyniku prawomocnego wyroku sądu"
+  },
+  {
+    "question": "Kto może zwrócić się do Rzecznika Praw Obywatelskich o pomoc?",
+    "option_a": "wyłącznie osoby pełnoletnie",
+    "option_b": "obywatele Polski",
+    "option_c": "każda osoba, niezależnie od obywatelstwa i wieku",
+    "option_d": "tylko organizacje pozarządowe",
+    "correct_answer": "każda osoba, niezależnie od obywatelstwa i wieku"
+  },
+  {
+    "question": "W regionie Afryki Północnej położone są:",
+    "option_a": "Portugalia, Hiszpania, Włochy",
+    "option_b": "Turcja, Jordania, Irak",
+    "option_c": "Maroko, Algieria, Tunezja",
+    "option_d": "RPA, Senegal, Nigeria",
+    "correct_answer": "Maroko, Algieria, Tunezja"
+  },
+  {
+    "question": "Państwa posiadające broń jądrową zgodnie z ustaleniami międzynarodowymi w ramach tzw. Non Proliferation Treaty to:",
+    "option_a": "Chiny, USA, Francja, Wielka Brytania, Rosja",
+    "option_b": "Norwegia, Belgia, Dania, Finlandia, Szwecja",
+    "option_c": "Chorwacja, Słowacja, Mołdawia, Gruzja, Armenia",
+    "option_d": "Kazachstan, Turkmenistan, Turcja, Azerbejdżan, Nepal",
+    "correct_answer": "Chiny, USA, Francja, Wielka Brytania, Rosja"
+  },
+  {
+    "question": "Oficjalna nazwa państwa Chiny to:",
+    "option_a": "Chińska Republika Ludowo-Demokratyczna",
+    "option_b": "Chińska Republika Demokratyczna",
+    "option_c": "Chińska Republika Ludowa",
+    "option_d": "Socjalistyczna Republika Chin",
+    "correct_answer": "Chińska Republika Ludowa"
+  },
+  {
+    "question": "Które z wymienionych państw nie przyjęły waluty Euro?",
+    "option_a": "Rumunia",
+    "option_b": "Litwa",
+    "option_c": "Portugalia",
+    "option_d": "Słowacja",
+    "correct_answer": "Rumunia"
+  },
+  {
+    "question": "Grenlandia to terytorium autonomiczne zależne od:",
+    "option_a": "Danii",
+    "option_b": "Belgii",
+    "option_c": "Szwecji",
+    "option_d": "Rosji",
+    "correct_answer": "Danii"
+  },
+  {
+    "question": "Które z poniżej wymienionych miast posiada długowiekową historię i stanowi centralny punkt wiary dla trzech religii monoteistycznych: judaizmu, chrześcijaństwa, islamu:",
+    "option_a": "Dubaj",
+    "option_b": "Pekin",
+    "option_c": "Jerozolima",
+    "option_d": "Teheran",
+    "correct_answer": "Jerozolima"
+  },
+  {
+    "question": "Prawidłowo określone  stolice krajów to:",
+    "option_a": "Bruksela – Belgia; Bukareszt – Rumunia; Zagrzeb – Chorwacja",
+    "option_b": "Madryt – Rumunia; Bukareszt – Belgia; Medjugorje – Chorwacja",
+    "option_c": "Berlin – Bawaria; Bukareszt – Białoruś;  Zagrzeb – Chorwacja",
+    "option_d": "Paryż – Belgia; Bukareszt – Rumunia; Split – Chorwacja",
+    "correct_answer": "Bruksela – Belgia; Bukareszt – Rumunia; Zagrzeb – Chorwacja"
+  },
+  {
+    "question": "Największe powierzchniowo państwo na świecie to:",
+    "option_a": "Kanada",
+    "option_b": "Brazylia",
+    "option_c": "Rosja",
+    "option_d": "Indie",
+    "correct_answer": "Rosja"
+  },
+  {
+    "question": "Literacką Nagrodę Nobla w 2018 roku otrzymała:",
+    "option_a": "Dorota Masłowska",
+    "option_b": "Olga Tokarczuk",
+    "option_c": "Barbara Wysoczańska",
+    "option_d": "Wisława Szymborska",
+    "correct_answer": "Olga Tokarczuk"
+  },
+  {
+    "question": "Maria Skłodowska-Curie otrzymała Nagrodę Nobla w dziedzinie:",
+    "option_a": "chemii",
+    "option_b": "fizyki",
+    "option_c": "chemii i fizyki",
+    "option_d": "geografii",
+    "correct_answer": "chemii i fizyki"
+  },
+  {
+    "question": "Rzeczpospolita należy do strefy Schengen:",
+    "option_a": "od 2007 r.",
+    "option_b": "od 2004 r.",
+    "option_c": "od 2005 r.",
+    "option_d": "od 2006 r.",
+    "correct_answer": "od 2007 r."
+  },
+  {
+    "question": "Kiedy obchodzone jest w Polsce Święto Flagi?",
+    "option_a": "2 maja",
+    "option_b": "12 maja",
+    "option_c": "22 lipca",
+    "option_d": "11 listopada",
+    "correct_answer": "2 maja"
+  },
+  {
+    "question": "Strefa Schengen to obszar:",
+    "option_a": "27 państw",
+    "option_b": "29 państw",
+    "option_c": "17 państw",
+    "option_d": "28 państw",
+    "correct_answer": "29 państw"
+  },
+  {
+    "question": "Do Unii Europejskiej nie należy:",
+    "option_a": "Litwa",
+    "option_b": "Malta",
+    "option_c": "Andora",
+    "option_d": "Cypr",
+    "correct_answer": "Andora"
+  },
+  {
+    "question": "Do Unii Europejskiej nie należy:",
+    "option_a": "Litwa",
+    "option_b": "Łotwa",
+    "option_c": "Estonia",
+    "option_d": "Konfederacja Szwajcarska",
+    "correct_answer": "Konfederacja Szwajcarska"
+  },
+  {
+    "question": "Do Unii Europejskiej nie należy:",
+    "option_a": "Litwa",
+    "option_b": "Słowacja",
+    "option_c": "Estonia",
+    "option_d": "Norwegia",
+    "correct_answer": "Norwegia"
+  },
+  {
+    "question": "Członkiem Unii Europejskiej nie jest:",
+    "option_a": "Mołdawia",
+    "option_b": "Litwa",
+    "option_c": "Łotwa",
+    "option_d": "Estonia",
+    "correct_answer": "Mołdawia"
+  },
+  {
+    "question": "Wspólna waluta większości krajów UE to:",
+    "option_a": "euro",
+    "option_b": "dolar amerykański",
+    "option_c": "złoty",
+    "option_d": "marka",
+    "correct_answer": "euro"
+  },
+  {
+    "question": "Oficjalny status Polski w  NATO to:",
+    "option_a": "państwo neutralne",
+    "option_b": "państwo członkowskie",
+    "option_c": "państwo obserwator",
+    "option_d": "państwo wspierające",
+    "correct_answer": "państwo członkowskie"
+  },
+  {
+    "question": "Skrót NATO oznacza:",
+    "option_a": "National Treaty Organization",
+    "option_b": "Northern Atlantic Trading Office",
+    "option_c": "National Atlantic Trade Organization",
+    "option_d": "North Atlantic Treaty Organization",
+    "correct_answer": "North Atlantic Treaty Organization"
+  },
+  {
+    "question": "NATO jest sojuszem:",
+    "option_a": "polityczno-militarnym",
+    "option_b": "gospodarczym",
+    "option_c": "ekonomicznym",
+    "option_d": "Unii Europejskiej",
+    "correct_answer": "polityczno-militarnym"
+  },
+  {
+    "question": "Akt prawny regulujący współpracę krajów w ramach NATO to:",
+    "option_a": "Traktat Waszyngtoński",
+    "option_b": "Traktat Lizboński",
+    "option_c": "Traktat Wersalski",
+    "option_d": "Traktat Amsterdamski",
+    "correct_answer": "Traktat Waszyngtoński"
+  },
+  {
+    "question": "RP przystąpiła do NATO w:",
+    "option_a": "1999 roku",
+    "option_b": "2004 roku",
+    "option_c": "1949 roku",
+    "option_d": "2000 roku",
+    "correct_answer": "1999 roku"
+  },
+  {
+    "question": "Bułgaria:",
+    "option_a": "należy tylko do Unii Europejskiej",
+    "option_b": "nie należy do Unii Europejskiej",
+    "option_c": "należy do Unii Europejskiej i strefy Schengen",
+    "option_d": "należy do Unii Europejskiej i nie należy do strefy Schengen",
+    "correct_answer": "należy do Unii Europejskiej i strefy Schengen"
+  },
+  {
+    "question": "Rumunia:",
+    "option_a": "należy tylko do Unii Europejskiej",
+    "option_b": "nie należy do Unii Europejskiej",
+    "option_c": "należy do Unii Europejskiej i strefy Schengen",
+    "option_d": "należy do Unii Europejskiej i nie należy do strefy Schengen",
+    "correct_answer": "należy do Unii Europejskiej i strefy Schengen"
+  },
+  {
+    "question": "Największe państwo świata pod względem liczby ludności to:",
+    "option_a": "Chiny",
+    "option_b": "Indie",
+    "option_c": "Rosja",
+    "option_d": "Stany Zjednoczone",
+    "correct_answer": "Indie"
+  },
+  {
+    "question": "Najwyższym i najstarszym odznaczeniem państwowym w Polsce jest:",
+    "option_a": "Order Orła Białego",
+    "option_b": "Virtuti Militari",
+    "option_c": "Order Odrodzenia Polski",
+    "option_d": "Order Uśmiechu",
+    "correct_answer": "Order Orła Białego"
+  },
+  {
+    "question": "Pluralizm polityczny oznacza:",
+    "option_a": "istnienie dwóch lub większej ilości partii politycznych",
+    "option_b": "istnienie systemu dwupartyjnego",
+    "option_c": "istnienie centralnego zarządzania",
+    "option_d": "istnienie systemu autorytarnego",
+    "correct_answer": "istnienie dwóch lub większej ilości partii politycznych"
+  },
+  {
+    "question": "Rzeczpospolita Polska nie graniczy z:",
+    "option_a": "Niemcami",
+    "option_b": "Czechami",
+    "option_c": "Słowacją",
+    "option_d": "Łotwą",
+    "correct_answer": "Łotwą"
+  },
+  {
+    "question": "Rzeczpospolita Polska nie graniczy z:",
+    "option_a": "Estonią",
+    "option_b": "Litwą",
+    "option_c": "Ukrainą",
+    "option_d": "Słowacją",
+    "correct_answer": "Estonią"
+  },
+  {
+    "question": "Rzeczpospolita Polska graniczy z:",
+    "option_a": "5 krajami",
+    "option_b": "6 krajami",
+    "option_c": "7 krajami",
+    "option_d": "8 krajami",
+    "correct_answer": "7 krajami"
+  },
+  {
+    "question": "Rzeczpospolita Polska graniczy z:",
+    "option_a": "tylko krajami Unii Europejskiej",
+    "option_b": "tylko krajami spoza Unii Europejskiej",
+    "option_c": "krajami z Unii Europejskiej i spoza Unii Europejskiej",
+    "option_d": "krajami Trójkąta Weimarskiego",
+    "correct_answer": "krajami z Unii Europejskiej i spoza Unii Europejskiej"
+  },
+  {
+    "question": "Sprzedaż towarów wytwarzanych w danym państwie podmiotom zagranicznym to:",
+    "option_a": "eksport",
+    "option_b": "import",
+    "option_c": "embargo",
+    "option_d": "dumping",
+    "correct_answer": "eksport"
+  },
+  {
+    "question": "Miejsce kultu wyznawców islamu to:",
+    "option_a": "kościół",
+    "option_b": "meczet",
+    "option_c": "synagoga",
+    "option_d": "cerkiew",
+    "correct_answer": "meczet"
+  },
+  {
+    "question": "Zgodnie z aktualną treścią hymn państwowy RP rozpoczyna się od słów:",
+    "option_a": "Jeszcze Polska nie zginęła, póki my żyjemy",
+    "option_b": "Jeszcze Polska nie zginęła, jeśli my żyjemy",
+    "option_c": "Jeszcze Polska nie zginęła, kiedy my żyjemy",
+    "option_d": "Jeszcze Polska nie zginęła, jeżeli my żyjemy",
+    "correct_answer": "Jeszcze Polska nie zginęła, kiedy my żyjemy"
+  },
+  {
+    "question": "Rzeczpospolita Polska weszła do Unii Europejskiej w roku:",
+    "option_a": "2004",
+    "option_b": "2005",
+    "option_c": "2007",
+    "option_d": "2010",
+    "correct_answer": "2004"
+  },
+  {
+    "question": "Polska ma najdłuższą granicę z:",
+    "option_a": "Niemcami",
+    "option_b": "Czechami",
+    "option_c": "Ukrainą",
+    "option_d": "Słowacją",
+    "correct_answer": "Czechami"
+  },
+  {
+    "question": "Najkrótszy odcinek linii granicy państwowej RP to granica z:",
+    "option_a": "Federacją Rosyjską",
+    "option_b": "Republiką Litewską",
+    "option_c": "Republiką Białorusi",
+    "option_d": "Republiką Czeską",
+    "correct_answer": "Federacją Rosyjską"
+  },
+  {
+    "question": "Pierwsza premier-kobieta w Polsce to:",
+    "option_a": "Beata Szydło",
+    "option_b": "Ewa Kopacz",
+    "option_c": "Hanna Suchocka",
+    "option_d": "Agata Buzek",
+    "correct_answer": "Hanna Suchocka"
+  },
+  {
+    "question": "W skład tzw. krajów bałtyckich wchodzą:",
+    "option_a": "Dania, Niemcy, Polska",
+    "option_b": "Dania, Finlandia, Szwecja",
+    "option_c": "Litwa, Łotwa, Estonia",
+    "option_d": "Polska, Litwa, Łotwa",
+    "correct_answer": "Litwa, Łotwa, Estonia"
+  },
+  {
+    "question": "Które z wymienionych państw nie jest monarchią?",
+    "option_a": "Słowenia",
+    "option_b": "Wielka Brytania",
+    "option_c": "Belgia",
+    "option_d": "Dania",
+    "correct_answer": "Słowenia"
+  },
+  {
+    "question": "Języki urzędowe w Belgii to:",
+    "option_a": "francuski, niemiecki, niderlandzki",
+    "option_b": "francuski, belgijski, angielski",
+    "option_c": "francuski, angielski, niemiecki",
+    "option_d": "belgijski, angielski, niderlandzki",
+    "correct_answer": "francuski, niemiecki, niderlandzki"
+  },
+  {
+    "question": "Które z niżej wymienionych państw nie należy do inicjatywy Trójmorza?",
+    "option_a": "Estonia",
+    "option_b": "Rumunia",
+    "option_c": "Finlandia",
+    "option_d": "Węgry",
+    "correct_answer": "Finlandia"
+  },
+  {
+    "question": "Walutą Szwajcarii jest:",
+    "option_a": "euro",
+    "option_b": "marka szwajcarska",
+    "option_c": "korona szwajcarska",
+    "option_d": "frank szwajcarski",
+    "correct_answer": "frank szwajcarski"
+  },
+  {
+    "question": "Jaka religia dominuje w Turcji?",
+    "option_a": "buddyzm",
+    "option_b": "hinduizm",
+    "option_c": "islam",
+    "option_d": "chrześcijaństwo",
+    "correct_answer": "islam"
+  },
+  {
+    "question": "Konstytucja RP została uchwalona przez:",
+    "option_a": "Zgromadzenie Narodowe RP",
+    "option_b": "Sejm RP",
+    "option_c": "Senat RP",
+    "option_d": "Prezydenta RP",
+    "correct_answer": "Zgromadzenie Narodowe RP"
+  },
+  {
+    "question": "Organem odpowiedzialnym za ochronę praw człowieka i obywatela przed naruszeniami ze strony władzy publicznej jest:",
+    "option_a": "Rzecznik Praw Obywatelskich",
+    "option_b": "Prezes Najwyższej Izby Kontroli",
+    "option_c": "Rzecznik Praw Konsumenta",
+    "option_d": "Prezes Trybunału Konstytucyjnego",
+    "correct_answer": "Rzecznik Praw Obywatelskich"
+  },
+  {
+    "question": "Jak nazywa się instytucja kontrolująca zgodność ustaw z Konstytucją?",
+    "option_a": "Sąd Najwyższy",
+    "option_b": "Trybunał Konstytucyjny",
+    "option_c": "Trybunał Sprawiedliwości UE",
+    "option_d": "Prokuratura Krajowa",
+    "correct_answer": "Trybunał Konstytucyjny"
+  },
+  {
+    "question": "Zgodnie z art. 4 Konstytucji RP władza zwierzchnia w RP należy do:",
+    "option_a": "Sejmu i Senatu",
+    "option_b": "Prezydenta RP",
+    "option_c": "organów państwa",
+    "option_d": "Narodu",
+    "correct_answer": "Narodu"
+  },
+  {
+    "question": "Kto zwołuje posiedzenie Rady Ministrów?",
+    "option_a": "Prezes Rady Ministrów",
+    "option_b": "Prezydent RP",
+    "option_c": "Marszałek Sejmu",
+    "option_d": "Marszałek Senatu",
+    "correct_answer": "Prezes Rady Ministrów"
+  },
+  {
+    "question": "Jaki akt prawny określa ustrój RP?",
+    "option_a": "ustawa",
+    "option_b": "rozporządzenie",
+    "option_c": "Konstytucja RP",
+    "option_d": "uchwała Sejmu",
+    "correct_answer": "Konstytucja RP"
+  },
+  {
+    "question": "Warunkiem wejścia w życie każdej ustawy w RP jest podpisanie jej przez:",
+    "option_a": "Marszałka Sejmu",
+    "option_b": "Marszałka Senatu",
+    "option_c": "Premiera",
+    "option_d": "Prezydenta",
+    "correct_answer": "Prezydenta"
+  },
+  {
+    "question": "Jaką formę ma interpelacja poselska zgodnie z Konstytucją RP?",
+    "option_a": "zaoczną",
+    "option_b": "pisemną",
+    "option_c": "telefoniczną",
+    "option_d": "elektroniczną",
+    "correct_answer": "pisemną"
+  },
+  {
+    "question": "Senatorowie w Polsce wybierani są na kadencję:",
+    "option_a": "3-letnią",
+    "option_b": "4-letnią,  chyba że prezydent lub Sejm w określonych warunkach podejmą decyzję o jej skróceniu",
+    "option_c": "5-letnią, chyba że prezydent lub Sejm w określonych warunkach podejmą decyzję o jej skróceniu",
+    "option_d": "6-letnią",
+    "correct_answer": "5-letnią, chyba że prezydent lub Sejm w określonych warunkach podejmą decyzję o jej skróceniu"
+  },
+  {
+    "question": "Czynne prawo wyborcze oznacza:",
+    "option_a": "prawo obywatela do głosowania w wyborach",
+    "option_b": "prawo obywatela do kandydowania w wyborach",
+    "option_c": "prawo obywatela do organizowania wyborów",
+    "option_d": "wszystkie powyższe odpowiedzi są prawidłowe",
+    "correct_answer": "prawo obywatela do głosowania w wyborach"
+  },
+  {
+    "question": "Prawem przysługującym obywatelom w RP jest:",
+    "option_a": "prawo do uczestniczenia w wyborach i referendum",
+    "option_b": "prawo do opieki ze strony Rzeczypospolitej Polskiej",
+    "option_c": "prawo do własności",
+    "option_d": "wszystkie odpowiedzi są prawidłowe",
+    "correct_answer": "wszystkie odpowiedzi są prawidłowe"
+  },
+  {
+    "question": "Klub poselski, zgodnie z regulaminem Sejmu i Senatu,  tworzy co najmniej:",
+    "option_a": "15 posłów",
+    "option_b": "3 posłów",
+    "option_c": "100 posłów",
+    "option_d": "360 posłów",
+    "correct_answer": "15 posłów"
+  },
+  {
+    "question": "Trójpodział władzy oznacza:",
+    "option_a": "podział władzy między Prezydenta, Sejm i Senat",
+    "option_b": "podział władzy w rządzie",
+    "option_c": "podział władzy między władzę centralną, samorządową i  lokalną",
+    "option_d": "podział władzy między władzę ustawodawczą, wykonawczą i sądowniczą",
+    "correct_answer": "podział władzy między władzę ustawodawczą, wykonawczą i sądowniczą"
+  },
+  {
+    "question": "Naczelnym organem kontroli państwowej jest:",
+    "option_a": "Sąd Najwyższy",
+    "option_b": "Sejm RP",
+    "option_c": "Senat RP",
+    "option_d": "Najwyższa Izba Kontroli",
+    "correct_answer": "Najwyższa Izba Kontroli"
+  },
+  {
+    "question": "Sejm i Senat są wybierane na kadencje:",
+    "option_a": "5 letnie",
+    "option_b": "4 letnie",
+    "option_c": "3 letnie",
+    "option_d": "2 letnie",
+    "correct_answer": "4 letnie"
+  },
+  {
+    "question": "Wybrany do Sejmu może być obywatel polski, mający prawo wybierania, który najpóźniej w dniu wyborów kończy:",
+    "option_a": "30 lat",
+    "option_b": "21 lat",
+    "option_c": "25 lat",
+    "option_d": "26 lat",
+    "correct_answer": "21 lat"
+  },
+  {
+    "question": "Jak nazywa się gałąź prawa zajmująca się przestępstwami?",
+    "option_a": "prawo cywilne",
+    "option_b": "prawo rodzinne",
+    "option_c": "prawo karne",
+    "option_d": "prawo administracyjne",
+    "correct_answer": "prawo karne"
+  },
+  {
+    "question": "Izbą niższą polskiego parlamentu jest:",
+    "option_a": "Sejm",
+    "option_b": "Senat",
+    "option_c": "Najwyższa Izba Kontroli",
+    "option_d": "Trybunał Konstytucyjny",
+    "correct_answer": "Sejm"
+  },
+  {
+    "question": "Prezydent RP wybierany jest na kadencję:",
+    "option_a": "4 letnią",
+    "option_b": "5 letnią",
+    "option_c": "3 letnią",
+    "option_d": "6 letnią",
+    "correct_answer": "5 letnią"
+  },
+  {
+    "question": "Zwierzchnikiem Sił Zbrojnych w Rzeczypospolitej Polskiej jest:",
+    "option_a": "Prezes Rady Ministrów",
+    "option_b": "Minister Obrony narodowej",
+    "option_c": "Marszałek Sejmu",
+    "option_d": "Prezydent RP",
+    "correct_answer": "Prezydent RP"
+  },
+  {
+    "question": "Obywatelstwo RP nadawane jest przez:",
+    "option_a": "Prezydenta RP",
+    "option_b": "ministra",
+    "option_c": "wojewodę",
+    "option_d": "burmistrza",
+    "correct_answer": "Prezydenta RP"
+  },
+  {
+    "question": "Immunitet parlamentarny przysługuje:",
+    "option_a": "policjantowi",
+    "option_b": "adwokatowi",
+    "option_c": "sędziemu",
+    "option_d": "posłowi",
+    "correct_answer": "posłowi"
+  },
+  {
+    "question": "Zdolność prawną osoba fizyczna nabywa",
+    "option_a": "z chwilą ukończenia 13 roku życia",
+    "option_b": "z chwilą ukończenia 16 roku życia",
+    "option_c": "z chwilą uzyskania pełnoletniości",
+    "option_d": "z chwilą urodzenia",
+    "correct_answer": "z chwilą urodzenia"
+  },
+  {
+    "question": "Władzę ustawodawczą w Rzeczpospolitej Polskiej sprawują:",
+    "option_a": "Sejm",
+    "option_b": "Senat",
+    "option_c": "Sejm i Senat",
+    "option_d": "Sejm, Senat i Prezes Rady Ministrów",
+    "correct_answer": "Sejm i Senat"
+  },
+  {
+    "question": "Przeciwnikiem powoda w procesie cywilnym jest:",
+    "option_a": "oskarżyciel posiłkowy",
+    "option_b": "oskarżony",
+    "option_c": "pozwany",
+    "option_d": "prokurator",
+    "correct_answer": "pozwany"
+  },
+  {
+    "question": "Najwyższym przedstawicielem Rzeczypospolitej Polskiej jest:",
+    "option_a": "Prezydent RP",
+    "option_b": "Prezes Rady Ministrów",
+    "option_c": "Marszałek Sejmu",
+    "option_d": "Marszałek Senatu",
+    "correct_answer": "Prezydent RP"
+  },
+  {
+    "question": "Rada ministrów składa się z:",
+    "option_a": "Ministrów",
+    "option_b": "Prezesa Rady Ministrów i Prezydenta RP",
+    "option_c": "Prezesa Rady Ministrów i ministrów",
+    "option_d": "Ministrów i zastępców ministrów",
+    "correct_answer": "Prezesa Rady Ministrów i ministrów"
+  },
+  {
+    "question": "Władzę w Polsce dzielimy na:",
+    "option_a": "ustawodawczą, wykonawczą, sądowniczą",
+    "option_b": "ustanowioną, wybieraną, sądowniczą",
+    "option_c": "miejską, powiatową, wojewódzką",
+    "option_d": "sejmową, ministerialną, wykonawczą",
+    "correct_answer": "ustawodawczą, wykonawczą, sądowniczą"
+  },
+  {
+    "question": "Organem udzielającym wotum zaufania nowo powołanemu premierowi w Polsce jest:",
+    "option_a": "Prezydent",
+    "option_b": "Sejm",
+    "option_c": "Senat",
+    "option_d": "Rada Ministrów",
+    "correct_answer": "Sejm"
+  },
+  {
+    "question": "Sejm i Senat obradują na:",
+    "option_a": "naradach",
+    "option_b": "posiedzeniach",
+    "option_c": "sympozjach",
+    "option_d": "konferencjach",
+    "correct_answer": "posiedzeniach"
+  },
+  {
+    "question": "Która z poniższych funkcji należy do Prezydenta RP?",
+    "option_a": "uchwalenie budżetu",
+    "option_b": "powoływanie sędziów",
+    "option_c": "kontrola konstytucyjności ustaw",
+    "option_d": "wydawanie ustaw",
+    "correct_answer": "powoływanie sędziów"
+  },
+  {
+    "question": "Zgodnie z Konstytucją  RP ochronie niepodległości państwa i niepodzielności jego terytorium oraz zapewnieniu bezpieczeństwa i nienaruszalności jego granic służą:",
+    "option_a": "Siły Zbrojne RP",
+    "option_b": "Straż Graniczna",
+    "option_c": "Wojska Obrony Terytorialnej",
+    "option_d": "Wojsko Polskie",
+    "correct_answer": "Siły Zbrojne RP"
+  },
+  {
+    "question": "Zgodnie z Konstytucją RP na straży wolności słowa, prawa do informacji oraz interesu publicznego w radiofonii i telewizji stoi:",
+    "option_a": "Krajowa Rada Radiofonii i Telewizji",
+    "option_b": "Rada Mediów Narodowych",
+    "option_c": "Rada Programowa",
+    "option_d": "Rada Ministrów",
+    "correct_answer": "Krajowa Rada Radiofonii i Telewizji"
+  },
+  {
+    "question": "Wyłączne prawo emisji pieniądza oraz ustalania i realizowania polityki pieniężnej ma:",
+    "option_a": "Rada Ministrów",
+    "option_b": "Narodowy Bank Polski",
+    "option_c": "Międzynarodowy Fundusz Walutowy",
+    "option_d": "Mennica Polska",
+    "correct_answer": "Narodowy Bank Polski"
+  },
+  {
+    "question": "Zbrodnie przeciwko ludzkości:",
+    "option_a": "są ścigane przez 30 lat",
+    "option_b": "są ścigane przez 50 lat",
+    "option_c": "są ścigane przez 100 lat",
+    "option_d": "nie podlegają przedawnieniu",
+    "correct_answer": "nie podlegają przedawnieniu"
+  },
+  {
+    "question": "Władza zwierzchnia w Rzeczypospolitej Polskiej należy do:",
+    "option_a": "Prezydenta Rzeczypospolitej Polskiej",
+    "option_b": "Narodu",
+    "option_c": "Rady Ministrów",
+    "option_d": "Sądów powszechnych",
+    "correct_answer": "Narodu"
+  },
+  {
+    "question": "Każdego uważa się za niewinnego dopóki:",
+    "option_a": "nie przyzna się on do popełnienia przestępstwa",
+    "option_b": "nie przyzna się on do winy",
+    "option_c": "nie zostanie skazany",
+    "option_d": "jego wina nie zostanie stwierdzona prawomocnym wyrokiem sądu",
+    "correct_answer": "jego wina nie zostanie stwierdzona prawomocnym wyrokiem sądu"
+  },
+  {
+    "question": "Europejski Trybunał Praw Człowieka to:",
+    "option_a": "instytucja Unii Europejskiej odpowiedzialna za rozstrzyganie sporów handlowych",
+    "option_b": "organ międzynarodowy, który ocenia skargi na naruszenia praw człowieka w krajach członkowskich Rady Europy",
+    "option_c": "sąd, który rozpatruje skargi obywateli na władze krajowe",
+    "option_d": "organ ONZ odpowiedzialny za egzekwowanie Powszechnej Deklaracji Praw Człowieka",
+    "correct_answer": "organ międzynarodowy, który ocenia skargi na naruszenia praw człowieka w krajach członkowskich Rady Europy"
+  },
+  {
+    "question": "Zasada uniwersalności praw człowieka oznacza:",
+    "option_a": "prawa człowieka dotyczą tylko obywateli państw demokratycznych",
+    "option_b": "prawa człowieka to przywileje tylko osób pełnoletnich",
+    "option_c": "prawa człowieka obowiązują tylko w krajach, które je podpisały",
+    "option_d": "prawa człowieka są niezbywalne i przysługują każdemu człowiekowi, niezależnie od narodowości, rasy, płci czy religii",
+    "correct_answer": "prawa człowieka są niezbywalne i przysługują każdemu człowiekowi, niezależnie od narodowości, rasy, płci czy religii"
+  },
+  {
+    "question": "Prawa człowieka to:",
+    "option_a": "prawa obywatelskie dotyczące tylko mieszkańców danego państwa",
+    "option_b": "przepisy dotyczące organizacji politycznych",
+    "option_c": "zbiór obowiązków wobec obywateli",
+    "option_d": "zbiór przepisów wynikający z godności ludzkiej, chroniących wolność i prawa każdej osoby",
+    "correct_answer": "zbiór przepisów wynikający z godności ludzkiej, chroniących wolność i prawa każdej osoby"
+  },
+  {
+    "question": "Powszechna Deklaracja Praw Człowieka została przyjęta przez:",
+    "option_a": "ONZ",
+    "option_b": "Unię Europejską",
+    "option_c": "Trójkąt Weimarski",
+    "option_d": "OBWE",
+    "correct_answer": "ONZ"
+  },
+  {
+    "question": "Trybunał Konstytucyjny orzeka o:",
+    "option_a": "zgodności ustawy z Konstytucją",
+    "option_b": "odpowiedzialności karnej w związku z zajmowanym stanowiskiem Prezydenta RP i Prezesa Rady Ministrów",
+    "option_c": "odpowiedzialności cywilnej członków rządu",
+    "option_d": "zgodności ustaw z uchwałami Sejmu",
+    "correct_answer": "zgodności ustawy z Konstytucją"
+  },
+  {
+    "question": "Które z poniższych praw nie jest prawem obywatelskim gwarantowanym przez Konstytucję?",
+    "option_a": "prawo do posiadania broni",
+    "option_b": "prawo do prowadzenia działalności gospodarczej",
+    "option_c": "prawo do ubezpieczenia zdrowotnego",
+    "option_d": "prawo do prywatności",
+    "correct_answer": "prawo do posiadania broni"
+  },
+  {
+    "question": "Ambasadorów RP mianuje:",
+    "option_a": "Premier RP",
+    "option_b": "Minister Spraw Zagranicznych RP",
+    "option_c": "Prezydent RP",
+    "option_d": "Minister Obrony Narodowej",
+    "correct_answer": "Prezydent RP"
+  },
+  {
+    "question": "Dopuszczalny poziom inflacji w Polsce wynosi:",
+    "option_a": "10 %",
+    "option_b": "30 %",
+    "option_c": "90 %",
+    "option_d": "nie ma takiego poziomu",
+    "correct_answer": "nie ma takiego poziomu"
+  },
+  {
+    "question": "Określenie Arabska Wiosna dotyczy:",
+    "option_a": "najcieplejszej pory roku w regionie Bliskiego Wschodu",
+    "option_b": "protestów społecznych i konfliktów zbrojnych w krajach arabskich, w latach 2010–2012",
+    "option_c": "zbioru poezji słynnych egipskich poetów",
+    "option_d": "święta, które z początkiem nowego roku obchodzą mieszkańcy Jordanii",
+    "correct_answer": "protestów społecznych i konfliktów zbrojnych w krajach arabskich, w latach 2010–2012"
+  },
+  {
+    "question": "Przestępstwo handlu ludźmi zgodnie z kodeksem karnym jest:",
+    "option_a": "uchybieniem",
+    "option_b": "zbrodnią",
+    "option_c": "wykroczeniem",
+    "option_d": "przewinieniem",
+    "correct_answer": "zbrodnią"
+  },
+  {
+    "question": "Kto przedstawia Prezydentowi ustawy do podpisu?",
+    "option_a": "Szef Kancelarii Prezydenta",
+    "option_b": "Marszałek Senatu",
+    "option_c": "Marszałek Sejmu",
+    "option_d": "Doradca Prezydenta RP",
+    "correct_answer": "Marszałek sejmu"
+  },
+  {
+    "question": "Rzecznik Praw Obywatelskich składa sprawozdanie ze swojej działalności do:",
+    "option_a": "Prezydenta RP",
+    "option_b": "Sejmu RP",
+    "option_c": "Senatu RP",
+    "option_d": "Trybunału Konstytucyjnego",
+    "correct_answer": "Sejmu RP"
+  },
+  {
+    "question": "Kto powołuje Rzecznika Praw Obywatelskich?",
+    "option_a": "Prezydent RP",
+    "option_b": "Sejm RP",
+    "option_c": "Senat RP",
+    "option_d": "Rada Ministrów",
+    "correct_answer": "Sejm RP"
+  },
+  {
+    "question": "Obowiązująca aktualnie Polska Konstytucja została uchwalona:",
+    "option_a": "3 maja 1990 r.",
+    "option_b": "5 kwietnia 1991 r.",
+    "option_c": "2 kwietnia 1997 r.",
+    "option_d": "2 kwietnia 1999 r.",
+    "correct_answer": "2 kwietnia 1997 r."
+  },
+  {
+    "question": "Zgodnie z Konstytucją RP Prezydent RP nie ma kompetencji do:",
+    "option_a": "prawa łaski",
+    "option_b": "zwierzchnictwa nad Siłami Zbrojnymi",
+    "option_c": "rozwiązywania Sejmu przed upływem jego kadencji z własnej inicjatywy",
+    "option_d": "zwoływania Rady Gabinetowej",
+    "correct_answer": "rozwiązywania Sejmu przed upływem jego kadencji z własnej inicjatywy"
+  },
+  {
+    "question": "Odpowiedzialność karną za popełnione przestępstwo nabywa się:",
+    "option_a": "w dniu ukończenia 17 lat",
+    "option_b": "w dniu ukończenia 18 lat",
+    "option_c": "w dniu ukończenia 21 lat",
+    "option_d": "w dniu ukończenia 16 lat",
+    "correct_answer": "w dniu ukończenia 17 lat"
+  },
+  {
+    "question": "Karą za przestępstwo nie jest:",
+    "option_a": "dożywotnie pozbawienie wolności",
+    "option_b": "pouczenie i nagana",
+    "option_c": "grzywna",
+    "option_d": "kara ograniczenia wolności",
+    "correct_answer": "pouczenie i nagana"
+  },
+  {
+    "question": "W Polsce, zgodnie z zasadą precedencji „drugą najważniejszą osobą w państwie\" jest:",
+    "option_a": "Prezes Rady Ministrów",
+    "option_b": "Marszałek Senatu",
+    "option_c": "Marszałek Sejmu",
+    "option_d": "Prezes Trybunału Konstytucyjnego",
+    "correct_answer": "Marszałek Sejmu"
+  },
+  {
+    "question": "Ilu parlamentarzystów liczy polski Senat?",
+    "option_a": "460",
+    "option_b": "200",
+    "option_c": "100",
+    "option_d": "55",
+    "correct_answer": "100"
+  },
+  {
+    "question": "Zgodnie z Konstytucją Rzeczypospolitej Polskiej Sejm i Senat są wybierane na:",
+    "option_a": "dwuletnie kadencje",
+    "option_b": "czteroletnie kadencje",
+    "option_c": "sześcioletnie kadencje",
+    "option_d": "ośmioletnie kadencje",
+    "correct_answer": "czteroletnie kadencje"
+  },
+  {
+    "question": "Zbrodnie ludobójstwa oraz zbrodnie wojenne osądza:",
+    "option_a": "Międzynarodowy Trybunał Praw Człowieka w Strasburgu",
+    "option_b": "Międzynarodowy Trybunał Karny w Hadze",
+    "option_c": "Międzynarodowy Trybunał Wojskowy w Norymberdze",
+    "option_d": "Międzynarodowy Trybunał ds. Zbrodni przeciwko Ludzkości w Brukseli",
+    "correct_answer": "Międzynarodowy Trybunał Karny w Hadze"
+  },
+  {
+    "question": "Minimalny wiek kandydata na prezydenta RP wynosi:",
+    "option_a": "30 lat",
+    "option_b": "35 lat",
+    "option_c": "40 lat",
+    "option_d": "45 lat",
+    "correct_answer": "35 lat"
+  },
+  {
+    "question": "Odpowiedzialności za wykroczenie podlega ten, kto ukończył:",
+    "option_a": "17 rok życia",
+    "option_b": "18 rok życia",
+    "option_c": "21 rok życia",
+    "option_d": "wiek sprawcy nie ma znaczenia",
+    "correct_answer": "17 rok życia"
+  },
+  {
+    "question": "Ministra powołuje i odwołuje:",
+    "option_a": "Prezes Rady Ministrów",
+    "option_b": "Marszałek Sejmu",
+    "option_c": "Prezydent",
+    "option_d": "Marszałek Senatu",
+    "correct_answer": "Prezydent"
+  },
+  {
+    "question": "Prezydent Rzeczypospolitej jest wybierany w wyborach powszechnych przez Naród na kadencję:",
+    "option_a": "4-letnią i może być ponownie wybrany tylko raz",
+    "option_b": "5-letnią i może być ponownie wybrany tylko raz",
+    "option_c": "5-letnią i może być ponownie wybrany 2-krotnie",
+    "option_d": "6-letnią i nie może być ponownie wybrany",
+    "correct_answer": "5-letnią i może być ponownie wybrany 2-krotnie"
+  },
+  {
+    "question": "Przestępstwa ze względu na rodzaj winy dzielą się na:",
+    "option_a": "umyślne i nieumyślne",
+    "option_b": "zbrodnie i występki",
+    "option_c": "ścigane z urzędu i ścigane na wniosek",
+    "option_d": "administracyjne, gospodarcze i kryminalne",
+    "correct_answer": "umyślne i nieumyślne"
+  },
+  {
+    "question": "Bierne prawo wyborcze w wyborach do Sejmu RP uzyskuje obywatel w wieku:",
+    "option_a": "19 lat",
+    "option_b": "21 lat",
+    "option_c": "35 lat",
+    "option_d": "40 lat",
+    "correct_answer": "21 lat"
+  },
+  {
+    "question": "Obywatele Unii Europejskiej wybierają posłów i posłanki do Parlamentu Europejskiego co:",
+    "option_a": "3 lata",
+    "option_b": "5 lat",
+    "option_c": "6 lat",
+    "option_d": "8 lat",
+    "correct_answer": "5 lat"
+  },
+  {
+    "question": "Odpowiedzialność za czyny zabronione pod groźbą kary stanowiące przestępstwo, reguluje:",
+    "option_a": "Ustawa z dnia z dnia 6 czerwca 1997r. Kodeks karny",
+    "option_b": "Ustawa z dnia 23 kwietnia 1964r. Kodeks cywilny",
+    "option_c": "Ustawa z dnia 15 września 2000r. Kodeks spółek handlowych",
+    "option_d": "Ustawa z dnia 6 kwietnia 1990 r. o Policji",
+    "correct_answer": "Ustawa z dnia z dnia 6 czerwca 1997r. Kodeks karny"
+  },
+  {
+    "question": "Najwyższa kara stosowana w polskim systemie prawnym to:",
+    "option_a": "kara 25 lat pozbawienia wolności",
+    "option_b": "kara 30 lat pozbawienia wolności",
+    "option_c": "dożywotnie pozbawienie wolności",
+    "option_d": "kara śmierci",
+    "correct_answer": "dożywotnie pozbawienie wolności"
+  },
+  {
+    "question": "Termin wyborów prezydenckich w Polsce ogłasza:",
+    "option_a": "Prezes Rady Ministrów",
+    "option_b": "Marszałek Senatu",
+    "option_c": "Marszałek Sejmu",
+    "option_d": "Prezydent",
+    "correct_answer": "Marszałek Sejmu"
+  },
+  {
+    "question": "Rzecznik Praw Obywatelskich RP:",
+    "option_a": "bada zgodność aktów prawnych z konstytucją",
+    "option_b": "organizuje pikiety wolnościowe",
+    "option_c": "rozstrzyga spory między obywatelami, które podlegają rozpoznaniu przez sądy",
+    "option_d": "stoi na straży wolności i praw człowieka",
+    "correct_answer": "stoi na straży wolności i praw człowieka"
+  },
+  {
+    "question": "Oddziały Straży Granicznej tworzy i znosi:",
+    "option_a": "Komendant Główny Straży Granicznej, w drodze zarządzenia",
+    "option_b": "minister właściwy do spraw wewnętrznych, w drodze rozporządzenia",
+    "option_c": "Prezes Rady Ministrów na wniosek ministra właściwego do spraw wewnętrznych, w drodze rozporządzenia",
+    "option_d": "Prezydent RP",
+    "correct_answer": "minister właściwy do spraw wewnętrznych, w drodze rozporządzenia"
+  },
+  {
+    "question": "Najmniejsza jednostka samorządu terytorialnego w Polsce to:",
+    "option_a": "dzielnica",
+    "option_b": "kolonia",
+    "option_c": "gmina",
+    "option_d": "powiat",
+    "correct_answer": "gmina"
+  },
+  {
+    "question": "Przedstawicielem Rady Ministrów w województwie jest:",
+    "option_a": "prezydent miasta",
+    "option_b": "wojewoda",
+    "option_c": "sejmik samorządowy",
+    "option_d": "marszałek sejmiku",
+    "correct_answer": "wojewoda"
+  },
+  {
+    "question": "Wybory do Sejmiku województwa odbywają się co:",
+    "option_a": "4 lata",
+    "option_b": "5 lat",
+    "option_c": "3 lata",
+    "option_d": "nie ma takich wyborów",
+    "correct_answer": "5 lat"
+  },
+  {
+    "question": "Burmistrz jest wybierany:",
+    "option_a": "w wyborach ogólnych pośrednich",
+    "option_b": "w bezpośrednich wyborach powszechnych",
+    "option_c": "przez radę gminy",
+    "option_d": "przez  radę miasta",
+    "correct_answer": "w bezpośrednich wyborach powszechnych"
+  },
+  {
+    "question": "Na czele urzędu wojewódzkiego stoi:",
+    "option_a": "dyrektor generalny",
+    "option_b": "sekretarz wojewody",
+    "option_c": "wojewoda",
+    "option_d": "marszałek województwa",
+    "correct_answer": "wojewoda"
+  },
+  {
+    "question": "Skrót NSA oznacza:",
+    "option_a": "Naczelny Sąd Apelacyjny",
+    "option_b": "Naczelny Sąd Akredytacyjny",
+    "option_c": "Naczelny Sąd Administracyjny",
+    "option_d": "Narodowa Agencja Aeronautyki i Przestrzeni Kosmicznej",
+    "correct_answer": "Naczelny Sąd Administracyjny"
+  },
+  {
+    "question": "Aktualnie w Polsce liczba województw wynosi:",
+    "option_a": "15",
+    "option_b": "16",
+    "option_c": "30",
+    "option_d": "49",
+    "correct_answer": "16"
+  },
+  {
+    "question": "Podatek katastralny to jedna z form opodatkowania:",
+    "option_a": "towarów",
+    "option_b": "usług",
+    "option_c": "nieruchomości",
+    "option_d": "prywatnych lasów i jezior",
+    "correct_answer": "nieruchomości"
+  },
+  {
+    "question": "Straż Graniczna nie zajmuje się:",
+    "option_a": "ochroną granicy państwowej na lądzie i morzu",
+    "option_b": "kontrolą ruchu granicznego",
+    "option_c": "egzekwowaniem podatków",
+    "option_d": "przeciwdziałaniem nielegalnej migracji",
+    "correct_answer": "egzekwowaniem podatków"
+  },
+  {
+    "question": "Zadaniem Straży Granicznej jest:",
+    "option_a": "nakładanie ceł na przywożone przez granicę towary",
+    "option_b": "wydawanie wiz i zezwoleń na przekraczanie granicy",
+    "option_c": "ochrona granicy państwowej w przestrzeni powietrznej",
+    "option_d": "ściganie sprawców wszystkich przestępstw",
+    "correct_answer": "ochrona granicy państwowej w przestrzeni powietrznej"
+  },
+  {
+    "question": "Do przekroczenia granicy państwowej nie uprawnia:",
+    "option_a": "prawo jazdy",
+    "option_b": "paszport",
+    "option_c": "dowód osobisty",
+    "option_d": "książeczka żeglarska",
+    "correct_answer": "prawo jazdy"
+  },
+  {
+    "question": "Komendant Główny Straży Granicznej jest centralnym organem administracji rządowej podległym:",
+    "option_a": "ministrowi Obrony Narodowej",
+    "option_b": "ministrowi właściwemu do spraw wewnętrznych",
+    "option_c": "ministrowi właściwemu do spraw zagranicznych",
+    "option_d": "Prezesowi Rady Ministrów",
+    "correct_answer": "ministrowi właściwemu do spraw wewnętrznych"
+  },
+  {
+    "question": "2 maja obchodzimy w Polsce:",
+    "option_a": "Dzień Zwycięstwa",
+    "option_b": "Dzień Flagi",
+    "option_c": "Dzień Strażaka",
+    "option_d": "Święto Straży Granicznej",
+    "correct_answer": "Dzień Flagi"
+  },
+  {
+    "question": "Instytucją UE powołaną do koordynacji i wsparcia ochrony granic zewnętrznych UE jest:",
+    "option_a": "Agencja Frontex",
+    "option_b": "Parlament Europejski",
+    "option_c": "Straż Graniczna",
+    "option_d": "Policje państw członkowskich UE",
+    "correct_answer": "Agencja Frontex"
+  },
+  {
+    "question": "Obszar obejmujący 29 państw, w których zniesiono kontrole graniczne  na granicach wewnętrznych, to:",
+    "option_a": "obszar krajów należących do NATO",
+    "option_b": "Strefa Czystego Transportu",
+    "option_c": "Strefa Schengen",
+    "option_d": "Unia Europejska",
+    "correct_answer": "Strefa Schengen"
+  },
+  {
+    "question": "W dwudziestoleciu międzywojennym ochrona granic Polski realizowana była przez:",
+    "option_a": "Straż Graniczną",
+    "option_b": "Korpus Ochrony Pogranicza",
+    "option_c": "Korpus Ochrony Pogranicza i Straż Graniczną",
+    "option_d": "Wojska Ochrony Pogranicza",
+    "correct_answer": "Korpus Ochrony Pogranicza"
+  },
+  {
+    "question": "Siedziba komendy Bieszczadzkiego Oddziału Straży Granicznej znajduje się w:",
+    "option_a": "Nowym Sączu",
+    "option_b": "Rzeszowie",
+    "option_c": "Przemyślu",
+    "option_d": "Chełmie",
+    "correct_answer": "Przemyślu"
+  },
+  {
+    "question": "Najniższy stopień w Straży Granicznej to:",
+    "option_a": "kapral Straży Granicznej",
+    "option_b": "szeregowy Straży Granicznej",
+    "option_c": "plutonowy Straży Granicznej",
+    "option_d": "referent Straży Granicznej",
+    "correct_answer": "szeregowy Straży Granicznej"
+  },
+  {
+    "question": "Komendanta Głównego Straży Granicznej powołuje:",
+    "option_a": "minister właściwy do spraw wewnętrznych",
+    "option_b": "Prezes Rady Ministrów",
+    "option_c": "minister właściwy do spraw zagranicznych",
+    "option_d": "Prezes Rady Ministrów na wniosek ministra właściwego do spraw wewnętrznych",
+    "correct_answer": "Prezes Rady Ministrów na wniosek ministra właściwego do spraw wewnętrznych"
+  },
+  {
+    "question": "W Straży Granicznej obowiązują następujące korpusy:",
+    "option_a": "korpus szeregowych i oficerów",
+    "option_b": "korpus szeregowych i podoficerów",
+    "option_c": "korpus szeregowych i chorążych",
+    "option_d": "korpus szeregowych, podoficerów, chorążych  i oficerów",
+    "correct_answer": "korpus szeregowych, podoficerów, chorążych  i oficerów"
+  },
+  {
+    "question": "Obowiązek współdziałania ze Strażą Graniczną dotyczy:",
+    "option_a": "organów administracji rządowej",
+    "option_b": "jednostek samorządu terytorialnego",
+    "option_c": "innych jednostek organizacyjnych",
+    "option_d": "wszystkie odpowiedzi są prawidłowe",
+    "correct_answer": "wszystkie odpowiedzi są prawidłowe"
+  },
+  {
+    "question": "Straż Graniczna została utworzona:",
+    "option_a": "ustawą z dnia 12 października 1990 r. o Straży Granicznej",
+    "option_b": "ustawą oddzielającą Straż Graniczną od Policji",
+    "option_c": "ustawą z dnia 12 grudnia 1999 r. o Służbie Granicznej",
+    "option_d": "ustawą z dnia 15 maja 1990 r. o Służbie w Straży Granicznej",
+    "correct_answer": "ustawą z dnia 12 października 1990 r. o Straży Granicznej"
+  },
+  {
+    "question": "Straż Graniczna jest podzielona:",
+    "option_a": "na Oddziały Straży Granicznej",
+    "option_b": "zgodnie z podziałem administracyjnym Polski",
+    "option_c": "zgodnie z zaleceniami Premiera",
+    "option_d": "na powiaty i gminy",
+    "correct_answer": "na Oddziały Straży Granicznej"
+  },
+  {
+    "question": "Organem właściwym do wydania paszportu jest:",
+    "option_a": "prezydent miasta na prawach powiatu",
+    "option_b": "burmistrz miasta",
+    "option_c": "wojewoda",
+    "option_d": "minister właściwy do spraw wewnętrznych",
+    "correct_answer": "wojewoda"
+  },
+  {
+    "question": "Zbiór PESEL to:",
+    "option_a": "losowo wybrany numer oznaczający osobę",
+    "option_b": "kolejny numer określający kobietę lub mężczyznę",
+    "option_c": "Powszechny Elektroniczny System Ewidencji Ludności",
+    "option_d": "Powszechny Ewidencyjny System Ewidencji Ludności",
+    "correct_answer": "Powszechny Elektroniczny System Ewidencji Ludności"
+  },
+  {
+    "question": "Rzeki, wzdłuż których została wytyczona zachodnia granica Polski z Niemcami to:",
+    "option_a": "Odra i Nysa Łużycka",
+    "option_b": "Warta i Nysa Łużycka",
+    "option_c": "Odra i Warta",
+    "option_d": "Wkra i Bug",
+    "correct_answer": "Odra i Nysa Łużycka"
+  },
+  {
+    "question": "Państwa, z którymi Polska posiada granicę lądową to:",
+    "option_a": "Niemcy, Słowenia, Czechy Rosja Litwa, Białoruś, Ukraina",
+    "option_b": "Niemcy, Szwecja, Czechy, Rosja,  Litwa, Białoruś, Ukraina",
+    "option_c": "Niemcy, Słowacja, Czechy, Rosja, Litwa, Białoruś, Ukraina",
+    "option_d": "Niemcy, Słowacja, Czechy, Łotwa, Litwa, Białoruś, Ukraina",
+    "correct_answer": "Niemcy, Słowacja, Czechy, Rosja, Litwa, Białoruś, Ukraina"
+  },
+  {
+    "question": "Do podstawowych zadań Straży Granicznej należy:",
+    "option_a": "ochrona granicy państwowej, kontrola ruchu granicznego, zapobieganie i przeciwdziałanie nielegalnej migracji i przeciwdziałanie nielegalnej migracji",
+    "option_b": "ochrona granicy państwowej w przestrzeni powietrznej",
+    "option_c": "kontrola celna przepływu towarów przez granicę",
+    "option_d": "kontrola legalności zatrudnienia obywateli RP",
+    "correct_answer": "ochrona granicy państwowej, kontrola ruchu granicznego, zapobieganie i przeciwdziałanie nielegalnej migracji i przeciwdziałanie nielegalnej migracji"
+  },
+  {
+    "question": "Straż Graniczna to:",
+    "option_a": "jednolita, umundurowana i uzbrojona formacja przeznaczoną do ochrony granicy państwowej",
+    "option_b": "formacja wojskowa",
+    "option_c": "formacja jednolita i przymusowa",
+    "option_d": "formacja paramilitarna",
+    "correct_answer": "jednolita, umundurowana i uzbrojona formacja przeznaczoną do ochrony granicy państwowej"
+  },
+  {
+    "question": "Co oznacza pojęcie „granica zewnętrzna UE”?",
+    "option_a": "granica Polski z Niemcami",
+    "option_b": "granica państw UE z państwami spoza Unii Europejskiej",
+    "option_c": "każda granica województwa",
+    "option_d": "granica miast przygranicznych",
+    "correct_answer": "granica państw UE z państwami spoza Unii Europejskiej"
+  },
+  {
+    "question": "Powołana 01 października 2023 roku  Wyższa Szkoła Straży Granicznej znajduje się w:",
+    "option_a": "Lubaniu",
+    "option_b": "Kętrzynie",
+    "option_c": "Koszalinie",
+    "option_d": "Warszawie",
+    "correct_answer": "Koszalinie"
+  },
+  {
+    "question": "Siedziba Komendy Głównej Straży Granicznej znajduje się w:",
+    "option_a": "Warszawie",
+    "option_b": "Gdańsku",
+    "option_c": "Raciborzu",
+    "option_d": "Przemyślu",
+    "correct_answer": "Warszawie"
+  },
+  {
+    "question": "Agencja o nazwie FRONTEX oznacza:",
+    "option_a": "Agencję Bezpieczeństwa Wewnętrznego",
+    "option_b": "Europejską Agencję Rozwoju",
+    "option_c": "Europejską Agencję Straży Granicznej i Przybrzeżnej",
+    "option_d": "organizację non-profit zajmującą się pomocą humanitarną dla nielegalnych migrantów",
+    "correct_answer": "Europejską Agencję Straży Granicznej i Przybrzeżnej"
+  },
+  {
+    "question": "Podporucznik Straży Granicznej to stopień służbowy należący do korpusu:",
+    "option_a": "szeregowych",
+    "option_b": "podoficerów",
+    "option_c": "chorążych",
+    "option_d": "oficerów",
+    "correct_answer": "oficerów"
+  },
+  {
+    "question": "Terenowymi organami Straży Granicznej są:",
+    "option_a": "komendanci oddziałów, placówek i dywizjonów Straży Granicznej",
+    "option_b": "komendanci ośrodków szkolenia i Wyższej Szkoły Straży Granicznej",
+    "option_c": "komendanci  drogowych i osobowych przejść  granicznych",
+    "option_d": "dowódcy jednostek pływających Straży Granicznej",
+    "correct_answer": "komendanci oddziałów, placówek i dywizjonów Straży Granicznej"
+  },
+  {
+    "question": "Straż Graniczna, jako jednolita, umundurowana i uzbrojona formacja została powołana ustawą z dnia:",
+    "option_a": "12 października 1991 r.",
+    "option_b": "12 października 1990 r.",
+    "option_c": "16 maja 1991 r.",
+    "option_d": "31 maja 1995 r.",
+    "correct_answer": "12 października 1990 r."
+  },
+  {
+    "question": "Nadzór nad działalnością sądów powszechnych i wojskowych w zakresie orzekania sprawuje:",
+    "option_a": "Sąd Najwyższy",
+    "option_b": "Trybunał Stanu",
+    "option_c": "Naczelny Sąd Administracyjny",
+    "option_d": "Prezes NIK",
+    "correct_answer": "Sąd Najwyższy"
+  },
+  {
+    "question": "Starosta kieruje:",
+    "option_a": "gminą",
+    "option_b": "urzędem",
+    "option_c": "powiatem",
+    "option_d": "województwem",
+    "correct_answer": "powiatem"
+  },
+  {
+    "question": "Osoba, która opuszcza miejsce zamieszkania w celu osiedlenia się w innym  kraju to:",
+    "option_a": "uchodźca",
+    "option_b": "emigrant",
+    "option_c": "azylant",
+    "option_d": "imigrant",
+    "correct_answer": "emigrant"
+  },
+  {
+    "question": "Kadencja wójta, burmistrza i prezydenta miasta trwa:",
+    "option_a": "5 lat",
+    "option_b": "4 lata",
+    "option_c": "6 lat",
+    "option_d": "3 lata",
+    "correct_answer": "5 lat"
+  },
+  {
+    "question": "Straż Graniczna to formacja typu:",
+    "option_a": "wojskowego",
+    "option_b": "policyjnego",
+    "option_c": "zmilitaryzowanego",
+    "option_d": "społecznego",
+    "correct_answer": "zmilitaryzowanego"
+  },
+  {
+    "question": "Straż Graniczna jako formacja podlega:",
+    "option_a": "Ministerstwu Obrony Narodowej",
+    "option_b": "Ministerstwu Spraw Wewnętrznych i Administracji",
+    "option_c": "Prezesowi Rady Ministrów",
+    "option_d": "Prezydentowi",
+    "correct_answer": "Ministerstwu Spraw Wewnętrznych i Administracji"
+  },
+  {
+    "question": "Zgodnie z Ustawą o Straży Granicznej, Straż Graniczna to formacja:",
+    "option_a": "jednolita, umundurowana, uzbrojona",
+    "option_b": "umundurowana, skoszarowana, uzbrojona",
+    "option_c": "militarna, wyspecjalizowana, zmotoryzowana",
+    "option_d": "umundurowana, skoszarowana, wyspecjalizowana",
+    "correct_answer": "jednolita, umundurowana, uzbrojona"
+  },
+  {
+    "question": "Granica rzeczna z Białorusią i Ukrainą przebiega  na:",
+    "option_a": "Bugu",
+    "option_b": "Warcie",
+    "option_c": "Wiśle",
+    "option_d": "Odrze",
+    "correct_answer": "Bugu"
+  },
+  {
+    "question": "Ministrowi Spraw Wewnętrznych i Administracji podlegają:",
+    "option_a": "Komendant Główny Policji",
+    "option_b": "Komendant Główny Straży Granicznej",
+    "option_c": "Komendant Służby Ochrony Państwa",
+    "option_d": "wszystkie ww. odpowiedzi są prawidłowe",
+    "correct_answer": "wszystkie ww. odpowiedzi są prawidłowe"
+  },
+  {
+    "question": "Cudzoziemiec w świetle prawa polskiego, to:",
+    "option_a": "osoba, która nie mieszka w Polsce",
+    "option_b": "osoba, która przekroczyła granicę danego państwa",
+    "option_c": "osoba, która nie posiada obywatelstwa polskiego",
+    "option_d": "osoba, która migruje",
+    "correct_answer": "osoba, która nie posiada obywatelstwa polskiego"
+  },
+  {
+    "question": "Ile oddziałów znajduje się w strukturze Straży Granicznej?",
+    "option_a": "7",
+    "option_b": "9",
+    "option_c": "11",
+    "option_d": "12",
+    "correct_answer": "9"
+  },
+  {
+    "question": "W jakich sytuacjach funkcjonariusz Straży Granicznej może użyć środków przymusu bezpośredniego?",
+    "option_a": "tylko na granicy zewnętrznej",
+    "option_b": "w każdym przypadku nieposłuszeństwa",
+    "option_c": "w sytuacji zagrożenia zdrowia, życia lub naruszenia porządku prawnego",
+    "option_d": "tylko za zgodą sądu",
+    "correct_answer": "w sytuacji zagrożenia zdrowia, życia lub naruszenia porządku prawnego"
+  },
+  {
+    "question": "Co obejmuje kontrola graniczna?",
+    "option_a": "tylko sprawdzenie paszportu",
+    "option_b": "ocenę dokumentów, osób i pojazdów przekraczających granicę",
+    "option_c": "sprawdzanie miejsc zamieszkania cudzoziemców",
+    "option_d": "weryfikację poziomu języka polskiego",
+    "correct_answer": "ocenę dokumentów, osób i pojazdów przekraczających granicę"
+  },
+  {
+    "question": "W jaki sposób Straż Graniczna przeciwdziała nielegalnej migracji?",
+    "option_a": "poprzez działania tylko w urzędach",
+    "option_b": "poprzez wsparcie służb celnych",
+    "option_c": "poprzez patrole, monitoring granic i kontrole legalności pobytu",
+    "option_d": "poprzez działania wyłącznie prewencyjne",
+    "correct_answer": "poprzez patrole, monitoring granic i kontrole legalności pobytu"
+  },
+  {
+    "question": "Banknoty i monety euro są w obiegu od:",
+    "option_a": "1990 roku",
+    "option_b": "2002 roku",
+    "option_c": "2015 roku",
+    "option_d": "2016 roku",
+    "correct_answer": "2002 roku"
+  },
+  {
+    "question": "Prawo szariatu oznacza:",
+    "option_a": "prawo zezwalające na handel towarami w obrębie miasta",
+    "option_b": "prawo gwarantujące dostęp do szkół dla muzułmańskich kobiet",
+    "option_c": "prawo regulujące wszystkie aspekty życia społecznego i prywatnego wyznawców islamu",
+    "option_d": "prawo nakazujące muzułmanom spożywanie wieprzowiny",
+    "correct_answer": "prawo regulujące wszystkie aspekty życia społecznego i prywatnego wyznawców islamu"
+  },
+  {
+    "question": "Jakimi sprawami zajmuje się Amnesty International?",
+    "option_a": "ochroną praw człowieka",
+    "option_b": "propagowaniem ochrony środowiska naturalnego",
+    "option_c": "ochroną praw zwierząt",
+    "option_d": "polepszeniem warunków odbywania kary wyłącznie więźniów politycznych",
+    "correct_answer": "ochroną praw człowieka"
+  },
+  {
+    "question": "Kryzys migracyjny, który rozpoczął się latem 2021 r. i jest elementem wojny hybrydowej, dotyczy:",
+    "option_a": "granicy Białorusi z granicą zewnętrzną Unii Europejskiej",
+    "option_b": "granicy Ukrainy z granicą zewnętrzną Unii Europejskiej",
+    "option_c": "granicy Republiki Czeskiej z Polską",
+    "option_d": "granicy Macedonii Północnej z granicą zewnętrzną Unii Europejskiej",
+    "correct_answer": "granicy Białorusi z granicą zewnętrzną Unii Europejskiej"
+  },
+  {
+    "question": "Patriarchat to model rodziny oparty na:",
+    "option_a": "wiodącej roli kobiety",
+    "option_b": "na wiodącej roli mężczyzny",
+    "option_c": "relacjach partnerskich",
+    "option_d": "relacjach partnerskich",
+    "correct_answer": "na wiodącej roli mężczyzny"
+  },
+  {
+    "question": "Polska nie jest krajem należącym do:",
+    "option_a": "Unii Europejskiej",
+    "option_b": "Strefy Schengen",
+    "option_c": "Grupy Wyszehradzkiej",
+    "option_d": "Rady Nordyckiej",
+    "correct_answer": "Rady Nordyckiej"
+  },
+  {
+    "question": "Ze względu na panujący ustrój polityczny Polska jest:",
+    "option_a": "republiką parlamentarną",
+    "option_b": "monarchią konstytucyjną",
+    "option_c": "republika prezydencką",
+    "option_d": "monarchią absolutną",
+    "correct_answer": "republiką parlamentarną"
+  },
+  {
+    "question": "Islamska fundamentalistyczna organizacja o charakterze terrorystycznym wywodząca się i działająca na terenie Palestyny to:",
+    "option_a": "IRA",
+    "option_b": "ISIS",
+    "option_c": "Hamas",
+    "option_d": "Al – Kaida",
+    "correct_answer": "Hamas"
+  },
+  {
+    "question": "Kto pierwszy pełnił  w Polsce funkcję Rzecznika Praw Obywatelskich?",
+    "option_a": "Ewa Łętowska",
+    "option_b": "Adam Bodnar",
+    "option_c": "Marcin Wiącek",
+    "option_d": "Andrzej Zoll",
+    "correct_answer": "Ewa Łętowska"
+  },
+  {
+    "question": "Niderlandy to inna nazwa kraju w Europie:",
+    "option_a": "Macedonia",
+    "option_b": "Holandia",
+    "option_c": "Belgia",
+    "option_d": "Hiszpania",
+    "correct_answer": "Holandia"
+  },
+  {
+    "question": "Naród, który nie ma własnego państwa to:",
+    "option_a": "Kurdowie",
+    "option_b": "Łotysze",
+    "option_c": "Albańczycy",
+    "option_d": "Armeńczycy",
+    "correct_answer": "Kurdowie"
+  },
+  {
+    "question": "Aktualnie najniższy (I) próg podatkowy od dochodów dla osób fizycznych (PIT) wynosi:",
+    "option_a": "5 %",
+    "option_b": "9 %",
+    "option_c": "12 %",
+    "option_d": "19 %",
+    "correct_answer": "12%"
+  },
+  {
+    "question": "Tadż Mahal czyli słynne mauzoleum wzniesione przez jednego z władców dynastii Wielkich Mogołów znajduje się w:",
+    "option_a": "Pakistanie",
+    "option_b": "Afganistanie",
+    "option_c": "Indiach",
+    "option_d": "Bangladeszu",
+    "correct_answer": "Indiach"
+  },
+  {
+    "question": "Stany Zjednoczone Ameryki to państwo federacyjne składające się z:",
+    "option_a": "30 stanów",
+    "option_b": "50 stanów i stołecznego Dystryktu Kolumbii",
+    "option_c": "62 stanów",
+    "option_d": "28 stanów",
+    "correct_answer": "50 stanów i stołecznego Dystryktu Kolumbii"
+  },
+  {
+    "question": "Stolicą Malty, państwa członkowskiego UE, jest:",
+    "option_a": "Malta",
+    "option_b": "Valletta",
+    "option_c": "Birgu",
+    "option_d": "Isla",
+    "correct_answer": "Valletta"
+  },
+  {
+    "question": "Rzeczpospolita Polska weszła do Unii Europejskiej i obszaru Schengen:",
+    "option_a": "tego samego roku",
+    "option_b": "tego samego roku ale w innych miesiącach",
+    "option_c": "tego samego dnia",
+    "option_d": "w różnym czasie",
+    "correct_answer": "w różnym czasie"
+  },
+  {
+    "question": "Oficjalne stanowisko Polski wobec strefy Schengen to:",
+    "option_a": "RP aplikuje o członkostwo",
+    "option_b": "RP jest pełnoprawnym sygnatariuszem",
+    "option_c": "RP ma status obserwatora",
+    "option_d": "RP nie jest państwem należącym do strefy",
+    "correct_answer": "RP jest pełnoprawnym sygnatariuszem"
+  },
+  {
+    "question": "Najkrótsza granica Polski to:",
+    "option_a": "granica z Litwą",
+    "option_b": "tego samego roku ale w innych miesiącach",
+    "option_c": "granica z Ukrainą",
+    "option_d": "granica ze Słowacją",
+    "correct_answer": "granica z Litwą"
+  },
+  {
+    "question": "Prerogatywa to:",
+    "option_a": "jednostka terytorialna obejmująca miasto",
+    "option_b": "twierdzenie, do którego przedstawia się uzasadnienie",
+    "option_c": "szczególne prawo, przywilej związany z zajmowanym stanowiskiem",
+    "option_d": "przywileje dotyczące wszystkich obywateli danego państwa",
+    "correct_answer": "szczególne prawo, przywilej związany z zajmowanym stanowiskiem"
+  },
+  {
+    "question": "Ministrem Spraw Wewnętrznych i Administracji jest:",
+    "option_a": "Marcin Kierwiński",
+    "option_b": "Czesław Mroczek",
+    "option_c": "Władysław Kosiniak – Kamysz",
+    "option_d": "Michał Kołodziejczak",
+    "correct_answer": "Marcin Kierwiński"
+  },
+  {
+    "question": "Aktualnie prezydentem Turcji jest:",
+    "option_a": "Viktor Orban",
+    "option_b": "Recep Tayyip Erdoğan",
+    "option_c": "Robert Fico",
+    "option_d": "Sergio Mattarella",
+    "correct_answer": "Recep Tayyip Erdoğan"
+  },
+  {
+    "question": "Parlament Europejski:",
+    "option_a": "zatwierdza budżet UE i kontroluje to, jak wydawane są pieniądze",
+    "option_b": "wybiera przewodniczącego lub przewodniczącą Komisji Europejskiej",
+    "option_c": "mianuje komisarzy i pociąga ich do odpowiedzialności",
+    "option_d": "wszystkie odpowiedzi są prawidłowe",
+    "correct_answer": "wszystkie odpowiedzi są prawidłowe"
+  },
+  {
+    "question": "Biuro Bezpieczeństwa Narodowego (BBN) jest organem, przy pomocy którego swoje zadania w zakresie bezpieczeństwa i obronności wykonuje:",
+    "option_a": "Minister Obrony Narodowej",
+    "option_b": "Minister Spraw Wewnętrznych i Administracji",
+    "option_c": "Prezydent",
+    "option_d": "Premier",
+    "correct_answer": "Prezydent"
+  },
+  {
+    "question": "Konstytucja RP została przyjęta przez Naród w drodze:",
+    "option_a": "aklamacji",
+    "option_b": "ustawy",
+    "option_c": "ustanowienia przez Prezydenta RP",
+    "option_d": "referendum konstytucyjnego",
+    "correct_answer": "referendum konstytucyjnego"
+  },
+  {
+    "question": "Źródłami powszechnie obowiązującego prawa Rzeczpospolitej Polskiej są:",
+    "option_a": "Konstytucja RP, ustawy, ratyfikowane umowy międzynarodowe, rozporządzenia i akty prawa miejscowego",
+    "option_b": "ustawy, rozporządzenia i zarządzenia",
+    "option_c": "Konstytucja RP, ustawy, ratyfikowane umowy międzynarodowe i rozporządzenia",
+    "option_d": "Konstytucja RP, ustawy, ratyfikowane umowy międzynarodowe i zarządzenia",
+    "correct_answer": "Konstytucja RP, ustawy, ratyfikowane umowy międzynarodowe, rozporządzenia i akty prawa miejscowego"
+  },
+  {
+    "question": "Wybrany do Senatu może być obywatel polski mający prawo wybierania, który najpóźniej w dniu wyborów kończy:",
+    "option_a": "30 lat",
+    "option_b": "21 lat",
+    "option_c": "35 lat",
+    "option_d": "20 lat",
+    "correct_answer": "30 lat"
+  },
+  {
+    "question": "Wybrany do Sejmu może być obywatel polski, mający prawo wybierania, który najpóźniej w dniu wyborów kończy:",
+    "option_a": "30 lat",
+    "option_b": "21 lat",
+    "option_c": "25 lat",
+    "option_d": "26 lat",
+    "correct_answer": "21 lat"
+  },
+  {
+    "question": "Expose to",
+    "option_a": "program działania rządu na następną kadencję wygłaszany przed uzyskaniem wotum zaufania dla Premiera",
+    "option_b": "program wyborczy",
+    "option_c": "program Unii Europejskiej na kolejną kadencję",
+    "option_d": "program parytetowy",
+    "correct_answer": "program działania rządu na następną kadencję wygłaszany przed uzyskaniem wotum zaufania dla Premiera"
+  },
+  {
+    "question": "Inicjatywy ustawodawczej nie posiada:",
+    "option_a": "Rada Ministrów",
+    "option_b": "Prezydent",
+    "option_c": "100 tysięcy obywateli",
+    "option_d": "gmina",
+    "correct_answer": "gmina"
+  },
+  {
+    "question": "Prawa osobiste  wskazane w Konstytucji RP zakazują:",
+    "option_a": "stosowania kary pozbawienia wolności",
+    "option_b": "stosowania tortur",
+    "option_c": "niesprawiedliwego traktowania",
+    "option_d": "stosowania kary grzywny",
+    "correct_answer": "stosowania tortur"
+  },
+  {
+    "question": "Każdy, przeciw komu prowadzone jest postępowania karne :",
+    "option_a": "ma prawo do obrony",
+    "option_b": "ma prawo do jednego telefonu",
+    "option_c": "ma prawo do działania przeciwko Policji",
+    "option_d": "ma prawo do żądania ujawnienia wizerunku funkcjonariusza Policji",
+    "correct_answer": "ma prawo do obrony"
+  },
+  {
+    "question": "Obowiązkiem obywatela polskiego jest:",
+    "option_a": "stanowienie prawa",
+    "option_b": "ponoszenie ciężarów i świadczeń publicznych",
+    "option_c": "posiadanie własności",
+    "option_d": "posiadanie zameldowania",
+    "correct_answer": "ponoszenie ciężarów i świadczeń publicznych"
+  },
+  {
+    "question": "Zgodnie z Konstytucją RP ekstradycja obywatela polskiego jest:",
+    "option_a": "dopuszczalna pod warunkiem wyrażenia przez niego zgody",
+    "option_b": "zakazana",
+    "option_c": "możliwa w przypadku dokonania przez niego przestępstwa",
+    "option_d": "uzasadniona",
+    "correct_answer": "zakazana"
+  },
+  {
+    "question": "Co oznacza prawo do swobody wypowiedzi?",
+    "option_a": "prawo do wyrażania swoich poglądów, przekonań i opinii oraz otrzymywania i przekazywania informacji i idei bez ingerencji władz publicznych",
+    "option_b": "prawo do odmowy zeznań świadka w procesie sądowym",
+    "option_c": "prawo do organizowania każdej manifestacji w miejscu publicznym",
+    "option_d": "prawo do nauki i edukacji w ojczystym języku",
+    "correct_answer": "prawo do wyrażania swoich poglądów, przekonań i opinii oraz otrzymywania i przekazywania informacji i idei bez ingerencji władz publicznych"
+  },
+  {
+    "question": "Wskaż kraj, który przejął tzw. prezydencję w UE od 1 stycznia 2025 r:",
+    "option_a": "Portugalia",
+    "option_b": "Polska",
+    "option_c": "Dania",
+    "option_d": "Finlandia",
+    "correct_answer": "Polska"
+  },
+  {
+    "question": "Hymnem Unii Europejskiej jest:",
+    "option_a": "finał IX symfonii L. Beethovena",
+    "option_b": "nocturne opus 9 F. Chopina",
+    "option_c": "Taniec z szablami A. Chaczaturiana",
+    "option_d": "Walc z serenady P. Czajkowskiego",
+    "correct_answer": "finał IX symfonii L. Beethovena"
+  },
+  {
+    "question": "Konstytucyjna zasada równości obywateli oznacza, że:",
+    "option_a": "każdy obywatel ma prawo do udziału w wyborach",
+    "option_b": "każdy obywatel ma prawo do pracy w administracji publicznej",
+    "option_c": "obywatele mogą zmieniać konstytucję na drodze referendum",
+    "option_d": "wszyscy obywatele mają równe prawa i obowiązki, bez względu na płeć, rasę czy wyznanie",
+    "correct_answer": "wszyscy obywatele mają równe prawa i obowiązki, bez względu na płeć, rasę czy wyznanie"
+  },
+  {
+    "question": "Rzeszów jest stolicą województwa:",
+    "option_a": "Pomorskiego",
+    "option_b": "Lubelskiego",
+    "option_c": "Podkarpackiego",
+    "option_d": "Podlaskiego",
+    "correct_answer": "Podkarpackiego"
+  },
+  {
+    "question": "Sejmik województwa jest:",
+    "option_a": "reprezentantem rządu w terenie",
+    "option_b": "organem stanowiącym i kontrolnym samorządu województwa",
+    "option_c": "przestał już funkcjonować",
+    "option_d": "pełni funkcję wyłącznie doradcze",
+    "correct_answer": "organem stanowiącym i kontrolnym samorządu województwa"
+  },
+  {
+    "question": "Organy administracji publicznej prowadzą postępowanie w sposób:",
+    "option_a": "budzący zaufanie jego uczestników do władzy publicznej",
+    "option_b": "nie budząc wątpliwości co do działania organów",
+    "option_c": "nieszkodliwy",
+    "option_d": "szczególny",
+    "correct_answer": "budzący zaufanie jego uczestników do władzy publicznej"
+  },
+  {
+    "question": "Funkcjonariusz Straży Granicznej jest obowiązany:",
+    "option_a": "posiadać prawo jazdy",
+    "option_b": "posiadać wykształcenie wyższe",
+    "option_c": "posiadać broń palną",
+    "option_d": "utrzymywać sprawność fizyczną zapewniającą wykonywanie przez niego zadań służbowych",
+    "correct_answer": "utrzymywać sprawność fizyczną zapewniającą wykonywanie przez niego zadań służbowych"
+  }
+]

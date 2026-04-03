@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Matryc Progresywnych Ravena</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --tło: #0f1117;
+  --powierzchnia: #161b26;
+  --powierzchnia2: #1c2233;
+  --obramowanie: #252d40;
+  --tekst: #c8d0e0;
+  --przygaszony: #5a6580;
+  --jasny: #eaf0ff;
+  --akcent: #4a9eff;
+  --złoty: #f0c040;
+  --zielony: #3eb489;
+  --czerwony: #e05555;
+  --mono: 'IBM Plex Mono', monospace;
+  --sans: 'IBM Plex Sans', sans-serif;
+  --komórka: 110px;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--tło); color:var(--tekst); font-family:var(--sans); min-height:100vh; }
+
+/* NAGŁÓWEK */
+.nagłówek {
+  background:var(--powierzchnia);
+  border-bottom:1px solid var(--obramowanie);
+  padding:14px 32px;
+  display:flex; align-items:center; gap:20px;
+}
+.nagłówek-tytuł { font-family:var(--mono); font-size:12px; letter-spacing:3px; color:var(--jasny); }
+.nagłówek-podtytuł { font-family:var(--mono); font-size:11px; color:var(--przygaszony); }
+.licznik-czasu {
+  margin-left:auto;
+  font-family:var(--mono); font-size:22px;
+  color:var(--akcent); letter-spacing:2px;
+}
+.licznik-czasu.ostrzeżenie { color:var(--złoty); }
+.licznik-czasu.alarm { color:var(--czerwony); }
+
+/* UKŁAD */
+.strona { max-width:960px; margin:0 auto; padding:32px 20px 60px; }
+
+/* PASEK POSTĘPU */
+.pasek-postępu { height:2px; background:var(--obramowanie); margin-bottom:28px; }
+.pasek-wypełnienie { height:100%; background:var(--akcent); transition:width .4s; }
+
+/* GÓRNY PASEK */
+.górny-pasek {
+  display:flex; align-items:center; gap:12px;
+  margin-bottom:24px; flex-wrap:wrap;
+}
+.oznaczenie-pytania { font-family:var(--mono); font-size:11px; color:var(--przygaszony); letter-spacing:2px; }
+.znaczniki-reguł { display:flex; gap:6px; flex-wrap:wrap; }
+.znacznik {
+  font-family:var(--mono); font-size:10px; letter-spacing:1px;
+  padding:3px 9px; border:1px solid var(--obramowanie); color:var(--przygaszony);
+  border-radius:2px;
+}
+.wyniki { margin-left:auto; display:flex; gap:14px; }
+.wynik-chip { font-family:var(--mono); font-size:12px; color:var(--przygaszony); }
+.wynik-chip span { color:var(--jasny); font-size:16px; font-weight:600; }
+
+/* MACIERZ */
+.ramka-macierzy {
+  background:var(--powierzchnia);
+  border:1px solid var(--obramowanie);
+  padding:24px 24px 20px;
+  margin-bottom:20px;
+}
+.etykieta-sekcji {
+  font-family:var(--mono); font-size:10px; letter-spacing:3px;
+  color:var(--przygaszony); text-transform:uppercase; margin-bottom:16px;
+}
+.siatka-macierzy {
+  display:grid;
+  grid-template-columns:repeat(3,var(--komórka));
+  grid-template-rows:repeat(3,var(--komórka));
+  gap:2px; width:fit-content; margin:0 auto;
+}
+.komórka {
+  width:var(--komórka); height:var(--komórka);
+  background:#1a2035;
+  border:1px solid var(--obramowanie);
+  display:flex; align-items:center; justify-content:center;
+}
+.komórka.puste-miejsce {
+  background:#111825;
+  border:1.5px dashed #2a3550;
+}
+.komórka svg { width:82px; height:82px; overflow:visible; }
+
+/* ODPOWIEDZI */
+.etykieta-odpowiedzi {
+  font-family:var(--mono); font-size:10px; letter-spacing:3px;
+  color:var(--przygaszony); margin-bottom:12px;
+}
+.siatka-odpowiedzi {
+  display:grid; grid-template-columns:repeat(4,1fr); gap:8px;
+  margin-bottom:20px;
+}
+.opcja {
+  background:var(--powierzchnia);
+  border:1.5px solid var(--obramowanie);
+  padding:10px; cursor:pointer;
+  display:flex; flex-direction:column; align-items:center; gap:6px;
+  transition:border-color .12s, background .12s;
+  user-select:none;
+}
+.opcja:hover { border-color:#3a4a6a; background:var(--powierzchnia2); }
+.opcja.wybrana { border-color:var(--akcent); background:rgba(74,158,255,.06); }
+.opcja.poprawna { border-color:var(--zielony); background:rgba(62,180,137,.07); }
+.opcja.błędna { border-color:var(--czerwony); background:rgba(224,85,85,.06); }
+.opcja svg { width:70px; height:70px; overflow:visible; }
+.klucz-opcji { font-family:var(--mono); font-size:11px; color:var(--przygaszony); }
+.klucz-opcji.poprawny { color:var(--zielony); }
+.klucz-opcji.błędny { color:var(--czerwony); }
+
+/* PANEL ANALIZY */
+.panel-analizy {
+  display:none;
+  background:var(--powierzchnia);
+  border:1px solid var(--obramowanie);
+  border-left:3px solid var(--akcent);
+  padding:18px 20px;
+  margin-bottom:20px;
+  animation:pojawienieSię .2s ease;
+}
+.panel-analizy.widoczny { display:block; }
+.tytuł-analizy {
+  font-family:var(--mono); font-size:10px; letter-spacing:3px;
+  color:var(--akcent); margin-bottom:12px;
+}
+.lista-reguł { list-style:none; }
+.lista-reguł li {
+  padding:7px 0 7px 14px;
+  border-left:2px solid var(--obramowanie);
+  margin-bottom:6px;
+  font-size:13px; color:var(--tekst); line-height:1.6;
+}
+.lista-reguł li strong { color:var(--jasny); }
+.siatka-wyjaśnień {
+  margin-top:14px;
+  display:grid; grid-template-columns:1fr 1fr; gap:8px;
+}
+.kafelek-wyjaśnienia {
+  background:var(--powierzchnia2); padding:10px 14px;
+  border-left:2px solid var(--obramowanie);
+  font-size:12px; color:var(--przygaszony); line-height:1.6;
+}
+.kafelek-wyjaśnienia.poprawny { border-color:var(--zielony); }
+.kafelek-wyjaśnienia.mylący { border-color:var(--czerwony); }
+.nagłówek-kafelka { font-family:var(--mono); font-size:10px; margin-bottom:4px; }
+.nagłówek-kafelka.poprawny { color:var(--zielony); }
+.nagłówek-kafelka.mylący { color:var(--czerwony); }
+
+/* PRZYCISKI */
+.rząd-przycisków { display:flex; gap:10px; flex-wrap:wrap; }
+.przycisk {
+  font-family:var(--mono); font-size:11px; letter-spacing:2px;
+  padding:10px 22px; border:1px solid var(--obramowanie);
+  background:transparent; color:var(--tekst); cursor:pointer;
+  transition:all .15s; text-transform:uppercase;
+}
+.przycisk:hover { border-color:var(--akcent); color:var(--akcent); }
+.przycisk.główny { background:var(--akcent); color:#000; border-color:var(--akcent); }
+.przycisk.główny:hover { background:#6ab4ff; }
+
+/* EKRAN WYNIKÓW */
+.ekran-wyników { display:none; text-align:center; padding:60px 20px; }
+.ekran-wyników.widoczny { display:block; }
+.wynik-iq {
+  font-family:var(--mono); font-size:72px; font-weight:600;
+  color:var(--akcent); line-height:1; margin:20px 0 10px;
+}
+.etykieta-iq { font-family:var(--mono); font-size:13px; color:var(--przygaszony); letter-spacing:3px; }
+.opis-iq { font-size:15px; color:var(--tekst); margin:20px auto; max-width:500px; line-height:1.7; }
+
+@keyframes pojawienieSię { from{opacity:0;transform:translateY(4px)} to{opacity:1;transform:translateY(0)} }
+
+@media(max-width:600px) {
+  :root { --komórka:85px; }
+  .siatka-odpowiedzi { grid-template-columns:repeat(2,1fr); }
+  .siatka-wyjaśnień { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="nagłówek">
+  <div>
+    <div class="nagłówek-tytuł">MATRYCE PROGRESYWNE RAVENA</div>
+    <div class="nagłówek-podtytuł">Poziom zaawansowany — wielokrotne reguły jednocześnie</div>
+  </div>
+  <div class="licznik-czasu" id="licznik">—:——</div>
+</div>
+
+<div class="strona" id="strona-główna">
+  <div class="pasek-postępu"><div class="pasek-wypełnienie" id="pasek" style="width:0%"></div></div>
+
+  <div class="górny-pasek">
+    <div class="oznaczenie-pytania" id="oznaczenie-pytania">ZADANIE 1 / 12</div>
+    <div class="znaczniki-reguł" id="znaczniki-reguł"></div>
+    <div class="wyniki">
+      <div class="wynik-chip">✓ <span id="wynik-poprawne">0</span></div>
+      <div class="wynik-chip">✗ <span id="wynik-błędy">0</span></div>
+    </div>
+  </div>
+
+  <div class="ramka-macierzy">
+    <div class="etykieta-sekcji">macierz 3 × 3 — wskaż brakujący element</div>
+    <div class="siatka-macierzy" id="siatka-macierzy"></div>
+  </div>
+
+  <div class="etykieta-odpowiedzi">wybierz odpowiedź (A–D)</div>
+  <div class="siatka-odpowiedzi" id="siatka-odpowiedzi"></div>
+
+  <div class="panel-analizy" id="panel-analizy">
+    <div class="tytuł-analizy">wyjaśnienie reguł</div>
+    <ul class="lista-reguł" id="lista-reguł"></ul>
+    <div class="siatka-wyjaśnień" id="siatka-wyjaśnień"></div>
+  </div>
+
+  <div class="rząd-przycisków">
+    <button class="przycisk" onclick="pokaźAnalizę()">pokaż regułę</button>
+    <button class="przycisk główny" id="przycisk-następne" onclick="następnePytanie()" style="display:none">następne →</button>
+  </div>
+</div>
+
+<div class="ekran-wyników" id="ekran-wyników">
+  <div class="etykieta-iq">SZACOWANE IQ</div>
+  <div class="wynik-iq" id="wartość-iq">—</div>
+  <div class="etykieta-iq" id="przedział-iq">—</div>
+  <div class="opis-iq" id="opis-iq"></div>
+  <div class="rząd-przycisków" style="justify-content:center;margin-top:20px">
+    <button class="przycisk główny" onclick="zacznijOdNowa()">zacznij od nowa</button>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════════════
+// FUNKCJE POMOCNICZE
+// ══════════════════════════════════════════════════════════
+
+function losuj(tab) { return tab[Math.floor(Math.random() * tab.length)]; }
+function potasuj(tab) {
+  const k = [...tab];
+  for (let i = k.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [k[i], k[j]] = [k[j], k[i]];
+  }
+  return k;
+}
+
+// ══════════════════════════════════════════════════════════
+// SYSTEM RYSOWANIA SVG
+// Środek każdej figury: (41, 41), pole widzenia: 82×82
+// ══════════════════════════════════════════════════════════
+
+const ŚR = 41; // środek
+
+const DEFINICJE_SVG = `<defs>
+  <pattern id="kreskowanie" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="5" stroke="#c8d0e0" stroke-width="1.2"/>
+  </pattern>
+  <pattern id="kropkowanie" width="6" height="6" patternUnits="userSpaceOnUse">
+    <circle cx="3" cy="3" r="1.2" fill="#c8d0e0"/>
+  </pattern>
+</defs>`;
+
+const WYPEŁNIENIA = {
+  puste:       'none',
+  pełne:       '#c8d0e0',
+  ciemne:      '#2a3a5a',
+  kreskowane:  'url(#kreskowanie)',
+  kropkowane:  'url(#kropkowanie)',
+  szare:       '#6a7a96',
+};
+
+const NAZWY_WYPEŁNIEŃ = {
+  puste: 'puste', pełne: 'pełne', ciemne: 'ciemne',
+  kreskowane: 'kreskowane', kropkowane: 'kropkowane', szare: 'szare',
+};
+
+const NAZWY_KSZTAŁTÓW = {
+  koło: 'koło', kwadrat: 'kwadrat', trójkąt: 'trójkąt', romb: 'romb',
+  pięciokąt: 'pięciokąt', sześciokąt: 'sześciokąt',
+  gwiazda4: 'gwiazda 4-ramienna', gwiazda6: 'gwiazda 6-ramienna',
+  krzyż: 'krzyż', strzałka: 'strzałka', linia: 'linia',
+};
+
+function svg(zawartość) {
+  return `<svg viewBox="0 0 82 82" xmlns="http://www.w3.org/2000/svg">${DEFINICJE_SVG}${zawartość}</svg>`;
+}
+
+// ── Definicje kształtów ──────────────────────────────────
+
+const KSZTAŁTY = {
+  koło: ({r=16, wypełnienie='none', gr=1.8, obrys='#c8d0e0'} = {}) =>
+    `<circle cx="${ŚR}" cy="${ŚR}" r="${r}" fill="${wypełnienie}" stroke="${obrys}" stroke-width="${gr}"/>`,
+
+  kwadrat: ({s=28, wypełnienie='none', gr=1.8, obrys='#c8d0e0', rot=0} = {}) => {
+    const p = s / 2;
+    return `<rect x="${ŚR-p}" y="${ŚR-p}" width="${s}" height="${s}" fill="${wypełnienie}" stroke="${obrys}" stroke-width="${gr}" transform="rotate(${rot},${ŚR},${ŚR})"/>`;
+  },
+
+  trójkąt: ({s=30, wypełnienie='none', gr=1.8, obrys='#c8d0e0', rot=0} = {}) => {
+    const h = s * 0.866;
+    const pts = `${ŚR},${ŚR-h*0.67} ${ŚR-s/2},${ŚR+h*0.33} ${ŚR+s/2},${ŚR+h*0.33}`;
+    return `<polygon points="${pts}" fill="${wypełnienie}" stroke="${obrys}" stroke-width="${gr}" transform="rotate(${rot},${ŚR},${ŚR})"/>`;
+  },
+
+  romb: ({s=18, wypełnienie='none', gr=1.8, obrys='#c8d0e0', rot=0} = {}) => {
+    const pts = `${ŚR},${ŚR-s} ${ŚR+s},${ŚR} ${ŚR},${ŚR+s} ${ŚR-s},${ŚR}`;
+    return `<polygon points="${pts}" fill="${wypełnienie}" stroke="${obrys}" stroke-width="${gr}" transform="rotate(${rot},${ŚR},${ŚR})"/>`;
+  },
+
+  pięciokąt: ({r=18, wypełnienie='none', gr=1.8, obrys='#c8d0e0', rot=-90} = {}) => {
+    const pts = Array.from({length:5}, (_, i) => {
+      const k = (72*i + rot) * Math.PI / 180;
+      return `${ŚR + r*Math.cos(k)},${ŚR + r*Math.sin(k)}`;
+    }).join(' ');
+    return `<polygon points="${pts}" fill="${wypełnienie}" stroke="${obrys}" stroke-width="${gr}"/>`;
+  },
+
+  sześciokąt: ({r=18, wypełnienie='none', gr=1.8, obrys='#c8d0e0', rot=0} = {}) => {
+    const pts = Array.from({length:6}, (_, i) => {
+      const k = (60*i + rot) * Math.PI / 180;
+      return `${ŚR + r*Math.cos(k)},${ŚR + r*Math.sin(k)}`;
+    }).join(' ');
+    return `<polygon points="${pts}" fill="${wypełnienie}" stroke="${obrys}" stroke-width="${gr}"/>`;
+  },
+
+  gwiazda4: ({r=18, rw=8, wypełnienie='none', gr=1.5, obrys='#c8d0e0', rot=0} = {}) => {
+    const pts = Array.from({length:8}, (_, i) => {
+      const k = (45*i + rot) * Math.PI / 180;
+      const rad = i % 2 === 0 ? r : rw;
+      return `${ŚR + rad*Math.cos(k)},${ŚR + rad*Math.sin(k)}`;
+    }).join(' ');
+    return `<polygon points="${pts}" fill="${wypełnienie}" stroke="${obrys}" stroke-width="${gr}"/>`;
+  },
+
+  gwiazda6: ({r=18, rw=9, wypełnienie='none', gr=1.5, obrys='#c8d0e0', rot=0} = {}) => {
+    const pts = Array.from({length:12}, (_, i) => {
+      const k = (30*i + rot) * Math.PI / 180;
+      const rad = i % 2 === 0 ? r : rw;
+      return `${ŚR + rad*Math.cos(k)},${ŚR + rad*Math.sin(k)}`;
+    }).join(' ');
+    return `<polygon points="${pts}" fill="${wypełnienie}" stroke="${obrys}" stroke-width="${gr}"/>`;
+  },
+
+  krzyż: ({a=9, b=22, wypełnienie='none', gr=1.5, obrys='#c8d0e0', rot=0} = {}) => {
+    const pts = [
+      [-a,-b],[-a,-a],[-b,-a],[-b,a],[-a,a],[-a,b],
+      [a,b],[a,a],[b,a],[b,-a],[a,-a],[a,-b]
+    ].map(([x,y]) => `${ŚR+x},${ŚR+y}`).join(' ');
+    return `<polygon points="${pts}" fill="${wypełnienie}" stroke="${obrys}" stroke-width="${gr}" transform="rotate(${rot},${ŚR},${ŚR})"/>`;
+  },
+
+  strzałka: ({dl=22, szer=8, wypełnienie='#c8d0e0', gr=0, obrys='#c8d0e0', rot=0} = {}) => {
+    const pts = [
+      [0,-dl],[szer,-szer],[4,-szer],[4,szer],[-4,szer],[-4,-szer],[-szer,-szer]
+    ].map(([x,y]) => `${ŚR+x},${ŚR+y}`).join(' ');
+    return `<polygon points="${pts}" fill="${wypełnienie}" stroke="${obrys}" stroke-width="${gr}" transform="rotate(${rot},${ŚR},${ŚR})"/>`;
+  },
+
+  linia: ({dl=22, rot=0, gr=2.2, obrys='#c8d0e0'} = {}) => {
+    const k = rot * Math.PI / 180;
+    return `<line x1="${ŚR-dl*Math.cos(k)}" y1="${ŚR-dl*Math.sin(k)}" x2="${ŚR+dl*Math.cos(k)}" y2="${ŚR+dl*Math.sin(k)}" stroke="${obrys}" stroke-width="${gr}" stroke-linecap="round"/>`;
+  },
+};
+
+// Rysuje figurę z przesunięciem (dx, dy)
+function figura(nazwa, param={}, dx=0, dy=0) {
+  const wewnątrz = KSZTAŁTY[nazwa] ? KSZTAŁTY[nazwa](param) : '';
+  if (dx === 0 && dy === 0) return wewnątrz;
+  return `<g transform="translate(${dx},${dy})">${wewnątrz}</g>`;
+}
+
+// Wiele figur ułożonych w określony wzór
+function wieleFigur(nazwa, param, liczba, układ='rząd') {
+  const układy = {
+    rząd:     n => Array.from({length:n}, (_,i) => [(i-(n-1)/2)*20, 0]),
+    kolumna:  n => Array.from({length:n}, (_,i) => [0, (i-(n-1)/2)*20]),
+    ukośna:   n => Array.from({length:n}, (_,i) => [(i-(n-1)/2)*16, (i-(n-1)/2)*16]),
+    rozrzut:  n => [[0,0],[-15,-15],[15,-15],[-15,15],[15,15],[-15,0],[15,0],[0,-15],[0,15]].slice(0,n),
+    siatka2x2:n => [[-12,-12],[12,-12],[-12,12],[12,12]].slice(0,n),
+  };
+  const pozycje = (układy[układ] || układy.rząd)(liczba);
+  return pozycje.map(([dx,dy]) => figura(nazwa, param, dx, dy)).join('');
+}
+
+// ══════════════════════════════════════════════════════════
+// TYPY ZADAŃ
+// Każde zadanie ma 2–3 jednoczesne reguły.
+// Mylące odpowiedzi łamią dokładnie jedną regułę każda.
+// ══════════════════════════════════════════════════════════
+
+// ── 1. Kwadrat Łaciński 2D (kształt × wiersz, wypełnienie × kolumna) ──
+function zadanieKwadratŁaciński() {
+  const kształtyDost = potasuj(['koło','kwadrat','trójkąt','romb','pięciokąt','sześciokąt']);
+  const [kA, kB, kC] = kształtyDost;
+  const wypełnieniaDost = potasuj(['puste','pełne','kreskowane','kropkowane']);
+  const [wA, wB, wC] = wypełnieniaDost;
+  const gr = 1.8, obrys = '#c8d0e0', r = 17, s = 32;
+
+  const kolumny = [kA, kB, kC];
+  const wiersze = [wA, wB, wC];
+
+  function komórkaSVG(kol, wie) {
+    return svg(KSZTAŁTY[kolumny[kol]]({r, s, wypełnienie: WYPEŁNIENIA[wiersze[wie]], gr, obrys}));
+  }
+
+  const komórki = [];
+  for (let w = 0; w < 3; w++) for (let k = 0; k < 3; k++) komórki.push(komórkaSVG(k, w));
+  const poprawna = komórkaSVG(2, 2);
+
+  // Mylące: każda łamie dokładnie jedną regułę
+  const Nieprawidłowa1 = svg(KSZTAŁTY[kolumny[2]]({r, s, wypełnienie: WYPEŁNIENIA[wiersze[0]], gr, obrys})); // złe wypełnienie
+  const Nieprawidłowa2 = svg(KSZTAŁTY[kolumny[1]]({r, s, wypełnienie: WYPEŁNIENIA[wiersze[2]], gr, obrys})); // zły kształt
+  const Nieprawidłowa3 = svg(KSZTAŁTY[kolumny[0]]({r, s, wypełnienie: WYPEŁNIENIA[wiersze[1]], gr, obrys})); // oboje złe
+
+  return {
+    komórki, poprawna,
+    opcje: potasuj([
+      { svg: poprawna, czyPoprawna: true,  dlaczego: `Poprawny kształt (${NAZWY_KSZTAŁTÓW[kC]}) z właściwym wypełnieniem (${NAZWY_WYPEŁNIEŃ[wC]})` },
+      { svg: Nieprawidłowa1,  czyPoprawna: false, dlaczego: `Właściwy kształt (${NAZWY_KSZTAŁTÓW[kC]}), ale złe wypełnienie (${NAZWY_WYPEŁNIEŃ[wA]} zamiast ${NAZWY_WYPEŁNIEŃ[wC]})` },
+      { svg: Nieprawidłowa2,  czyPoprawna: false, dlaczego: `Właściwe wypełnienie (${NAZWY_WYPEŁNIEŃ[wC]}), ale zły kształt (${NAZWY_KSZTAŁTÓW[kB]} zamiast ${NAZWY_KSZTAŁTÓW[kC]})` },
+      { svg: Nieprawidłowa3,  czyPoprawna: false, dlaczego: `Zarówno kształt, jak i wypełnienie są nieprawidłowe` },
+    ]),
+    reguły: [
+      `<strong>Reguła 1 — Kształt (kolumna):</strong> Kolumna 1 = ${NAZWY_KSZTAŁTÓW[kA]}, Kolumna 2 = ${NAZWY_KSZTAŁTÓW[kB]}, Kolumna 3 = ${NAZWY_KSZTAŁTÓW[kC]}`,
+      `<strong>Reguła 2 — Wypełnienie (wiersz):</strong> Wiersz 1 = ${NAZWY_WYPEŁNIEŃ[wA]}, Wiersz 2 = ${NAZWY_WYPEŁNIEŃ[wB]}, Wiersz 3 = ${NAZWY_WYPEŁNIEŃ[wC]}`,
+      `<strong>Oba warunki muszą być spełnione jednocześnie</strong> — to tzw. dwuwymiarowy kwadrat łaciński.`,
+    ],
+    znaczniki: ['kształt × kolumna', 'wypełnienie × wiersz', 'kwadrat łaciński 2D'],
+  };
+}
+
+// ── 2. Potrójna reguła (obrót + wypełnienie + rozmiar) ──
+function zadaniePotrójna() {
+  const nazwaKształtu = losuj(['strzałka','trójkąt','pięciokąt','krzyż','gwiazda4']);
+  const krokObrotu = losuj([30, 45, 60, 90]);
+  const kolejnośćWypełnień = potasuj(['puste','pełne','kreskowane']).slice(0,3);
+  const rozmiary = [14, 21, 30];
+
+  function komórkaSVG(wiersz, kol) {
+    const rot = krokObrotu * kol;
+    const wypełnienie = WYPEŁNIENIA[kolejnośćWypełnień[wiersz]];
+    const roz = rozmiary[wiersz];
+    return svg(KSZTAŁTY[nazwaKształtu]({r:roz, s:roz*1.8, rw:roz*0.45, dl:roz*0.9, a:roz*0.35, b:roz, wypełnienie, gr:1.8, obrys:'#c8d0e0', rot}));
+  }
+
+  const komórki = [];
+  for (let w = 0; w < 3; w++) for (let k = 0; k < 3; k++) komórki.push(komórkaSVG(w, k));
+  const poprawna = komórkaSVG(2, 2);
+
+  const właściwyObrót = krokObrotu * 2;
+  const właściweWypełnienie = kolejnośćWypełnień[2];
+  const właściwyRozmiar = rozmiary[2];
+
+  const Nieprawidłowa1 = svg(KSZTAŁTY[nazwaKształtu]({r:właściwyRozmiar, s:właściwyRozmiar*1.8, wypełnienie:WYPEŁNIENIA[właściweWypełnienie], gr:1.8, obrys:'#c8d0e0', rot:krokObrotu*0})); // zły obrót
+  const Nieprawidłowa2 = svg(KSZTAŁTY[nazwaKształtu]({r:właściwyRozmiar, s:właściwyRozmiar*1.8, wypełnienie:WYPEŁNIENIA[kolejnośćWypełnień[0]], gr:1.8, obrys:'#c8d0e0', rot:właściwyObrót})); // złe wypełnienie
+  const Nieprawidłowa3 = svg(KSZTAŁTY[nazwaKształtu]({r:rozmiary[0], s:rozmiary[0]*1.8, wypełnienie:WYPEŁNIENIA[właściweWypełnienie], gr:1.8, obrys:'#c8d0e0', rot:właściwyObrót})); // zły rozmiar
+
+  return {
+    komórki, poprawna,
+    opcje: potasuj([
+      { svg: poprawna, czyPoprawna: true,  dlaczego: `Obrót ${właściwyObrót}°, wypełnienie ${NAZWY_WYPEŁNIEŃ[właściweWypełnienie]}, rozmiar duży — wszystkie trzy reguły spełnione` },
+      { svg: Nieprawidłowa1,  czyPoprawna: false, dlaczego: `Błąd: obrót 0° zamiast ${właściwyObrót}° — naruszenie reguły obrotu kolumnowego` },
+      { svg: Nieprawidłowa2,  czyPoprawna: false, dlaczego: `Błąd: wypełnienie ${NAZWY_WYPEŁNIEŃ[kolejnośćWypełnień[0]]} zamiast ${NAZWY_WYPEŁNIEŃ[właściweWypełnienie]} — naruszenie reguły wypełnienia wierszowego` },
+      { svg: Nieprawidłowa3,  czyPoprawna: false, dlaczego: `Błąd: rozmiar mały zamiast dużego — naruszenie reguły progresji rozmiaru` },
+    ]),
+    reguły: [
+      `<strong>Reguła 1 — Obrót (kolumna):</strong> 0° → ${krokObrotu}° → ${krokObrotu*2}°`,
+      `<strong>Reguła 2 — Wypełnienie (wiersz):</strong> W1=${NAZWY_WYPEŁNIEŃ[kolejnośćWypełnień[0]]}, W2=${NAZWY_WYPEŁNIEŃ[kolejnośćWypełnień[1]]}, W3=${NAZWY_WYPEŁNIEŃ[kolejnośćWypełnień[2]]}`,
+      `<strong>Reguła 3 — Rozmiar (wiersz):</strong> mały → średni → duży`,
+      `<strong>Wszystkie trzy reguły działają niezależnie i muszą być spełnione jednocześnie.</strong>`,
+    ],
+    znaczniki: ['obrót kolumnowy', 'wypełnienie wierszowe', 'rozmiar wierszowy', 'trzy reguły'],
+  };
+}
+
+// ── 3. Ilość + kształt (podwójna progresja) ──
+function zadanieIlośćKształt() {
+  const pula = potasuj(['koło','kwadrat','romb','trójkąt','sześciokąt']);
+  const [k1, k2, k3] = pula;
+  const macierzLiczb = [[1,2,3],[2,3,4],[3,4,5]];
+
+  function komórkaSVG(wiersz, kol) {
+    const n = macierzLiczb[wiersz][kol];
+    const kształt = [k1,k2,k3][kol];
+    return svg(wieleFigur(kształt, {r:7, s:13, wypełnienie:'none', gr:1.5, obrys:'#c8d0e0'}, n, 'rząd'));
+  }
+
+  const komórki = [];
+  for (let w = 0; w < 3; w++) for (let k = 0; k < 3; k++) komórki.push(komórkaSVG(w, k));
+  const poprawna = komórkaSVG(2, 2);
+
+  const Nieprawidłowa1 = svg(wieleFigur(k3, {r:7,s:13,wypełnienie:'none',gr:1.5,obrys:'#c8d0e0'}, 3, 'rząd')); // za mało (3 zamiast 5)
+  const Nieprawidłowa2 = svg(wieleFigur(k2, {r:7,s:13,wypełnienie:'none',gr:1.5,obrys:'#c8d0e0'}, 5, 'rząd')); // zły kształt
+  const Nieprawidłowa3 = svg(wieleFigur(k3, {r:7,s:13,wypełnienie:'none',gr:1.5,obrys:'#c8d0e0'}, 4, 'rząd')); // o 1 za mało
+
+  return {
+    komórki, poprawna,
+    opcje: potasuj([
+      { svg: poprawna, czyPoprawna: true,  dlaczego: `5 elementów kształtu ${NAZWY_KSZTAŁTÓW[k3]} — obie reguły spełnione` },
+      { svg: Nieprawidłowa1,  czyPoprawna: false, dlaczego: `Błąd: 3 elementy zamiast 5 — naruszenie reguły ilości wierszowej` },
+      { svg: Nieprawidłowa2,  czyPoprawna: false, dlaczego: `Błąd: kształt ${NAZWY_KSZTAŁTÓW[k2]} zamiast ${NAZWY_KSZTAŁTÓW[k3]} — naruszenie reguły kształtu kolumnowego` },
+      { svg: Nieprawidłowa3,  czyPoprawna: false, dlaczego: `Błąd: 4 elementy zamiast 5 — odpowiedź prawie poprawna, różnica o 1` },
+    ]),
+    reguły: [
+      `<strong>Reguła 1 — Kształt (kolumna):</strong> Kol. 1 = ${NAZWY_KSZTAŁTÓW[k1]}, Kol. 2 = ${NAZWY_KSZTAŁTÓW[k2]}, Kol. 3 = ${NAZWY_KSZTAŁTÓW[k3]}`,
+      `<strong>Reguła 2 — Ilość (wiersz):</strong> W1: 1–2–3 | W2: 2–3–4 | W3: 3–4–<strong>5</strong>`,
+      `<strong>Uwaga:</strong> Dwie z mylących odpowiedzi różnią się tylko o 1 element — wymagana precyzyjna weryfikacja.`,
+    ],
+    znaczniki: ['ilość +1/wiersz', 'kształt × kolumna', 'podwójna progresja'],
+  };
+}
+
+// ── 4. Symetryczna różnica zbiorów (XOR) ──
+function zadanieXOR() {
+  const pula = potasuj(['koło','kwadrat','trójkąt','romb','pięciokąt','sześciokąt']);
+  const [A, B, C, D] = pula;
+  const param = {r:13, s:24, wypełnienie:'none', gr:1.8, obrys:'#c8d0e0'};
+
+  function para(n1, n2, dx=12) {
+    return svg(figura(n1, param, -dx, 0) + figura(n2, param, dx, 0));
+  }
+
+  // W1: {A,B} | {B,C} → B wspólny → {A,C}
+  // W2: {C,D} | {D,A} → D wspólny → {C,A}
+  // W3: {A,B} | {B,D} → B wspólny → {A,D}
+  const komórki = [
+    para(A,B), para(B,C), para(A,C),
+    para(C,D), para(D,A), para(C,A),
+    para(A,B), para(B,D), null,
+  ];
+  const poprawna = para(A,D);
+  komórki[8] = poprawna;
+
+  const Nieprawidłowa1 = para(B,D); // zawiera wspólny B
+  const Nieprawidłowa2 = para(A,B); // kopia W3 Kol1
+  const Nieprawidłowa3 = svg(figura(A, param)); // tylko jeden element
+
+  return {
+    komórki, poprawna,
+    opcje: potasuj([
+      { svg: poprawna, czyPoprawna: true,  dlaczego: `{${NAZWY_KSZTAŁTÓW[A]}, ${NAZWY_KSZTAŁTÓW[D]}} = XOR({${NAZWY_KSZTAŁTÓW[A]},${NAZWY_KSZTAŁTÓW[B]}}, {${NAZWY_KSZTAŁTÓW[B]},${NAZWY_KSZTAŁTÓW[D]}}) — element wspólny B zostaje usunięty` },
+      { svg: Nieprawidłowa1,  czyPoprawna: false, dlaczego: `Błąd: {${NAZWY_KSZTAŁTÓW[B]},${NAZWY_KSZTAŁTÓW[D]}} — element wspólny ${NAZWY_KSZTAŁTÓW[B]} nie został usunięty` },
+      { svg: Nieprawidłowa2,  czyPoprawna: false, dlaczego: `Błąd: {${NAZWY_KSZTAŁTÓW[A]},${NAZWY_KSZTAŁTÓW[B]}} — to kopia pierwszej komórki wiersza 3, nie wynik XOR` },
+      { svg: Nieprawidłowa3,  czyPoprawna: false, dlaczego: `Błąd: tylko ${NAZWY_KSZTAŁTÓW[A]} — pominięto element ${NAZWY_KSZTAŁTÓW[D]}` },
+    ]),
+    reguły: [
+      `<strong>Reguła — Symetryczna różnica zbiorów (XOR):</strong> Kolumna 3 zawiera figury, które wystąpiły <em>dokładnie raz</em> w kolumnach 1 i 2. Element wspólny jest usuwany.`,
+      `<strong>Wiersz 1:</strong> {${NAZWY_KSZTAŁTÓW[A]},${NAZWY_KSZTAŁTÓW[B]}} ∆ {${NAZWY_KSZTAŁTÓW[B]},${NAZWY_KSZTAŁTÓW[C]}} = {${NAZWY_KSZTAŁTÓW[A]},${NAZWY_KSZTAŁTÓW[C]}} ✓`,
+      `<strong>Wiersz 2:</strong> {${NAZWY_KSZTAŁTÓW[C]},${NAZWY_KSZTAŁTÓW[D]}} ∆ {${NAZWY_KSZTAŁTÓW[D]},${NAZWY_KSZTAŁTÓW[A]}} = {${NAZWY_KSZTAŁTÓW[C]},${NAZWY_KSZTAŁTÓW[A]}} ✓`,
+      `<strong>Wiersz 3:</strong> {${NAZWY_KSZTAŁTÓW[A]},${NAZWY_KSZTAŁTÓW[B]}} ∆ {${NAZWY_KSZTAŁTÓW[B]},${NAZWY_KSZTAŁTÓW[D]}} = {${NAZWY_KSZTAŁTÓW[A]},${NAZWY_KSZTAŁTÓW[D]}} ← brakujące`,
+    ],
+    znaczniki: ['XOR', 'teoria zbiorów', 'poziom Set E'],
+  };
+}
+
+// ── 5. Figury zagnieżdżone (zewnętrzna × kolumna, wewnętrzna × wiersz, wypełnienie × wiersz) ──
+function zadanieZagnieżdżone() {
+  const zewnętrzne = potasuj(['koło','kwadrat','sześciokąt']);
+  const wewnętrzne = potasuj(['romb','trójkąt','krzyż']);
+  const wypełnienia = potasuj(['puste','pełne','kreskowane']);
+  const gr = 1.8, obrys = '#c8d0e0';
+
+  function komórkaSVG(wiersz, kol) {
+    const zew = zewnętrzne[kol];
+    const wew = wewnętrzne[wiersz];
+    const wypZ = WYPEŁNIENIA[wypełnienia[wiersz]];
+    return svg(
+      KSZTAŁTY[zew]({r:20, s:38, wypełnienie:wypZ, gr, obrys}) +
+      KSZTAŁTY[wew]({r:10, s:18, a:5, b:13, wypełnienie:'none', gr:1.4, obrys})
+    );
+  }
+
+  const komórki = [];
+  for (let w = 0; w < 3; w++) for (let k = 0; k < 3; k++) komórki.push(komórkaSVG(w, k));
+  const poprawna = komórkaSVG(2, 2);
+
+  const Nieprawidłowa1 = svg( // zły kształt zewnętrzny (kol.1 zamiast kol.2)
+    KSZTAŁTY[zewnętrzne[1]]({r:20,s:38,wypełnienie:WYPEŁNIENIA[wypełnienia[2]],gr,obrys}) +
+    KSZTAŁTY[wewnętrzne[2]]({r:10,s:18,a:5,b:13,wypełnienie:'none',gr:1.4,obrys})
+  );
+  const Nieprawidłowa2 = svg( // zły kształt wewnętrzny (wiersz 0 zamiast 2)
+    KSZTAŁTY[zewnętrzne[2]]({r:20,s:38,wypełnienie:WYPEŁNIENIA[wypełnienia[2]],gr,obrys}) +
+    KSZTAŁTY[wewnętrzne[0]]({r:10,s:18,wypełnienie:'none',gr:1.4,obrys})
+  );
+  const Nieprawidłowa3 = svg( // złe wypełnienie (wiersz 0 zamiast 2)
+    KSZTAŁTY[zewnętrzne[2]]({r:20,s:38,wypełnienie:WYPEŁNIENIA[wypełnienia[0]],gr,obrys}) +
+    KSZTAŁTY[wewnętrzne[2]]({r:10,s:18,a:5,b:13,wypełnienie:'none',gr:1.4,obrys})
+  );
+
+  return {
+    komórki, poprawna,
+    opcje: potasuj([
+      { svg: poprawna, czyPoprawna: true,  dlaczego: `Zewnętrzna: ${NAZWY_KSZTAŁTÓW[zewnętrzne[2]]}, wewnętrzna: ${NAZWY_KSZTAŁTÓW[wewnętrzne[2]]}, wypełnienie: ${NAZWY_WYPEŁNIEŃ[wypełnienia[2]]}` },
+      { svg: Nieprawidłowa1,  czyPoprawna: false, dlaczego: `Błąd: zewnętrzny kształt ${NAZWY_KSZTAŁTÓW[zewnętrzne[1]]} zamiast ${NAZWY_KSZTAŁTÓW[zewnętrzne[2]]} — naruszenie reguły kolumnowej` },
+      { svg: Nieprawidłowa2,  czyPoprawna: false, dlaczego: `Błąd: wewnętrzny kształt ${NAZWY_KSZTAŁTÓW[wewnętrzne[0]]} zamiast ${NAZWY_KSZTAŁTÓW[wewnętrzne[2]]} — naruszenie reguły wierszowej` },
+      { svg: Nieprawidłowa3,  czyPoprawna: false, dlaczego: `Błąd: wypełnienie ${NAZWY_WYPEŁNIEŃ[wypełnienia[0]]} zamiast ${NAZWY_WYPEŁNIEŃ[wypełnienia[2]]} — naruszenie reguły wypełnienia` },
+    ]),
+    reguły: [
+      `<strong>Reguła 1 — Figura zewnętrzna (kolumna):</strong> K1=${NAZWY_KSZTAŁTÓW[zewnętrzne[0]]}, K2=${NAZWY_KSZTAŁTÓW[zewnętrzne[1]]}, K3=${NAZWY_KSZTAŁTÓW[zewnętrzne[2]]}`,
+      `<strong>Reguła 2 — Figura wewnętrzna (wiersz):</strong> W1=${NAZWY_KSZTAŁTÓW[wewnętrzne[0]]}, W2=${NAZWY_KSZTAŁTÓW[wewnętrzne[1]]}, W3=${NAZWY_KSZTAŁTÓW[wewnętrzne[2]]}`,
+      `<strong>Reguła 3 — Wypełnienie zewnętrzne (wiersz):</strong> W1=${NAZWY_WYPEŁNIEŃ[wypełnienia[0]]}, W2=${NAZWY_WYPEŁNIEŃ[wypełnienia[1]]}, W3=${NAZWY_WYPEŁNIEŃ[wypełnienia[2]]}`,
+      `<strong>Typ:</strong> Trzy niezależne reguły — figura zagnieżdżona (kompozyt).`,
+    ],
+    znaczniki: ['figura zagnieżdżona', 'trzy reguły', 'kompozyt'],
+  };
+}
+
+// ── 6. Reguła ukośna — atrybut = f(w+k) mod 3 ──
+function zadanieUkośne() {
+  const nazwaKształtu = losuj(['kwadrat','pięciokąt','sześciokąt']);
+  const wypełnieniaPoDiag = ['puste','pełne','kreskowane'];
+  const rozmiary = [13, 20, 28];
+
+  function idxDiag(w, k) { return (w + k) % 3; }
+
+  function komórkaSVG(wiersz, kol) {
+    const d = idxDiag(wiersz, kol);
+    const wypełnienie = WYPEŁNIENIA[wypełnieniaPoDiag[d]];
+    const r = rozmiary[d];
+    const rot = wiersz * 45;
+    return svg(KSZTAŁTY[nazwaKształtu]({r, s:r*1.9, wypełnienie, gr:1.8, obrys:'#c8d0e0', rot}));
+  }
+
+  const komórki = [];
+  for (let w = 0; w < 3; w++) for (let k = 0; k < 3; k++) komórki.push(komórkaSVG(w, k));
+  const poprawna = komórkaSVG(2, 2);
+
+  const d22 = idxDiag(2,2); // (2+2)%3 = 1
+  const Nieprawidłowa1 = svg(KSZTAŁTY[nazwaKształtu]({r:rozmiary[d22],s:rozmiary[d22]*1.9,wypełnienie:WYPEŁNIENIA[wypełnieniaPoDiag[0]],gr:1.8,obrys:'#c8d0e0',rot:90}));
+  const Nieprawidłowa2 = svg(KSZTAŁTY[nazwaKształtu]({r:rozmiary[2],s:rozmiary[2]*1.9,wypełnienie:WYPEŁNIENIA[wypełnieniaPoDiag[d22]],gr:1.8,obrys:'#c8d0e0',rot:90}));
+  const Nieprawidłowa3 = svg(KSZTAŁTY[nazwaKształtu]({r:rozmiary[d22],s:rozmiary[d22]*1.9,wypełnienie:WYPEŁNIENIA[wypełnieniaPoDiag[d22]],gr:1.8,obrys:'#c8d0e0',rot:0}));
+
+  return {
+    komórki, poprawna,
+    opcje: potasuj([
+      { svg: poprawna, czyPoprawna: true,  dlaczego: `Wypełnienie ${NAZWY_WYPEŁNIEŃ[wypełnieniaPoDiag[1]]}, rozmiar średni, obrót 90° — wszystkie trzy cechy zgodne z wzorcem ukośnym` },
+      { svg: Nieprawidłowa1,  czyPoprawna: false, dlaczego: `Błąd: wypełnienie z przekątnej 0 (${NAZWY_WYPEŁNIEŃ[wypełnieniaPoDiag[0]]}) zamiast przekątnej 1` },
+      { svg: Nieprawidłowa2,  czyPoprawna: false, dlaczego: `Błąd: rozmiar duży (przekątna 2) zamiast średniego (przekątna 1)` },
+      { svg: Nieprawidłowa3,  czyPoprawna: false, dlaczego: `Błąd: obrót 0° zamiast 90° — naruszenie reguły obrotu wierszowego` },
+    ]),
+    reguły: [
+      `<strong>Wzorzec ukośny:</strong> Zamiast patrzeć wierszami lub kolumnami — śledź przekątne biegnące ukośnie przez siatkę (od lewego górnego do prawego dolnego rogu).`,
+      `Skos 1 (lewa kolumna i górny wiersz): ${NAZWY_WYPEŁNIEŃ[wypełnieniaPoDiag[0]]}, mały | Skos 2 (środkowa przekątna): ${NAZWY_WYPEŁNIEŃ[wypełnieniaPoDiag[1]]}, średni | Skos 3 (prawa kolumna i dolny wiersz): ${NAZWY_WYPEŁNIEŃ[wypełnieniaPoDiag[2]]}, duży`,
+      `<strong>Reguła obrotu:</strong> Kąt rośnie o 45° z każdym wierszem — wiersz 1: 0°, wiersz 2: 45°, wiersz 3: 90°`,
+      `<strong>Wskazówka:</strong> To najtrudniejszy typ zadania — reguła nie jest widoczna w wierszach ani kolumnach, tylko po skosie.`,
+    ],
+    znaczniki: ['przekątna (w+k) mod 3', 'obrót wierszowy', 'poziom D/E'],
+  };
+}
+
+// ── 7. Arytmetyka ilości: Kolumna 3 = Kolumna 1 + Kolumna 2 ──
+function zadanieArytmetyka() {
+  const nazwaKształtu = losuj(['koło','kwadrat','romb']);
+  const możliwości = [
+    [1,2,3],[2,1,3],[3,1,4],[1,3,4],[2,2,4],[1,4,5],[2,3,5]
+  ];
+  const wiersze = potasuj(możliwości).slice(0,3);
+  const [w0, w1, w2] = wiersze;
+
+  function rysujN(n) {
+    return svg(wieleFigur(nazwaKształtu, {r:6, s:11, wypełnienie:'none', gr:1.5, obrys:'#c8d0e0'}, n, 'rozrzut'));
+  }
+
+  function wiersz2SVG([a, b, c]) {
+    return [rysujN(a), rysujN(b), rysujN(c)];
+  }
+
+  const komórki = [...wiersz2SVG(w0), ...wiersz2SVG(w1), ...wiersz2SVG(w2)];
+  const poprawna = komórki[8];
+  const właściwaLiczba = w2[2];
+
+  const Nieprawidłowa1 = rysujN(Math.max(1, właściwaLiczba - 1));
+  const Nieprawidłowa2 = rysujN(właściwaLiczba + 1 > 6 ? właściwaLiczba - 2 : właściwaLiczba + 1);
+  const Nieprawidłowa3 = rysujN(w2[0]);
+
+  return {
+    komórki, poprawna,
+    opcje: potasuj([
+      { svg: poprawna, czyPoprawna: true,  dlaczego: `${w2[0]} + ${w2[1]} = ${w2[2]} elementów — poprawna suma` },
+      { svg: Nieprawidłowa1,  czyPoprawna: false, dlaczego: `Błąd: ${właściwaLiczba-1} elementów — o 1 za mało` },
+      { svg: Nieprawidłowa2,  czyPoprawna: false, dlaczego: `Błąd: ${właściwaLiczba>5?właściwaLiczba-2:właściwaLiczba+1} elementów — o 1 za dużo` },
+      { svg: Nieprawidłowa3,  czyPoprawna: false, dlaczego: `Błąd: ${w2[0]} elementów — to wartość z kolumny 1, nie suma` },
+    ]),
+    reguły: [
+      `<strong>Reguła:</strong> Kolumna 3 = Kolumna 1 + Kolumna 2 (dodawanie liczby elementów).`,
+      `W1: ${w0[0]} + ${w0[1]} = ${w0[2]} ✓ | W2: ${w1[0]} + ${w1[1]} = ${w1[2]} ✓ | W3: ${w2[0]} + ${w2[1]} = ?`,
+      `<strong>Uwaga:</strong> Dwie z mylących odpowiedzi różnią się o ±1 — wymagana precyzyjna weryfikacja ilości.`,
+    ],
+    znaczniki: ['arytmetyka K3=K1+K2', 'precyzja', 'mylące ±1'],
+  };
+}
+
+// ── 8. Reguła sumy współrzędnych (w+k) wpływa na wszystkie atrybuty ──
+function zadanieSumaWspółrzędnych() {
+  const nazwaKształtu = losuj(['sześciokąt','pięciokąt','gwiazda4','gwiazda6']);
+  const krokObrotu = losuj([20, 30, 40, 45]);
+  const rozmiary = [12, 17, 23, 29];
+  const kolejnośćWypełnień = ['puste','kreskowane','pełne'];
+
+  function komórkaSVG(wiersz, kol) {
+    const rot = (wiersz * krokObrotu + kol * krokObrotu * 2) % 360;
+    const roz = rozmiary[Math.min(wiersz + kol, 3)];
+    const wypełnienie = WYPEŁNIENIA[kolejnośćWypełnień[(wiersz + kol) % 3]];
+    return svg(KSZTAŁTY[nazwaKształtu]({r:roz, s:roz*1.9, rw:roz*0.5, wypełnienie, gr:1.7, obrys:'#c8d0e0', rot}));
+  }
+
+  const komórki = [];
+  for (let w = 0; w < 3; w++) for (let k = 0; k < 3; k++) komórki.push(komórkaSVG(w, k));
+  const poprawna = komórkaSVG(2, 2);
+
+  const poprawnyObrót = (2*krokObrotu + 2*krokObrotu*2) % 360;
+  const poprawneWypełnienie = kolejnośćWypełnień[(2+2)%3];
+  const poprawnyRozmiar = rozmiary[Math.min(4,3)];
+
+  const Nieprawidłowa1 = svg(KSZTAŁTY[nazwaKształtu]({r:poprawnyRozmiar,s:poprawnyRozmiar*1.9,rw:poprawnyRozmiar*0.5,wypełnienie:WYPEŁNIENIA[poprawneWypełnienie],gr:1.7,obrys:'#c8d0e0',rot:(poprawnyObrót+90)%360}));
+  const Nieprawidłowa2 = svg(KSZTAŁTY[nazwaKształtu]({r:rozmiary[2],s:rozmiary[2]*1.9,rw:rozmiary[2]*0.5,wypełnienie:WYPEŁNIENIA[poprawneWypełnienie],gr:1.7,obrys:'#c8d0e0',rot:poprawnyObrót}));
+  const Nieprawidłowa3 = svg(KSZTAŁTY[nazwaKształtu]({r:poprawnyRozmiar,s:poprawnyRozmiar*1.9,rw:poprawnyRozmiar*0.5,wypełnienie:WYPEŁNIENIA[kolejnośćWypełnień[0]],gr:1.7,obrys:'#c8d0e0',rot:poprawnyObrót}));
+
+  return {
+    komórki, poprawna,
+    opcje: potasuj([
+      { svg: poprawna, czyPoprawna: true,  dlaczego: `Obrót ${poprawnyObrót}°, rozmiar największy, wypełnienie ${NAZWY_WYPEŁNIEŃ[poprawneWypełnienie]}` },
+      { svg: Nieprawidłowa1,  czyPoprawna: false, dlaczego: `Błąd: obrót o 90° za duży — naruszenie wzoru obrotu` },
+      { svg: Nieprawidłowa2,  czyPoprawna: false, dlaczego: `Błąd: rozmiar zbyt mały — indeks sumy w+k=4, ale użyto indeksu 2` },
+      { svg: Nieprawidłowa3,  czyPoprawna: false, dlaczego: `Błąd: wypełnienie ${NAZWY_WYPEŁNIEŃ[kolejnośćWypełnień[0]]} zamiast ${NAZWY_WYPEŁNIEŃ[poprawneWypełnienie]}` },
+    ]),
+    reguły: [
+      `<strong>Reguła 1 — Obrót:</strong> Figura obraca się tym bardziej, im dalej jest od lewego górnego rogu — rośnie o ${krokObrotu}° z każdym wierszem i o ${krokObrotu*2}° z każdą kolumną.`,
+      `<strong>Reguła 2 — Rozmiar:</strong> Figura rośnie po skosie — im bliżej prawego dolnego rogu, tym większa: ${rozmiary.join(' → ')}`,
+      `<strong>Reguła 3 — Wypełnienie:</strong> Wypełnienie zmienia się po skosie i powtarza co 3 kroki: ${NAZWY_WYPEŁNIEŃ[kolejnośćWypełnień[0]]} → ${NAZWY_WYPEŁNIEŃ[kolejnośćWypełnień[1]]} → ${NAZWY_WYPEŁNIEŃ[kolejnośćWypełnień[2]]} → i od nowa`,
+      `<strong>Wskazówka:</strong> Wszystkie trzy cechy zależą od odległości od lewego górnego rogu — im dalej po skosie, tym więcej zmian.`,
+    ],
+    znaczniki: ['wzór (w+k)', 'obrót+rozmiar+wypełnienie', 'poziom Set E'],
+  };
+}
+
+// ══════════════════════════════════════════════════════════
+// SILNIK GRY
+// ══════════════════════════════════════════════════════════
+
+const GENERATORY = [
+  zadanieKwadratŁaciński,
+  zadaniePotrójna,
+  zadanieIlośćKształt,
+  zadanieXOR,
+  zadanieZagnieżdżone,
+  zadanieUkośne,
+  zadanieArytmetyka,
+  zadanieSumaWspółrzędnych,
+];
+
+const ŁĄCZNA_LICZBA_PYTAŃ = 12;
+const CZAS_NA_PYTANIE = 90;
+
+let stan = {
+  nrPytania: 0,
+  poprawne: 0,
+  błędy: 0,
+  odpowiedziano: false,
+  zadanie: null,
+  interwałCzasu: null,
+  czasyOdpowiedzi: [],
+  kolejkaZadań: potasuj([...GENERATORY,...GENERATORY]).slice(0, ŁĄCZNA_LICZBA_PYTAŃ),
+};
+
+function uruchomCzas() {
+  let pozostały = CZAS_NA_PYTANIE;
+  const el = document.getElementById('licznik');
+  clearInterval(stan.interwałCzasu);
+  stan.interwałCzasu = setInterval(() => {
+    pozostały--;
+    const m = String(Math.floor(pozostały / 60));
+    const s = String(pozostały % 60).padStart(2, '0');
+    el.textContent = `${m}:${s}`;
+    el.className = 'licznik-czasu' + (pozostały <= 10 ? ' alarm' : pozostały <= 25 ? ' ostrzeżenie' : '');
+    if (pozostały <= 0) {
+      clearInterval(stan.interwałCzasu);
+      if (!stan.odpowiedziano) autoNiepowodzenie();
+    }
+  }, 1000);
+}
+
+function autoNiepowodzenie() {
+  stan.błędy++;
+  stan.odpowiedziano = true;
+  ujawnijOdpowiedzi(-1);
+  document.getElementById('wynik-błędy').textContent = stan.błędy;
+  document.getElementById('przycisk-następne').style.display = 'inline-block';
+  pokaźAnalizę();
+}
+
+function generujPytanie() {
+  stan.odpowiedziano = false;
+  stan.zadanie = stan.kolejkaZadań[stan.nrPytania]();
+
+  document.getElementById('oznaczenie-pytania').textContent = `ZADANIE ${stan.nrPytania + 1} / ${ŁĄCZNA_LICZBA_PYTAŃ}`;
+  document.getElementById('pasek').style.width = `${stan.nrPytania / ŁĄCZNA_LICZBA_PYTAŃ * 100}%`;
+
+  // Znaczniki reguł
+  const znaczniki = document.getElementById('znaczniki-reguł');
+  znaczniki.innerHTML = stan.zadanie.znaczniki.map(z => `<span class="znacznik">${z}</span>`).join('');
+
+  // Macierz
+  const siatka = document.getElementById('siatka-macierzy');
+  siatka.innerHTML = '';
+  stan.zadanie.komórki.forEach((kom, i) => {
+    const d = document.createElement('div');
+    d.className = 'komórka' + (i === 8 ? ' puste-miejsce' : '');
+    if (i < 8) d.innerHTML = kom;
+    else d.innerHTML = svg(`<text x="41" y="48" text-anchor="middle" font-size="26" font-family="IBM Plex Mono" fill="#2a3a5a">?</text>`);
+    siatka.appendChild(d);
+  });
+
+  // Opcje
+  const siatkaOpcji = document.getElementById('siatka-odpowiedzi');
+  siatkaOpcji.innerHTML = '';
+  stan.zadanie.opcje.forEach((opcja, i) => {
+    const d = document.createElement('div');
+    d.className = 'opcja';
+    d.innerHTML = opcja.svg + `<div class="klucz-opcji">${String.fromCharCode(65 + i)}</div>`;
+    d.onclick = () => wybierzOpcję(i, d);
+    siatkaOpcji.appendChild(d);
+  });
+
+  document.getElementById('panel-analizy').classList.remove('widoczny');
+  document.getElementById('przycisk-następne').style.display = 'none';
+
+  uruchomCzas();
+}
+
+function wybierzOpcję(idx, el) {
+  if (stan.odpowiedziano) return;
+  stan.odpowiedziano = true;
+  clearInterval(stan.interwałCzasu);
+
+  const licznikEl = document.getElementById('licznik');
+  const pozostałyCzas = parseInt(licznikEl.textContent.replace(':', '')) || 0;
+  stan.czasyOdpowiedzi.push(CZAS_NA_PYTANIE - (Math.floor(pozostałyCzas / 100) * 60 + pozostałyCzas % 100));
+
+  const czyPoprawna = stan.zadanie.opcje[idx].czyPoprawna;
+  if (czyPoprawna) stan.poprawne++; else stan.błędy++;
+
+  document.getElementById('wynik-poprawne').textContent = stan.poprawne;
+  document.getElementById('wynik-błędy').textContent = stan.błędy;
+
+  ujawnijOdpowiedzi(idx);
+  document.getElementById('przycisk-następne').style.display = 'inline-block';
+  pokaźAnalizę();
+}
+
+function ujawnijOdpowiedzi(wybranyIdx) {
+  const opcje = document.querySelectorAll('.opcja');
+  opcje.forEach((el, i) => {
+    const opcja = stan.zadanie.opcje[i];
+    if (opcja.czyPoprawna) {
+      el.classList.add('poprawna');
+      el.querySelector('.klucz-opcji').classList.add('poprawny');
+    } else if (i === wybranyIdx) {
+      el.classList.add('błędna');
+      el.querySelector('.klucz-opcji').classList.add('błędny');
+    }
+    el.onclick = null;
+  });
+}
+
+function pokaźAnalizę() {
+  const panel = document.getElementById('panel-analizy');
+  const listaReguł = document.getElementById('lista-reguł');
+  const siatkaWyjaśnień = document.getElementById('siatka-wyjaśnień');
+
+  listaReguł.innerHTML = stan.zadanie.reguły.map(r => `<li>${r}</li>`).join('');
+
+  siatkaWyjaśnień.innerHTML = stan.zadanie.opcje.map((opcja, i) => {
+    const typ = opcja.czyPoprawna ? 'poprawny' : 'mylący';
+    const etykieta = opcja.czyPoprawna ? '✓ ODPOWIEDŹ POPRAWNA' : `✗ ODPOWIEDŹ Nieprawidłowa ${String.fromCharCode(65+i)}`;
+    return `<div class="kafelek-wyjaśnienia ${typ}">
+      <div class="nagłówek-kafelka ${typ}">${etykieta}</div>
+      ${opcja.dlaczego}
+    </div>`;
+  }).join('');
+
+  panel.classList.add('widoczny');
+}
+
+function następnePytanie() {
+  stan.nrPytania++;
+  if (stan.nrPytania >= ŁĄCZNA_LICZBA_PYTAŃ) {
+    pokażWyniki();
+  } else {
+    generujPytanie();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+}
+
+function szacujIQ(poprawne, łącznie, średniCzas) {
+  const proc = poprawne / łącznie;
+  let iq;
+  if (proc >= 0.92) iq = 135;
+  else if (proc >= 0.83) iq = 125;
+  else if (proc >= 0.75) iq = 118;
+  else if (proc >= 0.67) iq = 112;
+  else if (proc >= 0.58) iq = 105;
+  else if (proc >= 0.50) iq = 100;
+  else if (proc >= 0.42) iq = 94;
+  else if (proc >= 0.33) iq = 88;
+  else iq = 80;
+  if (średniCzas < 30 && proc > 0.7) iq += 3;
+  if (średniCzas > 75) iq -= 2;
+  return Math.max(70, Math.min(145, iq));
+}
+
+function pokażWyniki() {
+  clearInterval(stan.interwałCzasu);
+  document.getElementById('strona-główna').style.display = 'none';
+  const ekran = document.getElementById('ekran-wyników');
+  ekran.classList.add('widoczny');
+
+  const średniCzas = stan.czasyOdpowiedzi.length
+    ? Math.round(stan.czasyOdpowiedzi.reduce((a,b)=>a+b,0)/stan.czasyOdpowiedzi.length)
+    : 45;
+  const iq = szacujIQ(stan.poprawne, ŁĄCZNA_LICZBA_PYTAŃ, średniCzas);
+
+  document.getElementById('wartość-iq').textContent = iq;
+
+  let przedział, opis;
+  if (iq >= 130) {
+    przedział = 'WYBITNY — górne 2% populacji';
+    opis = 'Wyjątkowa sprawność myślenia abstrakcyjno-dedukcyjnego. Zdolność do jednoczesnego śledzenia wielu niezależnych reguł i ich kombinowania.';
+  } else if (iq >= 120) {
+    przedział = 'BARDZO WYSOKI — górne 10%';
+    opis = 'Silne zdolności analityczne. Skuteczne wykrywanie wielowymiarowych reguł i rozumowanie przez analogię na wysokim poziomie.';
+  } else if (iq >= 110) {
+    przedział = 'POWYŻEJ PRZECIĘTNEJ — górne 25%';
+    opis = 'Dobra zdolność do wykrywania złożonych wzorców. Reguły wyższego rzędu (XOR, przekątne, suma współrzędnych) mogą wymagać dalszego treningu.';
+  } else if (iq >= 90) {
+    przedział = 'PRZECIĘTNY — środkowe 50%';
+    opis = 'Wykrywanie pojedynczych reguł sprawne. Jednoczesna analiza wielu atrybutów (np. kształt + wypełnienie + obrót) wymaga dalszego ćwiczenia.';
+  } else {
+    przedział = 'PONIŻEJ PRZECIĘTNEJ';
+    opis = 'Regularne ćwiczenia matryc mogą istotnie podnieść wynik. Zacznij od zadań z jedną regułą, stopniowo przechodzą do zadań złożonych.';
+  }
+
+  document.getElementById('przedział-iq').textContent = przedział;
+  document.getElementById('opis-iq').innerHTML = `
+    <strong>${stan.poprawne}/${ŁĄCZNA_LICZBA_PYTAŃ}</strong> poprawnych odpowiedzi &nbsp;|&nbsp;
+    Średni czas odpowiedzi: <strong>${średniCzas}s</strong><br><br>
+    ${opis}
+    <br><br>
+    <small style="color:var(--przygaszony)">Uwaga: to szacowanie orientacyjne na podstawie wzorców norm SPM — nie zastępuje standaryzowanego badania psychologicznego.</small>
+  `;
+}
+
+function zacznijOdNowa() {
+  clearInterval(stan.interwałCzasu);
+  stan = {
+    nrPytania: 0, poprawne: 0, błędy: 0,
+    odpowiedziano: false, zadanie: null,
+    interwałCzasu: null, czasyOdpowiedzi: [],
+    kolejkaZadań: potasuj([...GENERATORY,...GENERATORY]).slice(0, ŁĄCZNA_LICZBA_PYTAŃ),
+  };
+  document.getElementById('strona-główna').style.display = 'block';
+  document.getElementById('ekran-wyników').classList.remove('widoczny');
+  document.getElementById('wynik-poprawne').textContent = '0';
+  document.getElementById('wynik-błędy').textContent = '0';
+  document.getElementById('licznik').textContent = '—:——';
+  document.getElementById('licznik').className = 'licznik-czasu';
+  generujPytanie();
+}
+
+// Inicjalizacja
+generujPytanie();
+</script>
+</body>
+</html>
