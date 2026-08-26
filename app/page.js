@@ -13,7 +13,7 @@ const MODULES = [
     glow: 'rgba(167,139,250,0.18)',
     border: 'rgba(167,139,250,0.35)',
   },
-  
+   
   {
     href: '/sprawnosc',
     icon: '🏃',
