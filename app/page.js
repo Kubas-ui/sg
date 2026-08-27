@@ -25,10 +25,7 @@ const MODULES = [
   },
 ]
 
-const SOON = [
-  { code: 'PS-03', cat: 'PROFIL PSYCHOLOGICZNY', title: 'Kwestionariusz osobowości', desc: 'Przygotowanie do rozmowy z psychologiem w rekrutacji do służby mundurowej.' },
-  { code: 'MR-04', cat: 'MYŚLENIE ABSTRAKCYJNE', title: 'Matryce progresywne Ravena', desc: 'Ćwiczenia z rozumowania niewerbalnego stosowanego w testach psychologicznych.' },
-]
+
 
 export default function Hub() {
   const [mounted, setMounted] = useState(false)
@@ -159,38 +156,7 @@ export default function Hub() {
           ))}
         </div>
 
-        {/* Divider */}
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: 12,
-          marginBottom: 24,
-        }}>
-          <div style={{ flex: 1, height: 1, background: '#21262d' }} />
-          <span style={{ fontSize: 11, color: '#484f58', whiteSpace: 'nowrap' }}>W PRZYGOTOWANIU</span>
-          <div style={{ flex: 1, height: 1, background: '#21262d' }} />
-        </div>
 
-        {/* Wkrótce */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 2 }}>
-          {SOON.map((mod, i) => (
-            <div key={i} style={{
-              background: '#0d1117',
-              border: '1px solid #21262d',
-              borderLeft: '3px solid #21262d',
-              borderRadius: 6,
-              padding: '20px 24px',
-              opacity: 0.5,
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
-                <span style={{ fontSize: 10, fontWeight: 600, color: '#484f58', letterSpacing: 1, textTransform: 'uppercase' }}>{mod.cat}</span>
-                <span style={{ fontSize: 10, color: '#30363d' }}>{mod.code}</span>
-              </div>
-              <div style={{ fontSize: 15, fontWeight: 600, color: '#8b949e', marginBottom: 6 }}>{mod.title}</div>
-              <div style={{ fontSize: 12, color: '#484f58', lineHeight: 1.6 }}>{mod.desc}</div>
-            </div>
-          ))}
-        </div>
 
       </div>
     </div>
