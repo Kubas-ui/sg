@@ -95,10 +95,9 @@ export default function Hub() {
                   borderLeft: `3px solid ${mod.accent}`,
                   borderRadius: 6,
                   padding: '24px 28px',
-                  display: 'grid',
-                  gridTemplateColumns: '1fr auto',
-                  alignItems: 'center',
-                  gap: 24,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 16,
                   transition: 'background 0.12s, border-color 0.12s',
                   cursor: 'pointer',
                 }}
@@ -114,7 +113,7 @@ export default function Hub() {
                 }}
               >
                 <div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
+                  <div style={{ marginBottom: 8 }}>
                     <span style={{
                       fontSize: 10,
                       fontWeight: 600,
@@ -122,17 +121,16 @@ export default function Hub() {
                       letterSpacing: 1,
                       textTransform: 'uppercase',
                     }}>{mod.cat}</span>
-                    <span style={{ fontSize: 10, color: '#484f58' }}>{mod.code}</span>
                   </div>
                   <div style={{ fontSize: 17, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>
                     {mod.title}
                   </div>
-                  <div style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.6, maxWidth: 520 }}>
+                  <div style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.6 }}>
                     {mod.desc}
                   </div>
                 </div>
-                <div style={{ textAlign: 'right', flexShrink: 0 }}>
-                  <div style={{ fontSize: 11, color: '#484f58', marginBottom: 12, whiteSpace: 'nowrap' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 12 }}>
+                  <div style={{ fontSize: 11, color: '#484f58' }}>
                     {mod.meta}
                   </div>
                   <div style={{
