@@ -44,6 +44,7 @@ export default function AdminLogin() {
           placeholder="Hasło administratora"
           value={password}
           onChange={e => setPassword(e.target.value)}
+          onBlur={e => setPassword(e.target.value)}
           onKeyDown={e => e.key === 'Enter' && handleLogin()}
           style={{ width: '100%', padding: '14px 18px', background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(167,139,250,0.3)', borderRadius: 12, color: '#fff', fontSize: 15, outline: 'none', boxSizing: 'border-box', marginBottom: 12 }}
         />
@@ -54,8 +55,8 @@ export default function AdminLogin() {
 
         <button
           onClick={handleLogin}
-          disabled={loading || !password}
-          style={{ width: '100%', background: password ? 'linear-gradient(135deg,#a78bfa,#7c3aed)' : 'rgba(255,255,255,0.1)', color: '#fff', border: 'none', padding: '14px', borderRadius: 12, fontSize: 15, fontWeight: 700, cursor: password ? 'pointer' : 'not-allowed', letterSpacing: 1 }}
+          disabled={loading}
+          style={{ width: '100%', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', color: '#fff', border: 'none', padding: '14px', borderRadius: 12, fontSize: 15, fontWeight: 700, cursor: 'pointer', letterSpacing: 1 }}
         >
           {loading ? 'Sprawdzanie...' : 'Zaloguj się'}
         </button>
