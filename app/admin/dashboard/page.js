@@ -319,7 +319,7 @@ export default function AdminDashboard() {
                 style={{ ...S.input, marginBottom: 0, cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center', userSelect: 'none', color: qForm.correct_answer ? '#fff' : '#888' }}>
                 <span>
                   {qForm.correct_answer
-                    ? (() => { const idx = [qForm.option_a, qForm.option_b, qForm.option_c, qForm.option_d].indexOf(qForm.correct_answer); return `${['A','B','C','D'][idx]}: ${qForm.correct_answer}` })()
+                    ? (() => { const idx = [qForm.option_a, qForm.option_b, qForm.option_c, qForm.option_d].indexOf(qForm.correct_answer); return `${idx >= 0 ? ['A','B','C','D'][idx] + ': ' : ''}${qForm.correct_answer}` })()
                     : '-- Wybierz prawidłową odpowiedź --'}
                 </span>
                 <span style={{ fontSize: 10, color: '#a78bfa' }}>{qForm._open ? '▲' : '▼'}</span>
