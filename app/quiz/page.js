@@ -22,6 +22,7 @@ function useIsAndroid() {
 
 export default function QuizPage() {
   const topRef = useRef(null)
+  const shouldScroll = useRef(false)
   const [questions, setQuestions] = useState([])
   const [answers, setAnswers] = useState({})
   const [submitted, setSubmitted] = useState(false)
@@ -55,7 +56,7 @@ export default function QuizPage() {
       setAnswers({})
       setSubmitted(false)
       setShowWarning(false)
-      setTimeout(() => topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50)
+      shouldScroll.current = true
     } catch (e) {
       setError(e.message)
     } finally {
@@ -64,6 +65,14 @@ export default function QuizPage() {
   }
 
   useEffect(() => { loadQuestions() }, [])
+
+  useEffect(() => {
+    if (shouldScroll.current) {
+      shouldScroll.current = false
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    }
+  }, [questions])
 
   const handleAnswer = (qIdx, option) => {
     if (submitted) return
@@ -80,7 +89,8 @@ export default function QuizPage() {
       return
     }
     setSubmitted(true)
-    setTimeout(() => topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
   }
 
   const score = submitted ? questions.filter((q, i) => answers[i] === q.correct_answer).length : 0
