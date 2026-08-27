@@ -132,6 +132,7 @@ const CWICZENIA = [
 
 export default function SprawnoscPage() {
   const [plec, setPlec] = useState('m') // 'm' | 'k'
+  const [otwartyFilm, setOtwartyFilm] = useState(null) // index ćwiczenia z otwartym odtwarzaczem
 
   const S = {
     page: {
@@ -239,24 +240,46 @@ export default function SprawnoscPage() {
                 <div style={{ fontSize: 10, color: '#f59e0b', fontFamily: 'monospace', letterSpacing: 2, marginBottom: 6 }}>ĆWICZENIE {idx + 1}</div>
                 <div style={{ fontSize: 16, fontWeight: 700, color: '#fff' }}>{cw.nazwa}</div>
               </div>
-              {/* Link do filmu */}
-              <a
-                href={plec === 'm' ? cw.filmy.m : cw.filmy.k}
-                target="_blank"
-                rel="noopener noreferrer"
+              {/* Przycisk odtwarzacza filmu */}
+              <button
+                onClick={() => setOtwartyFilm(otwartyFilm === idx ? null : idx)}
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 6,
-                  background: 'rgba(245,158,11,0.12)',
+                  background: otwartyFilm === idx ? 'rgba(245,158,11,0.25)' : 'rgba(245,158,11,0.12)',
                   border: '1px solid rgba(245,158,11,0.35)',
                   color: '#f59e0b', borderRadius: 8, padding: '7px 14px',
                   fontSize: 12, fontFamily: 'monospace', letterSpacing: 1,
-                  textDecoration: 'none', whiteSpace: 'nowrap',
+                  cursor: 'pointer', whiteSpace: 'nowrap',
                   flexShrink: 0,
                 }}
               >
-                ▶ film — {plec === 'm' ? 'mężczyźni' : 'kobiety'}
-              </a>
+                {otwartyFilm === idx ? '✕ zamknij' : '▶ film'} — {plec === 'm' ? 'mężczyźni' : 'kobiety'}
+              </button>
             </div>
+
+            {/* Wbudowany odtwarzacz wideo (streaming przez własne proxy /api/video) */}
+            {otwartyFilm === idx && (
+              <div style={{ marginBottom: 18 }}>
+                <video
+                  key={`${idx}-${plec}`}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  style={{ width: '100%', maxHeight: 420, borderRadius: 12, background: '#000', display: 'block' }}
+                  src={`/api/video?src=${encodeURIComponent(plec === 'm' ? cw.filmy.m : cw.filmy.k)}`}
+                >
+                  Twoja przeglądarka nie obsługuje odtwarzania wideo.
+                </video>
+                <a
+                  href={plec === 'm' ? cw.filmy.m : cw.filmy.k}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: 'inline-block', marginTop: 8, fontSize: 11, color: 'rgba(255,255,255,0.35)', textDecoration: 'underline' }}
+                >
+                  Film się nie odtwarza? Otwórz bezpośrednio →
+                </a>
+              </div>
+            )}
 
             {/* Opis */}
             <div style={{ fontSize: 13, color: '#b8aed4', lineHeight: 1.75, marginBottom: 18 }}>{cw.opis}</div>
