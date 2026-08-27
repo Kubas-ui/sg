@@ -6,7 +6,6 @@ const MODULES = [
   {
     href: '/quiz',
     cat: 'WIEDZA OGÓLNA',
-    code: 'WO-01',
     title: 'Test wiedzy ogólnej',
     desc: 'Losowany zestaw 20 pytań z bazy 241 zagadnień obowiązujących na etapie weryfikacji kandydatów do Straży Granicznej.',
     meta: '241 pytań · losowe 20 na test',
@@ -16,7 +15,6 @@ const MODULES = [
   {
     href: '/sprawnosc',
     cat: 'SPRAWNOŚĆ FIZYCZNA',
-    code: 'SF-02',
     title: 'Przygotowanie do testów sprawnościowych',
     desc: 'Zasady testu, opisy ćwiczeń z filmami instruktażowymi oraz tabele norm dla obu grup wiekowych i płci.',
     meta: '6 ćwiczeń · normy wg rozporządzenia SG',
