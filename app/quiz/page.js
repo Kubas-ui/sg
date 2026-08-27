@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { supabase } from '../../lib/supabase'
 
@@ -21,6 +21,7 @@ function useIsAndroid() {
 }
 
 export default function QuizPage() {
+  const topRef = useRef(null)
   const [questions, setQuestions] = useState([])
   const [answers, setAnswers] = useState({})
   const [submitted, setSubmitted] = useState(false)
@@ -54,6 +55,7 @@ export default function QuizPage() {
       setAnswers({})
       setSubmitted(false)
       setShowWarning(false)
+      setTimeout(() => topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50)
     } catch (e) {
       setError(e.message)
     } finally {
@@ -78,7 +80,7 @@ export default function QuizPage() {
       return
     }
     setSubmitted(true)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    setTimeout(() => topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50)
   }
 
   const score = submitted ? questions.filter((q, i) => answers[i] === q.correct_answer).length : 0
@@ -113,7 +115,7 @@ export default function QuizPage() {
   return (
     <div style={S.page}>
       {/* Header */}
-      <div style={S.header}>
+      <div style={S.header} ref={topRef}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <Link href="/" style={{ fontSize: 18, color: 'rgba(255,255,255,0.35)', textDecoration: 'none', lineHeight: 1, transition: 'color 0.15s' }}
             onMouseEnter={e => e.currentTarget.style.color = '#a78bfa'}
