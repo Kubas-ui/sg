@@ -1,131 +1,198 @@
 'use client'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 const MODULES = [
   {
     href: '/quiz',
-    icon: '📋',
-    title: 'Test Wiedzy Ogólnej',
-    subtitle: 'SG — wiedza ogólna',
-    desc: '241 pytań z bazy, losowane zestawy po 20. Sprawdź czy odpiszesz na wszystkie zanim skończysz.',
-    meta: '241 pytań · losowe 20',
-    color: '#a78bfa',
-    glow: 'rgba(167,139,250,0.18)',
-    border: 'rgba(167,139,250,0.35)',
+    cat: 'WIEDZA OGÓLNA',
+    code: 'WO-01',
+    title: 'Test wiedzy ogólnej',
+    desc: 'Losowany zestaw 20 pytań z bazy 241 zagadnień obowiązujących na etapie weryfikacji kandydatów do Straży Granicznej.',
+    meta: '241 pytań · losowe 20 na test',
+    accent: '#c0392b',
+    accentDim: 'rgba(192,57,43,0.08)',
   },
-   
   {
     href: '/sprawnosc',
-    icon: '🏃',
-    title: 'Testy Sprawnościowe',
-    subtitle: 'Przygotowanie fizyczne',
-    desc: 'Zasady testu, opisy ćwiczeń z filmami instruktażowymi oraz tabele norm dla kobiet i mężczyzn w dwóch grupach wiekowych.',
-    meta: '6 ćwiczeń · normy SG',
-    color: '#f59e0b',
-    glow: 'rgba(245,158,11,0.18)',
-    border: 'rgba(245,158,11,0.35)',
+    cat: 'SPRAWNOŚĆ FIZYCZNA',
+    code: 'SF-02',
+    title: 'Przygotowanie do testów sprawnościowych',
+    desc: 'Zasady testu, opisy ćwiczeń z filmami instruktażowymi oraz tabele norm dla obu grup wiekowych i płci.',
+    meta: '6 ćwiczeń · normy wg rozporządzenia SG',
+    accent: '#1a6fa8',
+    accentDim: 'rgba(26,111,168,0.08)',
   },
 ]
 
-const COMING_SOON = [
-  { icon: '⏱️', title: 'Wkrótce…', desc: 'Kolejny moduł w przygotowaniu.' },
+const SOON = [
+  { code: 'PS-03', cat: 'PROFIL PSYCHOLOGICZNY', title: 'Kwestionariusz osobowości', desc: 'Przygotowanie do rozmowy z psychologiem w rekrutacji do służby mundurowej.' },
+  { code: 'MR-04', cat: 'MYŚLENIE ABSTRAKCYJNE', title: 'Matryce progresywne Ravena', desc: 'Ćwiczenia z rozumowania niewerbalnego stosowanego w testach psychologicznych.' },
 ]
 
 export default function Hub() {
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
   return (
     <div style={{
       minHeight: '100vh',
-      background: 'linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)',
-      fontFamily: "'Georgia', serif",
-      color: '#e8e0f0',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '40px 20px 60px',
+      background: '#0e1117',
+      color: '#e6edf3',
+      fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
     }}>
 
+      {/* Pasek górny */}
       <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 340px))',
-        gap: 24,
-        justifyContent: 'center',
-        width: '100%',
-        maxWidth: 760,
-        marginBottom: 24,
+        borderBottom: '1px solid #21262d',
+        padding: '0 32px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        height: 52,
       }}>
-        {MODULES.map(mod => (
-          <Link key={mod.href} href={mod.href} style={{ textDecoration: 'none' }}>
-            <div
-              style={{
-                background: mod.glow,
-                border: `1.5px solid ${mod.border}`,
-                borderRadius: 20,
-                padding: '28px 28px 24px',
-                cursor: 'pointer',
-                transition: 'transform 0.18s ease, box-shadow 0.18s ease',
-                position: 'relative',
-                overflow: 'hidden',
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.transform = 'translateY(-4px)'
-                e.currentTarget.style.boxShadow = `0 16px 48px ${mod.glow}`
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = 'none'
-              }}
-            >
-              <div style={{ fontSize: 40, marginBottom: 16, lineHeight: 1 }}>{mod.icon}</div>
-              <div style={{ fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 4 }}>
-                {mod.title}
-              </div>
-              <div style={{ fontSize: 11, color: mod.color, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 14, fontFamily: 'monospace' }}>
-                {mod.subtitle}
-              </div>
-              <div style={{ fontSize: 13, color: '#b8aed4', lineHeight: 1.65, marginBottom: 20 }}>
-                {mod.desc}
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <span style={{ fontSize: 11, color: mod.color, fontFamily: 'monospace', letterSpacing: 1 }}>
-                  {mod.meta}
-                </span>
-                <span style={{ fontSize: 20, color: mod.color }}>→</span>
-              </div>
-              <div style={{
-                position: 'absolute', top: 0, left: 0, right: 0, height: 3,
-                background: `linear-gradient(90deg, transparent, ${mod.color}, transparent)`,
-                borderRadius: '20px 20px 0 0',
-              }} />
-            </div>
-          </Link>
-        ))}
-
-        {COMING_SOON.map((mod, i) => (
-          <div key={i} style={{
-            background: 'rgba(255,255,255,0.03)',
-            border: '1.5px dashed rgba(255,255,255,0.1)',
-            borderRadius: 20,
-            padding: '28px 28px 24px',
-            opacity: 0.5,
-          }}>
-            <div style={{ fontSize: 40, marginBottom: 16, lineHeight: 1, filter: 'grayscale(1)' }}>{mod.icon}</div>
-            <div style={{ fontSize: 18, fontWeight: 700, color: '#888', marginBottom: 14 }}>{mod.title}</div>
-            <div style={{ fontSize: 13, color: '#666', lineHeight: 1.65 }}>{mod.desc}</div>
-          </div>
-        ))}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <div style={{ width: 8, height: 8, background: '#c0392b', borderRadius: '50%' }} />
+          <span style={{ fontSize: 12, color: '#8b949e', letterSpacing: 0.3 }}>
+            PLATFORMA PRZYGOTOWANIA DO REKRUTACJI SG
+          </span>
+        </div>
+        <Link href="/admin" style={{ fontSize: 11, color: '#484f58', textDecoration: 'none' }}>
+          panel
+        </Link>
       </div>
 
-      <Link href="/admin" style={{
-        fontSize: 11,
-        color: 'rgba(255,255,255,0.2)',
-        fontFamily: 'monospace',
-        letterSpacing: 2,
-        textDecoration: 'none',
-        textTransform: 'uppercase',
-      }}>
-        ⚙ admin
-      </Link>
+      {/* Główna zawartość */}
+      <div style={{ maxWidth: 860, margin: '0 auto', padding: '56px 24px 80px' }}>
+
+        {/* Nagłówek */}
+        <div style={{ marginBottom: 48 }}>
+          <div style={{
+            fontSize: 11,
+            color: '#8b949e',
+            letterSpacing: 1.5,
+            textTransform: 'uppercase',
+            marginBottom: 14,
+          }}>
+            Etapy rekrutacji — moduły szkoleniowe
+          </div>
+          <h1 style={{
+            fontSize: 'clamp(28px, 5vw, 42px)',
+            fontWeight: 800,
+            color: '#e6edf3',
+            margin: 0,
+            lineHeight: 1.15,
+            letterSpacing: -0.5,
+          }}>
+            Przygotuj się<br />
+            <span style={{ color: '#8b949e', fontWeight: 400 }}>do każdego etapu.</span>
+          </h1>
+        </div>
+
+        {/* Aktywne moduły */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 2, marginBottom: 40 }}>
+          {MODULES.map((mod) => (
+            <Link key={mod.href} href={mod.href} style={{ textDecoration: 'none' }}>
+              <div
+                style={{
+                  background: '#161b22',
+                  border: '1px solid #21262d',
+                  borderLeft: `3px solid ${mod.accent}`,
+                  borderRadius: 6,
+                  padding: '24px 28px',
+                  display: 'grid',
+                  gridTemplateColumns: '1fr auto',
+                  alignItems: 'center',
+                  gap: 24,
+                  transition: 'background 0.12s, border-color 0.12s',
+                  cursor: 'pointer',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = mod.accentDim
+                  e.currentTarget.style.borderColor = mod.accent
+                  e.currentTarget.style.borderLeftColor = mod.accent
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = '#161b22'
+                  e.currentTarget.style.borderColor = '#21262d'
+                  e.currentTarget.style.borderLeftColor = mod.accent
+                }}
+              >
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
+                    <span style={{
+                      fontSize: 10,
+                      fontWeight: 600,
+                      color: mod.accent,
+                      letterSpacing: 1,
+                      textTransform: 'uppercase',
+                    }}>{mod.cat}</span>
+                    <span style={{ fontSize: 10, color: '#484f58' }}>{mod.code}</span>
+                  </div>
+                  <div style={{ fontSize: 17, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>
+                    {mod.title}
+                  </div>
+                  <div style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.6, maxWidth: 520 }}>
+                    {mod.desc}
+                  </div>
+                </div>
+                <div style={{ textAlign: 'right', flexShrink: 0 }}>
+                  <div style={{ fontSize: 11, color: '#484f58', marginBottom: 12, whiteSpace: 'nowrap' }}>
+                    {mod.meta}
+                  </div>
+                  <div style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 6,
+                    background: mod.accent,
+                    color: '#fff',
+                    fontSize: 12,
+                    fontWeight: 600,
+                    padding: '7px 16px',
+                    borderRadius: 4,
+                  }}>
+                    Rozpocznij <span style={{ fontSize: 14 }}>→</span>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* Divider */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 12,
+          marginBottom: 24,
+        }}>
+          <div style={{ flex: 1, height: 1, background: '#21262d' }} />
+          <span style={{ fontSize: 11, color: '#484f58', whiteSpace: 'nowrap' }}>W PRZYGOTOWANIU</span>
+          <div style={{ flex: 1, height: 1, background: '#21262d' }} />
+        </div>
+
+        {/* Wkrótce */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 2 }}>
+          {SOON.map((mod, i) => (
+            <div key={i} style={{
+              background: '#0d1117',
+              border: '1px solid #21262d',
+              borderLeft: '3px solid #21262d',
+              borderRadius: 6,
+              padding: '20px 24px',
+              opacity: 0.5,
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
+                <span style={{ fontSize: 10, fontWeight: 600, color: '#484f58', letterSpacing: 1, textTransform: 'uppercase' }}>{mod.cat}</span>
+                <span style={{ fontSize: 10, color: '#30363d' }}>{mod.code}</span>
+              </div>
+              <div style={{ fontSize: 15, fontWeight: 600, color: '#8b949e', marginBottom: 6 }}>{mod.title}</div>
+              <div style={{ fontSize: 12, color: '#484f58', lineHeight: 1.6 }}>{mod.desc}</div>
+            </div>
+          ))}
+        </div>
+
+      </div>
     </div>
   )
 }
