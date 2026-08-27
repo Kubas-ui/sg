@@ -52,9 +52,9 @@ export default function Hub() {
             PLATFORMA PRZYGOTOWANIA DO REKRUTACJI SG
           </span>
         </div>
-        <Link href="/admin" style={{ fontSize: 11, color: '#484f58', textDecoration: 'none' }}>
+{/*<Link href="/admin" style={{ fontSize: 11, color: '#484f58', textDecoration: 'none' }}>
           panel
-        </Link>
+        </Link>*/}
       </div>
 
       {/* Główna zawartość */}
